@@ -1,0 +1,25 @@
+ul { padding: 0; margin: 0; list-style: none; }
+img { display: block; width: 100%; border: none; }
+a { text-decoration: none; color: inherit; display: block;}
+section { position: relative; }
+
+
+/*********************** CLEAR ***********************/
+.clear { clear: both; height: 0px; }
+.clear5 { clear: both; height: 5px; }
+.clear10 { clear: both; height: 10px; }
+.clear15 { clear: both; height: 15px; }
+.clear20 { clear: both; height: 20px; }
+.clear30 { clear: both; height: 30px; }
+.clear40 { clear: both; height: 40px; }
+
+
+/*********************** COLUMNAS ***********************/
+.col2 li { float: left; width: 50%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col3 li { float: left; width: 33.33%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col4 li { float: left; width: 25%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col5 li { float: left; width: 20%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col6 li { float: left; width: 16.66%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col7 li { float: left; width: 14.28%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col8 li { float: left; width: 12.5%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+.col9 li { float: left; width: 11%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
