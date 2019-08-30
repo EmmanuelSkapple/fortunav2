@@ -23,3 +23,20 @@ section { position: relative; }
 .col7 li { float: left; width: 14.28%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
 .col8 li { float: left; width: 12.5%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
 .col9 li { float: left; width: 11%; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; position: relative; }
+
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+}
+
+
+@media (min-width: 1440px){
+
+}

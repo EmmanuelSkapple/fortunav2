@@ -7,8 +7,8 @@ import '../styles/General.css';
 function Slider() {
   return (
     <div>
-      <div>
-        <video id="videoBG" autoPlay muted loop playsInline poster='imgs/01.JPG'>
+      <div className="filterBlack">
+        <video id="videoBG" autoPlay muted loop playsInline poster='imgs/FostunaPoster.JPG'>
 
             <source src="imgs/fortuna-web.webm" type="video/webm"/>
             <source src="imgs/fortuna-web.mp4" type="video/mp4"/>
