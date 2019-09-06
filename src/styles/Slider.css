@@ -1,1 +1,6 @@
-#videoBG{width: 100%;}
+.Slider #videoBG{ width:100%; background:#ccc;}
+.Slider .filterBlack{filter: grayscale(50%) brightness(66%);-webkit-filter: grayscale(50%) brightness(66%);}
+.Slider .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: -130px;}
+.Slider .seccion1 .redesSociales .LineUp{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 100px;margin: 0 auto;border-radius: 30px;}
+.Slider .seccion1 .redesSociales .LineDown{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 200px;margin: 0 auto;border-radius: 30px;}
+.Slider .seccion1 .redesSociales li:not(.LineDown):not(.LineUp){padding: 7px;}

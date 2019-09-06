@@ -1,8 +1,13 @@
 ul { padding: 0; margin: 0; list-style: none; }
 img { display: block; width: 100%; border: none; }
-a { text-decoration: none; color: inherit; display: block;}
+a { text-decoration: none; color: inherit; display: block;font-family: 'Arimo', sans-serif; text-transform: uppercase;}
 section { position: relative; }
-
+* { box-sizing: border-box; }
+*:focus { outline: none; }
+.conteRight { width: 50%; float: right; }
+.conteLeft { width: 50%; float: left; }
+.contenedor { width: 1200px; margin: 0px auto; position: relative; }
+p { -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transition: all .4s ease; transition: all .4s ease; margin: 0 0 10px; font-size: 18px; line-height: 31px; }
 
 /*********************** CLEAR ***********************/
 .clear { clear: both; height: 0px; }

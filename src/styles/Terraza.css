@@ -1,0 +1,22 @@
+.Terraza .seccion1 .TerrazaBG{  background-image: url('/imgs/TerrazaFortunaBG.png');background-repeat: no-repeat;background-size: cover; padding: 50px 270px 130px;width: 100%;height: 800px;}
+.Terraza .seccion1 {padding: 40px;}
+
+.Terraza .seccion1 .TerrazaBG ul{padding: 60px;}
+.Terraza .seccion1 .TerrazaTitle{position: absolute;bottom: 60px;left: 130px;}
+.Terraza .seccion1 .TerrazaTitle h2:first-child{margin: 2px;font-size: 40px; text-align: left;color: #FFF;font-family: 'Abril Fatface', cursive; }
+.Terraza .seccion1 .TerrazaTitle h2:last-child{font-size:70px; margin: 0;color: #d8bfa0; font-family: 'Anton', sans-serif;}
+.Terraza .seccion1 .TerrazaBG li:first-child{margin-top: -40px}
+.Terraza .seccion1 .TerrazaBG li:last-child{margin-top: 40px}
+.Terraza .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: -130px;}
+.Terraza .seccion1 .redesSociales .LineUp{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 100px;margin: 0 auto;border-radius: 30px;}
+.Terraza .seccion1 .redesSociales .LineDown{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 200px;margin: 0 auto;border-radius: 30px;}
+.Terraza .seccion1 .redesSociales a{margin-left: -20px;margin: 20px 0; padding: 7px; transform: rotate(-90deg); width: 120px;}
+.Terraza .seccion1 .redesSociales li:first-child{margin-bottom: 50px;}
+.Terraza .seccion1 .redesSociales li:nth-child(2){margin-left: -35px;}
+ #TerrazaSlide{height: 600px;}
+ #TerrazaSlide:hover #TerrazaLeft{margin-top:0px;}
+ #TerrazaSlide:hover #TerrazaRight{margin-top: 0px;}
+.Terraza .explosion { width: 170px;position: relative;bottom: 650px;left: 180px;z-index: -1;transform: rotate(-15deg);}
+.Terraza .explosion .TapaCerveza {width: 83px;margin: 0 auto;position: relative;top: 23px;left: 4px;}
+
+.Terraza .seccion1 .redesSociales li:last-child{margin-top: 50px;}
