@@ -1,22 +1,417 @@
-.Terraza .seccion1 .TerrazaBG{  background-image: url('/imgs/TerrazaFortunaBG.png');background-repeat: no-repeat;background-size: cover; padding: 50px 270px 130px;width: 100%;height: 800px;}
+.Terraza .seccion1 .TerrazaBG{  background-image: url('/imgs/TerrazaFortunaBG.png');background-repeat: no-repeat;background-size: cover; width: 100%;height: 800px;}
 .Terraza .seccion1 {padding: 40px;}
 
-.Terraza .seccion1 .TerrazaBG ul{padding: 60px;}
+
+
+.Terraza .seccion1 .TerrazaBG #TerrazaSlide ul{padding: 60px;}
 .Terraza .seccion1 .TerrazaTitle{position: absolute;bottom: 60px;left: 130px;}
 .Terraza .seccion1 .TerrazaTitle h2:first-child{margin: 2px;font-size: 40px; text-align: left;color: #FFF;font-family: 'Abril Fatface', cursive; }
 .Terraza .seccion1 .TerrazaTitle h2:last-child{font-size:70px; margin: 0;color: #d8bfa0; font-family: 'Anton', sans-serif;}
-.Terraza .seccion1 .TerrazaBG li:first-child{margin-top: -40px}
-.Terraza .seccion1 .TerrazaBG li:last-child{margin-top: 40px}
+.Terraza .seccion1 .TerrazaBG #TerrazaSlide li:first-child{margin-top: -40px}
+.Terraza .seccion1 .TerrazaBG #TerrazaSlide li:last-child{margin-top: 40px}
 .Terraza .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: -130px;}
 .Terraza .seccion1 .redesSociales .LineUp{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 100px;margin: 0 auto;border-radius: 30px;}
 .Terraza .seccion1 .redesSociales .LineDown{width: 2px;background-color: #BF0D0D;border: 1px solid #BF0D0D;height: 200px;margin: 0 auto;border-radius: 30px;}
 .Terraza .seccion1 .redesSociales a{margin-left: -20px;margin: 20px 0; padding: 7px; transform: rotate(-90deg); width: 120px;}
 .Terraza .seccion1 .redesSociales li:first-child{margin-bottom: 50px;}
 .Terraza .seccion1 .redesSociales li:nth-child(2){margin-left: -35px;}
- #TerrazaSlide{height: 600px;}
+ #TerrazaSlide{height: 600px;   width: 680px;margin: 0 auto;padding-top: 20px;}
  #TerrazaSlide:hover #TerrazaLeft{margin-top:0px;}
  #TerrazaSlide:hover #TerrazaRight{margin-top: 0px;}
 .Terraza .explosion { width: 170px;position: relative;bottom: 650px;left: 180px;z-index: -1;transform: rotate(-15deg);}
 .Terraza .explosion .TapaCerveza {width: 83px;margin: 0 auto;position: relative;top: 23px;left: 4px;}
 
 .Terraza .seccion1 .redesSociales li:last-child{margin-top: 50px;}
+.Terraza .seccion1 .TerrazaBG .galeria{width: 560px;margin: 0 auto;position: relative;top: -650px;z-index: -1;opacity: 0;display: none;}
+
+
+
+
+
+/**************ONDAS**************/
+
+
+.waveContent{
+  left: 350px;
+position: relative;
+bottom: 530px;
+z-index: -1;
+}
+
+.waveContentLeft{
+  left: -340px;
+  position: relative;
+  bottom: 170px;
+  z-index: -1;
+}
+
+
+
+
+.waveLeft {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 310px;
+  height: 310px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 48%;
+  animation: drift 3000ms infinite linear;
+  background-image: linear-gradient(240deg, #fede01, #fedd04);
+
+}
+
+.waveLeft.-three {
+  animation: drift 4000ms infinite linear;
+
+}
+.waveLeft.-two {
+  animation: drift 7000ms infinite linear;
+  margin-left: -210px;
+  margin-top: -300px;
+}
+
+.wave {
+
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #f7b002;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 48%;
+  animation: drift 3000ms infinite linear;
+}
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+/****************** BUBBLES **************/
+.BubblesContent{position: absolute;width: 140px;height: 300PX;bottom: -400px;left: 160px;}
+.bubble {-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;height: 30px;position: absolute;width: 30px;border: 3px solid #fcca00;z-index: -2;}
+.bubble:after {-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 4px solid #feec4b;content: "";height: 30px;left: -7px;top: -7px;position: absolute;width: 30px;z-index: -2;}
+.BubblesContentRigth{    position: absolute;width: 140px;height: 300PX;bottom: -130px;right: 210px;}
+
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 200px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 200px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 200px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 15s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2.5s ease-in-out infinite alternate;
+
+	left: -5%;
+	top: 5%;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+	left: 5%;
+	top: 80%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 18s linear infinite, sideWays 2.8s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 18s linear infinite, sideWays 2.8s ease-in-out infinite alternate;
+	animation: animateBubble 18s linear infinite, sideWays 2.8s ease-in-out infinite alternate;
+
+	left: 10%;
+	top: 40%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+	left: 20%;
+	top: 0;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 19s linear infinite, sideWays 3.5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 3.5s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 3.5s ease-in-out infinite alternate;
+
+	left: 30%;
+	top: 50%;
+
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 11s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 11s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+	animation: animateBubble 11s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+
+	left: 50%;
+	top: 0;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 1.9s ease-in-out infinite alternate;
+
+	left: 65%;
+	top: 70%;
+
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 12s linear infinite, sideWays 3.3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3.3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3.3s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 10%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 19s linear infinite, sideWays 4.2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 19s linear infinite, sideWays 4.2s ease-in-out infinite alternate;
+	animation: animateBubble 19s linear infinite, sideWays 4.2s ease-in-out infinite alternate;
+
+	left: 90%;
+	top: 50%;
+
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 16s linear infinite, sideWays 1.7s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 16s linear infinite, sideWays 1.7s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 1.7s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 80%;
+
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+
+
+
+
+
+
+.wrapper{
+  perspective: 800px;
+  position: relative;
+  margin: 0 auto;
+  height: 600px;
+width: 680px;
+}
+
+.card{
+  height: 600px;
+width: 680px;
+margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  cursor: pointer;
+}
+
+.card > div{
+  position: absolute;
+
+  padding: 34px 21px;
+  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.front{
+  transform: rotateY(0deg) translateZ(160px);
+  border-radius: 34px 3px 0 0;
+}
+
+.right{
+  opacity: 0.08;
+  transform: rotateY(90deg) translateZ(160px);
+  border-radius: 0 0 3px 34px;
+}
+
+.card:target{
+  transform: translateZ(-160px) rotateY( -90deg);
+}
+
+.card:target .front{
+  opacity: 0;
+}
+
+.card:target .right{
+  opacity: 1;
+}
+
+
+
+img{
+  transform-origin: top right;
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: 100ms;
+  pointer-events: none;
+}
+
+.img-wrapper{
+  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  position: absolute;
+  top: 0; right: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+.card:target ~ .img-wrapper img{
+  transform: scale(0.9) translateX(77%) translateY(90%) rotateZ(80deg);
+}
+
+ul{
+  margin-left: 21px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+}
+
+li{
+  padding-bottom: 8px;
+  position: relative;
+}
+
+li:before{
+  content: 'x';
+  position: absolute;
+  left: -21px;
+  opacity: .55;
+}
+
+
+
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
