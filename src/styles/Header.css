@@ -1,14 +1,18 @@
-.Menu{background: none;position: fixed;width: 180px; height: 100%;top: 0; left: 0; z-index: 999;}
-.Menu li {padding: 20px ; height: 200px;}
-.Menu i{font-size: 30px;}
-
-.Menu li a{color: #000;font-size: 20px;font-weight: 600;}
-.Menu .carrito{width: 60px;margin: 0 auto; margin-top: -35px;}
-.Menu .BadgeCarrito{    margin-bottom: -15px;margin-left: 30px; width: 35px;height: 35px;color: #FFF;font-size: 20px;position: relative;background-color: #E67B7B;border-radius: 30px;text-align: center;}
-
-.Menu .BadgeCarrito p{ padding-top: 3px; font-size: 17px;}
+.Menu{position: fixed;width: 60%; bottom: 0; left: 50%; z-index: 999;height: 40px; margin-left: -300px;}
+.Menu li {display: inline-block; padding: 9px 20px; position: relative; cursor: pointer;}
+.Menu li:nth-child(1) {width: 15%}
+.Menu li:nth-child(2) {width: 40%}
+.Menu li:nth-child(3) {width: 15%}
+.Menu ul {margin: 0 auto;width: 100%}
 
 
+.Menu svg{fill: #ececec;}
+
+.Menu li a{color: #ececec;font-size: 20px;font-family: 'Fira Sans', sans-serif; font-weight: 300}
+.Menu .carrito{width: 30px;margin: 0 auto; }
+.Menu .BadgeCarrito{width: 20px;height: 20px;color: #FFF;position: absolute;background-color: #E67B7B;border-radius: 30px;text-align: center;margin-left: 20px;margin-top: -7px;}
+
+.Menu .BadgeCarrito p{ font-size: 13px;line-height: 20px;}
 .Menu li a:after {display:block;content: '';border-bottom: solid 3px #BF0D0D;transform: scaleX(0);transition: transform 250ms ease-in-out;}
 .Menu li a:hover:after { transform: scaleX(1); }
 

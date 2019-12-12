@@ -50,101 +50,14 @@ render (){
      return (
        <div className="Terraza">
          <div className="seccion1">
-           <div className="contenedor">
-
-             <div className="TerrazaBG">
-              <div id="TerrazaSlide">
-                 <ul className="col2">
-                   <li id="TerrazaLeft">
-                     <img src="imgs/TerrezaFront01.png"></img>
-                   </li>
-                   <li id="TerrazaRight">
-                     <img src="imgs/TerrezaFront02.png"></img>
-                   </li>
-                 </ul>
-              </div>
-              <div className="galeria">
-                <ul className="col2">
-                  <li>
-                    <img src="imgs/galery01.jpg"></img>
-                  </li>
-                  <li>
-                    <img src="imgs/galery02.JPG"></img>
-                  </li>
-                  <li>
-                    <img src="imgs/galery03.jpg"></img>
-                  </li>
-                  <li>
-                    <img src="imgs/galery05.png"></img>
-                  </li>
-                  <li>
-                    <img src="imgs/galery04.png"></img>
-                  </li>
-                  <div className="clear"/>
-                </ul>
-              </div>
-
-             </div>
-             <div className="TerrazaTitle">
-               <h2>Disfruta</h2>
-               <h2>Terraza Fortuna</h2>
-             </div>
-             <div className="redesSociales">
-                 <ul>
-                   <li>
-                     <div className="LineUp"></div>
-                   </li>
-                   <li>
-                    <a>Saber más</a>
-                   </li>
-                   <li>
-                     <div className="LineDown"></div>
-                   </li>
-                 </ul>
-             </div>
-
-           </div>
-           <div className="waveContent">
-             <div className='wave -one'></div>
-             <div className='wave -two'></div>
-             <div className='wave -three'></div>
-           </div>
-           <div className="BubblesContentRigth">
-             <div className="bubble x1"></div>
-             <div className="bubble x2"></div>
-             <div className="bubble x3"></div>
-             <div className="bubble x4"></div>
-             <div className="bubble x5"></div>
-             <div className="bubble x6"></div>
-             <div className="bubble x7"></div>
-             <div className="bubble x8"></div>
-             <div className="bubble x9"></div>
-             <div className="bubble x10"></div>
-           </div>
-          <div className="wrap">
-            <div className="BubblesContent">
-              <div className="bubble x1"></div>
-              <div className="bubble x2"></div>
-              <div className="bubble x3"></div>
-              <div className="bubble x4"></div>
-              <div className="bubble x5"></div>
-              <div className="bubble x6"></div>
-              <div className="bubble x7"></div>
-              <div className="bubble x8"></div>
-              <div className="bubble x9"></div>
-              <div className="bubble x10"></div>
-            </div>
-            <div className="waveContentLeft">
-              <div className='waveLeft -one'></div>
-              <div className='waveLeft -two'></div>
-              <div className='waveLeft -three'></div>
-            </div>
-          </div>
-        </div>
-
-
+           <ul className="col2">
+            <li>
+            </li>
+            <li>
+            </li>
+           </ul>
+         </div>
        </div>
-
     )
   }
 }
