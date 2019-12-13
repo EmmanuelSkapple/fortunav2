@@ -12,7 +12,7 @@ function Slider() {
           <div className="filterBlack">
       
 
-            <img id="videoBG" src="/imgs/FortunaPoster.png"  videoSrc="https://www.youtube.com/watch?v=38dAOcfQuqo"/>
+            <img id="videoBG" src="/imgs/FortunaPosterCorto.png"  videoSrc="https://www.youtube.com/watch?v=38dAOcfQuqo"/>
              <Spritesheet
                className={`logo-animado`}
                image={`/imgs/sprites.png`}

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import LogoSVG from './logoSvg.js';
+import BarraSVG from './BarraSvg.js';
 
 import '../styles/Terraza.css';
 import '../styles/General.css';
@@ -49,14 +51,54 @@ class Terraza extends Component {
 render (){
      return (
        <div className="Terraza">
-         <div className="seccion1">
-           <ul className="col2">
-            <li>
-            </li>
-            <li>
-            </li>
-           </ul>
-         </div>
+         <section className="seccion1">
+          <div className="BarraContenedor">
+            <BarraSVG/>
+          </div>
+          <div className="contenedor">
+            <ul className="col2 primer_lista">
+              <li>
+                <div className="ContainerLeft">
+                  <div className="ContainetTitle">
+                    <h1>Terr<span class="whiteText">aza</span> </h1>
+                    <h1>Fo<span class="whiteText">rtuna</span></h1>
+                  </div>
+
+                  <a><div className="btnReserva"><p>Reserva</p> <i class="fas fa-caret-right"></i></div></a>
+                </div>
+                
+              </li>
+              <li>
+                <div className="TerrazaImg01">
+                <img  src="/imgs/TerrazaNueva01.png"  />
+                </div>
+              </li>
+              <div className="clear"></div>
+             </ul>
+            
+             <div className="LogoContainer">
+                <LogoSVG/>
+              </div>
+          </div>
+         </section>
+         <section className="seccion2">
+           <div className="BarraContenedor">
+              <ul className="col2 segunda_lista">
+                <li>
+                  <div className="TerrazaImg02">
+                    <img  src="/imgs/TerrazaNueva02.png"  />
+                  </div>
+                  
+                </li>
+                <li>
+                  <div className="TerrazaImg03">
+                  <img  src="/imgs/TerrazaNueva03.png"  />
+                  </div>
+                </li>
+                <div className="clear"></div>
+              </ul>
+            </div>
+          </section>
        </div>
     )
   }

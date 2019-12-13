@@ -13,6 +13,7 @@ render (){
       <div className="Home">
       <Menu/>
       <Slider/>
+      <Terraza/>
       </div>
     )
   }
