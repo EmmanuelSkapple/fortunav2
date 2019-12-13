@@ -8,8 +8,7 @@ render (){
        <div className="BarraFortuna">
          <svg  id="BarraFortuna" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="0 0 4095 4841.9">
 
-          <style>{`.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}.st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}`}</style>
-
+          <style>{`.BarraFortuna .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} .BarraFortuna .st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}`}</style>
           <g id="UMtFyd_1_">
             <g id="XMLID_1_">
               <path id="XMLID_85_" class="st0" d="M488.6,1769.3c-5.9,15-9.9,30.5-13.7,46.1c-4.7,19.3-14.6,34-35.7,40.9c-6.4,0-12.7,0-19.1,0

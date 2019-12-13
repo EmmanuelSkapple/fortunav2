@@ -1,6 +1,6 @@
 .Slider #videoBG{ width:100%; background:#ccc;}
 .Slider .filterBlack{filter: grayscale(50%) brightness(66%);-webkit-filter: grayscale(50%) brightness(66%);}
-.Slider .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: 0px;}
+.Slider .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: 60px;}
 .Slider .seccion1 .redesSociales ul{margin-left: 0px;}
 .Slider .seccion1 .redesSociales .LineUp{height: 100px;}
 .Slider .seccion1 .redesSociales .LineDown{height: 200px;}
@@ -9,29 +9,7 @@
 .Slider .seccion1 #MouseScroll{position: absolute;left: 20px;bottom: 12%;height: 70px;width: 25px; display: none;}
 svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 
-.Slider .seccion1 .MouseScroll{display: inline-block;
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-    margin: auto;
-    width: 30px;
-    height: 58px;
-    z-index: 10;
-    background: url(/imgs/scrollMouse.png) no-repeat 0 0%;
-    background-size: 1500px 58px;
-    -moz-animation: scrolldown 2s steps(49) infinite;
-    -webkit-animation: scrolldown 2s steps(49) infinite;
-    animation: scrolldown 2s steps(49) infinite;
-    -moz-transform: rotateZ(180deg);
-    -ms-transform: rotateZ(180deg);
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-    pointer-events: none;
-    opacity: 1;
-    -moz-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;}
+.Slider .seccion1 .MouseScroll{display: inline-block;position: absolute;bottom: 20px;left: 40px;margin: auto;width: 30px;height: 58px;z-index: 10;background: url(/imgs/scrollMouse.png) no-repeat 0 0%;background-size: 1500px 58px;-moz-animation: scrolldown 2s steps(49) infinite;-webkit-animation: scrolldown 2s steps(49) infinite;animation: scrolldown 2s steps(49) infinite;-moz-transform: rotateZ(180deg);-ms-transform: rotateZ(180deg);-webkit-transform: rotateZ(180deg);transform: rotateZ(180deg);pointer-events: none;opacity: 1;-moz-transition: opacity 0.2s;-o-transition: opacity 0.2s;-webkit-transition: opacity 0.2s;transition: opacity 0.2s;}
 
 
 .Slider .seccion1 .redesSociales #FacebookIcon{width: 30px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}

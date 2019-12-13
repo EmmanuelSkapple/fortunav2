@@ -64,7 +64,7 @@ render (){
                     <h1>Fo<span class="whiteText">rtuna</span></h1>
                   </div>
 
-                  <a><div className="btnReserva"><p>Reserva</p> <i class="fas fa-caret-right"></i></div></a>
+                  <a><div className="btn btnReserva"><p>Reserva</p> <i class="fas fa-caret-right"></i></div></a>
                 </div>
                 
               </li>
@@ -72,23 +72,27 @@ render (){
                 <div className="TerrazaImg01">
                 <img  src="/imgs/TerrazaNueva01.png"  />
                 </div>
+                
               </li>
               <div className="clear"></div>
              </ul>
             
-             <div className="LogoContainer">
-                <LogoSVG/>
-              </div>
+             
           </div>
          </section>
          <section className="seccion2">
-           <div className="BarraContenedor">
+           <div className="contenedor">
               <ul className="col2 segunda_lista">
                 <li>
                   <div className="TerrazaImg02">
                     <img  src="/imgs/TerrazaNueva02.png"  />
                   </div>
-                  
+                  <div className="LineaHorizontal">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"viewBox="0 0 4000 240" >
+                    <style >{`.Terraza .seccion2 .st0{fill:#841B1E;}`}</style>
+                      <polygon id="XMLID_3_" class="st0" points="0,30.2 1984.8,0 4000,30.2 1981.8,57 "/>
+                    </svg>
+                </div>
                 </li>
                 <li>
                   <div className="TerrazaImg03">
