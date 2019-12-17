@@ -1,5 +1,6 @@
-.Terraza .LogoContainer{width: 500px; position: absolute; z-index: 10;    right: -230px; margin-top: 100px;}
-.Terraza #LogoFortuna{opacity: .4}
+.Terraza .LogoContainer{width: 400px; position: absolute; z-index: 10;    right: -230px; top: 0;}
+.Terraza .BeerContainer{width: 300px}
+
 .Terraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 110px;height: 440px;}
 .Terraza .BarraFortuna{    height: 440px;}
 .Terraza .seccion1 .primer_lista li:nth-child(1) {width: 35%}
@@ -21,13 +22,33 @@
 .Terraza .seccion1 .TerrazaImg01{width: 90%;}
 .Terraza .seccion1 .TerrazaImg01 img{ cursor: url('/imgs/cursor-mano.png'), auto;}
 
-.Terraza .seccion2 {padding-top: 90px;}
+.Terraza .seccion2 {padding-top: 90px; overflow-x: hidden;}
 .Terraza .seccion2  .TerrazaImg02 { width: 440px; margin-left: auto;margin-right: 40px;}
 .Terraza .seccion2  .TerrazaImg03 { width: 440px;}
 
 .Terraza .seccion2 .LineaHorizontal {width: 400px;margin-left: auto;margin-right: 60px;margin-top: 40px;}
 
 
+.Terraza .LogoContainer #LogoFortuna:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.Terraza .LogoContainer #LogoFortuna{
+  -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+}
 
 ul{
   margin-left: 21px;
@@ -61,4 +82,77 @@ li:before{
   body{
     transform: scale(.67);
   }
+}
+
+
+
+
+::-webkit-scrollbar
+{
+    width: 0.5vw;  /* for vertical scrollbars */
+    height: 0.5vw; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.leaf0, .leaf1{
+    position: fixed;
+    background: url("https://image.ibb.co/h57i1d/Black_Leaf0.png") no-repeat;
+    background-size: contain;
+    z-index: -500;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.leaf1 {
+    position: fixed;
+    background: url("https://image.ibb.co/fA8Z7J/Black_Leaf1.png") no-repeat;
+    background-size: contain;
+    z-index: -500;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.snowflake0 {
+    background: url("https://image.ibb.co/fA8Z7J/Black_Leaf1.png") no-repeat;
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    z-index: -500;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.tree {
+    visibility: hidden;
+    position: fixed;
+    top: 15vh;
+    left: 2vw;
+    height: 25vh;
+    width: 22vw;
+    background: red;
+}
+
+.sky {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background: skyblue;
 }
