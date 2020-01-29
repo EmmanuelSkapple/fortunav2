@@ -63,9 +63,17 @@ p { -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transiti
 
 }
 
+@media screen and (min-width: 1440px) and (max-width: 1840px){
+	.contenedor { width: 95%; }
+	.seccion1{ border: 1px solid green; }
+}
 
-@media (min-width: 1440px){
+
+@media screen and (min-width: 1841px) and (max-width: 2240px){
 	.contenedor { width: 95%; }
 	.seccion1{ border: 1px solid red; }
-
+}
+@media (min-width: 2241px){
+	.contenedor { width: 95%; }
+	.seccion1{ border: 1px solid blue; }
 }

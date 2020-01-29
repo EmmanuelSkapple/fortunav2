@@ -6,7 +6,7 @@ class BarraSVG extends Component {
 render (){
      return (
        <div className="BarraFortuna">
-         <svg  id="BarraFortuna" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="0 0 4095 4841.9">
+         <svg  id="BarraFortuna" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="0 0 4095 2041.9">
 
           <style>{`.BarraFortuna .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} .BarraFortuna .st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}`}</style>
           <g id="UMtFyd_1_">
