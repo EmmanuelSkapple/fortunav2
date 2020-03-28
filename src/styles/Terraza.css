@@ -134,23 +134,87 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 
 /*********************** MEDIAS QUERIES ***********************/
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 669px) {
 	.contenedor { width: 95%; }
-	/* .seccion1{ border: 1px solid red; } */
+	 .seccion1{ border: 1px solid red; } 
 }
 
-@media screen and (min-width: 480px) and (max-width: 599px) {
-	.contenedor { width: 95%; }
-	/* .seccion1{ border: 1px solid blue; } */
+@media screen and (min-width: 670px) and (max-width: 770px) {
+	 .seccion1{ border: 1px solid blue; }
+   .contenedor { width: 95%; }
+ 	 .seccion1{ border: 1px solid green; }
+   .Slider .seccion1 .logo-animado{transform: scale(.5) translateY(50%);}
+   .Slider .seccion1 .redesSociales .LineUp{display: none;}
+
+  .Terraza .BarraFortuna{height: 310px;width: 50%;}
+  .Terraza .seccion1 .primer_lista li:nth-child(1){width: 30%}
+   .Terraza .seccion1 .TerrazaImg01{width: 65%;margin: 0px auto;}
+   .Terraza .seccion1 .ContainetTitle{left: -45px;top: 50px;}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{width: 200px;padding: 0px 0px 0px 15px;}
+   .Terraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 15px}
+   .Terraza .seccion1 .ContainetTitle p{font-size: 70px;}
+   .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin-right: -105px;}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 350px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 45px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 45px;margin-left: 120px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {margin-left: 90px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 12px}
+   .Terraza .contentIngediente .contentTitulo{margin-top: 20px;margin-bottom: 10px;}
+ .Terraza .contentIngediente img.iconIngrediente{width: 70px}
+ .Terraza .contentIngediente img.iconIngrediente.lupulo{width: 60px;}
+   .Terraza .contentIngediente .contentTitulo img.vineta{padding: 0px;height: 10px;width: 40px;margin-top: 10px}
+   .Terraza .contentIngediente h3{font-size: 20px;margin: 0px auto;}
+   .Terraza .contentIngediente p{font-size: 11px}
+   .Terraza img.Botella{width: 50%;}
+   .Terraza .seccion4 p:nth-child(1){font-size: 50px}
+   .Terraza .seccion4 span{font-size: 20px}
+   .Terraza .seccion4 p.goldText{font-size: 50px}
+   .Terraza .seccion4 p{font-size: 15px;line-height: 20px}
+   .Terraza .seccion5 .Tequilaline.Up{top: -40px}
+ .Terraza .seccion5 .Tequilaline.Down{bottom: -40px}
+ .Terraza .seccion5 .titleTequila h1{font-size: 50px;margin: 0px;}
+ .Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 15px}
+ .Terraza .seccion5 .verMapa{bottom: -20px}
+ .Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%)}
+ .Terraza .seccion6 #InstagramCard{transform: scale(.5);}
+ .Terraza .seccion6 .contendorInstagram{margin-top: -30px}
 }
 
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+@media screen and (min-width: 771px) and (max-width: 1023px) {
 	.contenedor { width: 95%; }
 	 .seccion1{ border: 1px solid green; }
-  .Terraza .seccion1 .TerrazaImg01{width: 350px}
-  .Terraza .seccion1 .ContainetTitle{left: 70px}
+  .Slider .seccion1 .logo-animado{transform: scale(.5) translateY(50%);}
+  .Slider .seccion1 .redesSociales .LineUp{display: none;}
+  .Terraza .seccion1 .TerrazaImg01{width: 65%;margin: 0px auto;}
+  .Terraza .seccion1 .ContainetTitle{left: -30px;top: 50px}
   .Terraza .seccion1 .ContainetTitle p{font-size: 70px;}
+  .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin-right: -105px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 430px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 50px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 50px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {margin-left: 120px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 12px}
+  .Terraza .contentIngediente .contentTitulo{margin-top: 20px;margin-bottom: 10px;}
+.Terraza .contentIngediente img.iconIngrediente{width: 70px}
+.Terraza .contentIngediente img.iconIngrediente.lupulo{width: 60px;}
+  .Terraza .contentIngediente .contentTitulo img.vineta{padding: 0px;height: 10px;width: 40px;margin-top: 10px}
+  .Terraza .contentIngediente h3{font-size: 20px;margin: 0px auto;}
+  .Terraza .contentIngediente p{font-size: 11px}
+  .Terraza img.Botella{width: 50%;}
+  .Terraza .seccion4 p:nth-child(1){font-size: 50px}
+  .Terraza .seccion4 span{font-size: 20px}
+  .Terraza .seccion4 p.goldText{font-size: 50px}
+  .Terraza .seccion4 p{font-size: 15px;line-height: 20px}
+  .Terraza .seccion5 .Tequilaline.Up{top: -40px}
+.Terraza .seccion5 .Tequilaline.Down{bottom: -40px}
+.Terraza .seccion5 .titleTequila h1{font-size: 50px;margin: 0px;}
+.Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 15px}
+.Terraza .seccion5 .verMapa{bottom: -20px}
+.Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%)}
+.Terraza .seccion6 #InstagramCard{transform: scale(.6);}
+.Terraza .seccion6 .contendorInstagram{margin-top: -30px}
 }
+
 /***********Mac emmanuel 1280************/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 	.contenedor { width: 1000px; }
