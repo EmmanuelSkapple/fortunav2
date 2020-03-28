@@ -1,0 +1,6 @@
+.Footer p{color: #fff;line-height: 15px;text-align: left;font-size: 14px;padding-left: 20px;font-weight: 600;}
+.Footer .seccion1{padding: 50px 10px;background-image: url('/imgs/FooterBG.png');background-repeat: no-repeat;background-size: cover;}
+.Footer .seccion1 .lineVertical {width: 1px;height: 120px;position: absolute;background-color: #c1c1c1;right: 0px;top: 0px;}
+
+.PowerBy {display: flex;}
+.PowerBy p:nth-child(2){position: absolute;right: 0px}

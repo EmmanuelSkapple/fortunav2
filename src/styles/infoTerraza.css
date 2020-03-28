@@ -1,0 +1,120 @@
+.infoTerraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
+.infoTerraza .BarraFortuna{    height: 760px;}
+.infoTerraza #BarraFortuna{width: 700px}
+.infoTerraza .seccion1 .primer_lista li:nth-child(1) {width: 35%}
+.infoTerraza .seccion1 .primer_lista li:nth-child(2) {width: 65%}
+.infoTerraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; height: 630px;}
+.infoTerraza .seccion1  .ContainetTitle{ position: absolute; left: -60px;top: 120px;z-index: 10}
+.infoTerraza .seccion1  .ContainetTitle p{margin: 0px;font-size: 110px;font-weight: 700;line-height: 80px;}
+.infoTerraza .seccion1  .ContainetTitle p:nth-child(2){margin-right: -175px;}
+.infoTerraza .seccion1  .ContainetTitle span{color: white}
+.infoTerraza .seccion1 .ContainerLeft .btnReserva {     box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;position: absolute;z-index: 100;width: 250px;display: inline-flex;padding: 5px 0px 0px 30px;background-color: black;color: #fff;bottom: 140px;left: 50%;margin-left: -120px;}
+.infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 250px 0 0 0 #8B191D;}
+.infoTerraza .seccion1 .ContainerLeft .btnReserva p{text-align: left; }
+.infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 100px;margin-top: 7px; }
+.infoTerraza .seccion1 .TerrazaImg01{width: 500px;margin: 0px 0px 0px auto;padding-top: 60px;}
+.infoTerraza .seccion1 .TerrazaImg01 img{ cursor: url('/imgs/cursor-mano.png'), auto;}
+.infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;}
+.infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo:hover{box-shadow: inset 250px 0 0 0 #8B191D;}
+
+.infoTerraza .seccion1 .diagonalSimple{position: absolute;bottom: -140px}
+.infoTerraza .seccion2{margin-top: 150px}
+.infoTerraza .seccion2 .contenedorPasion{width: 90%;display: flex;}
+.infoTerraza .seccion2 .contenedorPasion .listaImg{width: 20%;}
+.infoTerraza .seccion2 .contenedorPasion .listaLetra{width: 60%;}
+.infoTerraza .seccion2 .contenedorPasion img{position: absolute;width: 80px;margin: 0px auto;top: 50%;transform: translateY(-50%);}
+.infoTerraza .seccion2 .contenedorPasion h1{text-align: center;font-size: 40px;margin: 10px auto;cursor: pointer;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion2 .contenedorPasion h1:hover{text-align: center;font-size: 60px;color:#7c1c1c;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion2 .contenedorPasion h1:hover ~  h1.active{color:#000;text-align: center;font-size: 40px;margin: 10px auto;cursor: pointer;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion2 .contenedorPasion h1.active{text-align: center;font-size: 60px;color:#7c1c1c;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion2 .contenTerrazaPasion{margin-top: -80px;}
+.infoTerraza .lineaHorizontal{margin: 60px 0px;}
+.infoTerraza .seccion3 .TourContent .contentInfoTour{text-align: center;position: absolute;right: 0px;bottom: -40px;background: #000;color: #fff;padding: 5px 30px;}
+.infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 40px;font-family: 'Helvetica Neue',sans-serif;margin: 10px; margin-bottom: 20px;}
+.infoTerraza .seccion3 .TourContent .contentInfoTour p{line-height: 18px;font-size: 15px;font-family: 'Helvetica Neue',sans-serif;margin: 5px ;font-weight: 400}
+.infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{box-shadow: inset 0 0 0 0 #8B191D;line-height: 18px;font-size: 15px;font-family: 'Helvetica Neue',sans-serif;margin: 5px ;font-weight: 400;background: #fff;color: #000; width: 60%;margin: 10px auto; border-radius: 5px; padding: 5px;letter-spacing: 6px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva:hover{box-shadow: inset 0 -50px 0 0 #8B191D;color: #fff;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.infoTerraza .seccion3 .petContent .petTitle{margin: 10px auto;margin-bottom: 30px}
+.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 40px;text-align: center;color: #7c1c1c;margin: 5px}
+.infoTerraza .seccion3 .petContent .petTitle span{font-size: 40px;text-align: center;color: #000}
+.infoTerraza .seccion3 .petContent .petTitle p{font-size: 30px;text-align: center;color: #000}
+.infoTerraza .seccion3 .petContent .petBirds{position: absolute;left: 0px;top: 20%;width: 200px;}
+.infoTerraza .seccion3 .petContent .petFriend {margin: 20px;padding-top: 60px}
+.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 60px;text-align: center;margin: 5px;color: #000;font-weight: 400}
+.infoTerraza .seccion3 .petContent .petFriend span{font-size: 60px;text-align: center;color: #7c1c1c;font-weight: 800}
+.infoTerraza .seccion3 .petContent .petAnimal{width: 90%;margin: 0px auto;}
+.infoTerraza .seccion4{margin-top: 100px;margin-bottom: 60px;}
+.infoTerraza .seccion4 h1{font-size: 40px;}
+.infoTerraza .seccion4 .contentEventos{height: 420px;width: 90%;margin: 0px auto;background-color: #fff;-webkit-box-shadow: -5px 7px 23px 0px rgba(145,145,145,1);
+-moz-box-shadow: -5px 7px 23px 0px rgba(145,145,145,1);
+box-shadow: -5px 7px 23px 0px rgba(145,145,145,1);}
+.infoTerraza .seccion4 .descripcionEventos{padding: 10px}
+.infoTerraza .seccion4 .descripcionEventos h3{color: #7c1c1c;margin-bottom: 10px}
+.infoTerraza .seccion4 .descripcionEventos p{font-size: 15px;margin: 0px;line-height: 20px;font-weight: 400;}
+
+ul{margin-left: 21px;padding: 0;font-size: 16px;font-weight: 300;list-style: none;}
+
+li{padding-bottom: 8px;position: relative;}
+
+li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
+
+
+
+
+
+
+
+
+/*********************** MEDIAS QUERIES ***********************/
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid red; } */
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid blue; } */
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid green; } */
+
+}
+/***********Mac emmanuel 1280************/
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.contenedor { width: 1000px; }
+	/* .seccion1{ border: 1px solid blue; } */
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1840px){
+	/* .seccion1{ border: 1px solid green; } */
+}
+
+
+@media screen and (min-width: 1841px) and (max-width: 2240px){
+	/* .seccion1{ border: 1px solid black; } */
+
+}
+@media (min-width: 2241px){
+	/* .seccion1{ border: 1px solid blue; }*/
+}
+
+
+
+::-webkit-scrollbar
+{
+    width: 0.5vw;  /* for vertical scrollbars */
+    height: 0.5vw; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.5);
+}

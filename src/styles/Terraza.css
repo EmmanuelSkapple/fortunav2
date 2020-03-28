@@ -4,81 +4,117 @@
 .Terraza .contentOpenHouse span{position: absolute;font-size: 60px;font-family: Latios;width: 700px;margin-top: 20px;}
 .Terraza .BeerContainer{width: 300px}
 
-.Terraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 90px;height: 440px;}
-.Terraza .BarraFortuna{    height: 440px;}
+.Terraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
+.Terraza .BarraFortuna{    height: 760px;}
+.Terraza #BarraFortuna{width: 700px}
+
 .Terraza .seccion1 .primer_lista li:nth-child(1) {width: 35%}
 .Terraza .seccion1 .primer_lista li:nth-child(2) {width: 65%}
-.Terraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; padding-bottom: 80px;}
+.Terraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; height: 630px;}
 
-.Terraza .seccion1 .ContainerLeft .ContainetTitle{font-size: 90px; position: relative; right: -305px; z-index: 10}
-.Terraza .seccion1 .ContainerLeft .ContainetTitle h1{margin: 0px}
-.Terraza .seccion1 .ContainerLeft .ContainetTitle h1:nth-child(2){margin-right: -195px;}
-.Terraza .seccion1 .ContainerLeft .ContainetTitle span{color: white}
-
-.Terraza .seccion1 .ContainerLeft .btnReserva {  box-shadow: inset 0 0 0 0 #8B191D;-webkit-transition: ease-out 0.4s;-moz-transition: ease-out 0.4s;transition: ease-out 0.4s;cursor:pointer;position:relative;z-index: 100 ; width: 250px;display: inline-flex;margin: 200px auto 0; padding: 10px 10px 0px 30px;background-color: black;color: #fff;}
+.Terraza .seccion1  .ContainetTitle{ position: absolute; left: -60px;top: 120px;z-index: 10}
+.Terraza .seccion1  .ContainetTitle p{margin: 0px;font-size: 110px;font-weight: 700;line-height: 80px;}
+.Terraza .seccion1  .ContainetTitle p:nth-child(2){margin-right: -175px;}
+.Terraza .seccion1  .ContainetTitle span{color: white}
+.Terraza .seccion1 .ContainerLeft .btnReserva {     box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;position: absolute;z-index: 100;width: 250px;display: inline-flex;padding: 5px 0px 0px 30px;background-color: black;color: #fff;bottom: 140px;left: 50%;margin-left: -120px;}
+.Terraza .seccion1 .ContainerLeft .btnReserva.LLama i{display: none}
 .Terraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 250px 0 0 0 #8B191D;}
-
-
 .Terraza .seccion1 .ContainerLeft .btnReserva p{text-align: left; }
 .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 100px;margin-top: 7px; }
 
-.Terraza .seccion1 .TerrazaImg01{    width: 80%;margin-left: 55px;}
-.Terraza .seccion1 .TerrazaImg01 img{ cursor: url('/imgs/cursor-mano.png'), auto;}
+.Terraza .seccion1 .TerrazaImg01{width: 500px;margin: 0px 0px 0px auto;padding-top: 60px;}
+.Terraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;}
+.Terraza .seccion1 .TerrazaImg01 .btnMasInfo:hover{box-shadow: inset 250px 0 0 0 #8B191D;}
+.Terraza .seccion2 .bgContentBeer{position: relative;top: -100px;}
+.Terraza .seccion2 .bgContentBeer .bgBeer{width: 100%}
+.Terraza .seccion2 .bgContentBeer .tituloBeer{width: 590px;position: absolute;top: 50%;transform: translateY(-50%);}
+.Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1) {font-size: 60px;font-weight: 700;color: #BA2F2F;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {font-size: 60px;font-weight: 700;color: #2FBA64;margin-left: 190px;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer span {font-weight: 700;color: #BA2F2F;margin-left: 140px;line-height: 35px;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {text-align: left;width: 370px;margin-left: 190px;margin-top: 29px;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 12px;font-weight: 700;color: #A2A2A2;margin: 0px;line-height: 29px;}
 
-.Terraza .seccion2 {padding: 10px 100px;padding-bottom: 130px;}
-.Terraza .seccion2  .TerrazaImg02 { width: 440px; margin-left: auto;margin-right: 40px;}
-.Terraza .seccion2  .TerrazaImg03 { width: 440px;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
-.Terraza .seccion2  .TerrazaImg03 img{ -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
+.Terraza .seccion3{background-color: #FAFAFA; clip-path: polygon(0% 0%, 100% 7%,100% 90%,0 100%);padding-top: 270px;margin-top: -285px;z-index: -1;padding-bottom: 130px;}
+.Terraza .seccion3 .tanque{position: absolute;}
+.Terraza .seccion3 .tanque.Left{left: 0px;width: 210px;top: 100px;}
+.Terraza .seccion3 .tanque.Right{right: 0px}
+.Terraza .seccion3 .contentIngediente{width: 80%;margin: 0px auto;text-align: center;}
+.Terraza .seccion3 .contentIngediente.down{margin-top: 100px}
+.Terraza .seccion3 .contentIngediente.down.levadura{margin-top: 120px}
+.Terraza .contentIngediente img.iconIngrediente{width: 100px;margin: 0px auto;opacity: 0.6}
+.Terraza .contentIngediente img.iconIngrediente.lupulo{width: 80px;margin: 0px auto;}
+.Terraza  img.Botella{width: 60%;margin: 0px auto;}
+.Terraza .contentIngediente .contentTitulo{display: flex;justify-content: center;}
+.Terraza .contentIngediente .contentTitulo img.vineta{width: 70px;padding: 20px 0px;margin: 0px 10px;}
+.Terraza .contentIngediente p {font-size: 15px;line-height: 20px;padding: 0px 30px}
+.Terraza .contentIngediente h3{color: #7C1D1D;font-size: 20px;font-weight: 800;}
+.Terraza .verVariedades{ text-align: center;font-size: 20px;font-weight: 700;text-decoration: underline;width: 20%;margin: 0px auto;}
+.Terraza .seccion4{margin-top: -70px;padding-top: 190px;padding-bottom: 100px;}
+.Terraza .seccion4 img.diagonalFortuna{position: absolute;top: -30px;z-index: 10;left: 0px;}
+.Terraza .seccion4 .contentProceso.Up {display: flex;}
+.Terraza .seccion4 .contentProceso.Up img{padding: 5px}
+.Terraza .seccion4 .contentProceso.Down img{padding: 5px}
+.Terraza .seccion4 .lineDown {padding: 5px}
+.Terraza .seccion4 p:nth-child(1){font-size: 60px;font-weight: 700;margin-top: 50px;}
+.Terraza .seccion4 span{font-size: 25px;font-weight: 600;}
+.Terraza .seccion4 p.goldText{font-size: 60px;font-weight: 700;color: #AC8723;}
+.Terraza .seccion4 .contentTours{-webkit-box-shadow: -3px 6px 20px 0px rgba(153,153,153,1);-moz-box-shadow: -3px 6px 20px 0px rgba(153,153,153,1);box-shadow: -3px 6px 20px 0px rgba(153,153,153,1); width: 80%;margin: 0px auto;padding: 15px;margin-top: 100px;}
+.Terraza .seccion4 p{font-size: 20px;line-height: 25px; text-align: center; font-weight: 500;}
+.Terraza .seccion4 .contentTours .ReservarTour{background-color:#000;color: #FFFFFF; width: 30%;padding: 10px 5px;margin: 0px auto;margin-top: 30px;}
+.Terraza .seccion4 .contentTours .goldText{font-size: 20px;font-weight: 700;color: #AC8723;margin: 10px;}
+.Terraza .seccion5 .TequilaBG .imgRuta.activo{ opacity: 1;display: block;animation: fadeInTequila 2s;}
+.Terraza .seccion5 .TequilaBG .imgRuta.hidden{opacity: 0;display: none;animation: fadeOutTequila 3s;}
+.Terraza .seccion5 .TequilaBG .mapa.activo{opacity: 1;display: block;height: 290px;clip-path: polygon(50% 0%, 0% 20%, 0% 90%, 52% 100%, 100% 90%, 100% 20%);animation: fadeInTequila 2s;}
+.Terraza .seccion5 .TequilaBG .mapa.hidden{opacity: 0;display: none;animation: fadeOutTequila 3s;}
 
-.Terraza .seccion2  .TerrazaImg03.active::before {content: '';width: 280px;height: 270px;position: absolute;bottom: -50px;left: -50px;background-color: #bf494b;z-index: -1;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
-.Terraza .seccion2  .TerrazaImg03::before {content: '';width: 280px;height: 270px;position: absolute;bottom: 10px;left: 0px;background-color: #bf494b;z-index: -1;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
-.Terraza .seccion2  .TerrazaImg03.active::after {content: '';width: 250%;height: 2px;background-color: #bf494b;position: absolute;bottom: -20px;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
-.Terraza .seccion2  .TerrazaImg03::after {content: '';width: 0%;height: 0px;background-color: #bf494b;position: absolute;bottom: -20px;-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}
+.Terraza .seccion5 .Tequilaline.Up{position: absolute;top: -60px;z-index: 1;-moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/}
+.Terraza .seccion5 .Tequilaline.Down{position: absolute;bottom: -60px; z-index:1;-moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer */
+   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/}
+.Terraza .seccion5 .titleTequila{ z-index: 2;width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-70%);text-align: center;}
+.Terraza .seccion5 .titleTequila h1{font-size: 60px;font-weight: 700;color: #fff;margin-bottom: 20px}
+.Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 20px;font-weight: 700;color: #fff;}
+.Terraza .seccion5 .verMapa {cursor: pointer;text-decoration: underline;position: relative;bottom: -50px;}
+.Terraza .seccion5 .verMapaRegresar {font-size: 20px;font-weight: 700;cursor: pointer;text-decoration: underline;position: relative;bottom: -120px;color: #000;}
+.Terraza .seccion5 .verMapa:hover{opacity: 0.5}
+.Terraza .seccion5 .verMapaRegresar:hover{opacity: 0.5}
+.Terraza .seccion6 .contendorInstagram{width: 80%;margin: 0px auto;margin-top: 50px;}
+.Terraza .seccion6 #InstagramCard {transform: scale(.8);}
 
-.Terraza .seccion2 .LineaHorizontal {width: 400px;margin-left: auto;margin-right: 60px;margin-top: 40px;}
 
+ul{margin-left: 21px;padding: 0;font-size: 16px;font-weight: 300;list-style: none;}
 
-.Terraza .LogoContainer #LogoFortuna:hover {
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    transform:rotate(360deg);
+li{padding-bottom: 8px;position: relative;}
+
+li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
+
+@keyframes fadeInTequila {
+    from {
+        opacity:0;
+        display: none;
+    }
+    to {
+        display: block;
+        opacity:1;
+    }
 }
 
-.Terraza .LogoContainer #LogoFortuna{
-  -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-
-    overflow:hidden;
+@keyframes fadeOutTequila {
+  from {
+      opacity:1;
+      display: block;
+  }
+  to {
+      display: none;
+      opacity:0;
+  }
 }
-
-ul{
-  margin-left: 21px;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 300;
-  list-style: none;
-}
-
-li{
-  padding-bottom: 8px;
-  position: relative;
-}
-
-li:before{
-  content: 'x';
-  position: absolute;
-  left: -21px;
-  opacity: .55;
-}
-
 
 @keyframes fadeIn{
   0%{
@@ -87,12 +123,53 @@ li:before{
   }
 }
 
+
 @media only screen and (max-width: 600px){
   body{
     transform: scale(.67);
   }
 }
 
+
+
+
+/*********************** MEDIAS QUERIES ***********************/
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid red; } */
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid blue; } */
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+	.contenedor { width: 95%; }
+	 .seccion1{ border: 1px solid green; }
+  .Terraza .seccion1 .TerrazaImg01{width: 350px}
+  .Terraza .seccion1 .ContainetTitle{left: 70px}
+  .Terraza .seccion1 .ContainetTitle p{font-size: 70px;}
+}
+/***********Mac emmanuel 1280************/
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.contenedor { width: 1000px; }
+	 .seccion1{ border: 1px solid blue; }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1840px){
+	/* .seccion1{ border: 1px solid green; } */
+}
+
+
+@media screen and (min-width: 1841px) and (max-width: 2240px){
+	/* .seccion1{ border: 1px solid black; } */
+
+}
+@media (min-width: 2241px){
+	/* .seccion1{ border: 1px solid blue; }*/
+}
 
 
 
