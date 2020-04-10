@@ -92,20 +92,19 @@ render (){
           <div className="BarraContenedor">
             <BarraSVG/>
           </div>
-          <div className="contenedor">
             <ul className="col2 primer_lista">
               <li>
                 <div className="ContainerLeft">
                   <a onClick={()=>this.setState({reserva:!this.state.reserva})} className={!this.state.reserva?"btn btnReserva":"btn btnReserva LLama"}>{!this.state.reserva?<p>Reserva</p>:<p>Llama al : 3336277134</p>} <i class="fas fa-caret-right"></i></a>
                 </div>
-
               </li>
               <li>
-                <div className="ContainetTitle">
-                  <p>Terr<span class="whiteText">aza</span> </p>
-                  <p>Fo<span class="whiteText">rtuna</span></p>
-                </div>
+
                 <div className="TerrazaImg01">
+                  <div className="ContainetTitle">
+                    <p>Terr<span class="whiteText">aza</span> </p>
+                    <p>Fo<span class="whiteText">rtuna</span></p>
+                  </div>
                   <img  src="/imgs/TerrazaNueva01.png"  />
                   <a className="btnMasInfo">
                     <Link to='/Terraza'>
@@ -117,7 +116,6 @@ render (){
               </li>
               <div className="clear"></div>
              </ul>
-          </div>
          </section>
          <section className="seccion2">
           <div className="bgContentBeer">

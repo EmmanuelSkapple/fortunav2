@@ -3,14 +3,13 @@ import {Link} from 'react-router-dom';
 import '../styles/Slider.css';
 import '../styles/General.css';
 import Spritesheet from 'react-responsive-spritesheet';
-
+import MenuSlider from './MenuSlider.js';
 
 function Slider() {
   return (
     <div className="Slider">
-      <div className="seccion1">
+      <section className="seccion1">
           <div className="filterBlack">
-      
 
             <img id="videoBG" src="/imgs/FortunaPosterCorto.png"  videoSrc="https://www.youtube.com/watch?v=38dAOcfQuqo"/>
              <Spritesheet
@@ -76,7 +75,8 @@ function Slider() {
                   </li>
                 </ul>
             </div>
-          </div>
+            <MenuSlider/>
+          </section>
     </div>
 
 

@@ -5,63 +5,42 @@ import $ from 'jquery';
 import '../styles/Header.css';
 import '../styles/General.css';
 
-class Menu extends Component{
+class MenuSlider extends Component{
   constructor(){
     super();
-    this.state={
-      black:false,
-      openMenuMobil:false,
-    }
+    this.state={}
   }
   componentDidMount(){
-    this.setState({black:this.props.black})
-    var self =this;
+
+    if(!this.props.black){
       $(document).scroll(function() {
-        var scrollTop = $(window).scrollTop()
-        if (!self.state.black) {
+        var scrollTop = $(window).scrollTop();
+         console.log(scrollTop);
           if (scrollTop >= 20 ) {
-              $('#Menu').addClass("topBlack");
+              $('#MenuSlider').addClass("hidden");
           }
           else{
-            $('#Menu').removeClass("topBlack");
+              $('#MenuSlider').removeClass("hidden");
           }
-        }
       });
+    }
 
   }
   render() {
-
    return (
-     <div id='Menu' className={this.props.black?'Menu topBlack':'Menu'}>
+     <div id='MenuSlider' className='MenuSlider Menu'>
        <div className='contentMenu'>
-         <div className='menu_mobil' onClick={()=>this.setState({openMenuMobil:!this.state.openMenuMobil})}>
-           <div className='dash'></div>
-           <div className='dash'></div>
-           <div className='dash'></div>
-         </div>
-         <ul className={this.state.openMenuMobil?'col1 lista_mobil activa':'col1 lista_mobil'}>
+         <ul className="col5">
            <li>
-             <Link className="menu" to={`/`}>Inicio</Link>
-           </li>
-           <li>
-              <Link className="menu"to={`/variedades`}>Nuestras cervezas</Link>
-           </li>
-           <li>
-             <Link className="menu" to={`/tienda`}>Tienda</Link>
-           </li>
-           <div className='clear'></div>
-         </ul>
-         <ul className="col5 lista_pc">
-           <li className='Not_mobil'>
              <img className='logo'  src="/imgs/sprites-uno.png"  />
            </li>
-           <li className='Not_mobil'>
+           <li>
              <Link className="menu" to={`/`}>Inicio</Link>
            </li>
-           <li className='Not_mobil'>
+           <li>
               <Link className="menu"to={`/variedades`}>Nuestras cervezas</Link>
            </li>
-           <li className='Not_mobil'>
+           <li>
              <Link className="menu" to={`/tienda`}>Tienda</Link>
            </li>
            <li>
@@ -90,4 +69,4 @@ class Menu extends Component{
 
 
 
-export default Menu;
+export default MenuSlider;

@@ -13,11 +13,11 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 
 
 .Slider .seccion1 .redesSociales #FacebookIcon{width: 30px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
-.Slider .seccion1 .redesSociales #FacebookIcon:hover{width: 40px; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
+.Slider .seccion1 .redesSociales #FacebookIcon:hover{transform: scale(1.3); -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
 .Slider .seccion1 .redesSociales #InstagramIcon{width: 30px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
-.Slider .seccion1 .redesSociales #InstagramIcon:hover{width: 40px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.Slider .seccion1 .redesSociales #InstagramIcon:hover{transform: scale(1.3);-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
 .Slider .seccion1 .redesSociales #TwitterIcon{width: 30px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
-.Slider .seccion1 .redesSociales #TwitterIcon:hover{width: 40px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.Slider .seccion1 .redesSociales #TwitterIcon:hover{transform: scale(1.3);-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
 
 
 @keyframes scroll {
@@ -32,3 +32,50 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 
 @keyframes scrolldown{0%{background-position:0% 0}to{background-position:100% 0}}
 
+@media screen and (min-width: 320px) and (max-width: 501px) {
+	.contenedor { width: 95%; }
+	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 30px;}
+	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 30px}
+	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 30px}
+	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
+	 .Slider .seccion1 .logo-animado{transform: scale(.4) translateY(50%);top: 90%;}
+   .Slider .seccion1 .redesSociales{right: 20px;top: 40px;}
+
+}
+
+@media screen and (min-width: 502px) and (max-width: 669px) {
+	.contenedor { width: 95%; }
+	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 30px;}
+	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 30px}
+	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 30px}
+	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
+	 .Slider .seccion1 .logo-animado{transform: scale(.4) translateY(50%);top: 70%;}
+   .Slider .seccion1 .redesSociales{right: 20px;top: 40px;}
+
+}
+@media screen and (min-width: 670px) and (max-width: 770px) {
+	.Slider .seccion1 .logo-animado{transform: scale(.4) translateY(50%);top: 70%;}
+
+	.Slider .seccion1 .redesSociales .LineUp{display: none;}
+
+}
+@media screen and (min-width: 1841px) and (max-width: 2240px){
+.Slider .seccion1 .logo-animado{transform: scale(1.2);}
+.Slider .seccion1 .redesSociales{right: 120px}
+.Slider .seccion1 .redesSociales #FacebookIcon{width: 60px;}
+.Slider .seccion1 .redesSociales #InstagramIcon{width: 60px}
+.Slider .seccion1 .redesSociales #TwitterIcon{width: 60px}
+.Slider .seccion1 .redesSociales .LineUp{height: 180px;}
+.Slider .seccion1 .redesSociales .LineUp svg{width: 80px}
+
+}
+@media (min-width: 2241px){
+.Slider .seccion1 .logo-animado{transform: scale(1.2);}
+.Slider .seccion1 .redesSociales{right: 120px}
+.Slider .seccion1 .redesSociales #FacebookIcon{width: 60px;}
+.Slider .seccion1 .redesSociales #InstagramIcon{width: 60px}
+.Slider .seccion1 .redesSociales #TwitterIcon{width: 60px}
+.Slider .seccion1 .redesSociales .LineUp{height: 180px;}
+.Slider .seccion1 .redesSociales .LineUp svg{width: 80px}
+
+}

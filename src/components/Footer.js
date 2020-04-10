@@ -45,7 +45,7 @@ render (){
              </ul>
              <div className='PowerBy'>
                <p>TODOS LOS DERECHOS RESERVADOS LYM GRUPO CERVECERO</p>
-               <p>Power By Kodika</p>
+               <p>Hecho por Kodika</p>
              </div>
            </div>
          </section>
