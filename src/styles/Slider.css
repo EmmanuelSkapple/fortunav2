@@ -32,14 +32,28 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 
 @keyframes scrolldown{0%{background-position:0% 0}to{background-position:100% 0}}
 
+@media screen and (max-width: 319px) {
+	.contenedor { width: 95%; }
+	.seccion1{ border: 1px solid red; }
+	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 20px;}
+	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 20px}
+	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 20px}
+	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
+	 .Slider .seccion1 .logo-animado{transform: scale(.2);bottom: 70px;top: inherit;left: 45%;}
+   .Slider .seccion1 .redesSociales{right: 2px;top: 10px;}
+
+	.Slider .seccion1 .MouseScroll{transform: scale(.4);transform-origin: center;left: 10px;bottom: -15px}
+
+}
 @media screen and (min-width: 320px) and (max-width: 501px) {
 	.contenedor { width: 95%; }
-	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 30px;}
-	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 30px}
-	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 30px}
+	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 20px;}
+	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 20px}
+	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 20px}
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
-	 .Slider .seccion1 .logo-animado{transform: scale(.4) translateY(50%);top: 90%;}
+	 .Slider .seccion1 .logo-animado{transform: scale(.3);bottom: 70px;top: inherit;}
    .Slider .seccion1 .redesSociales{right: 20px;top: 40px;}
+
 
 }
 

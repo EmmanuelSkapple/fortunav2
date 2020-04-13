@@ -3,7 +3,7 @@
 .Menu .contentMenu .logo{width: 40px;margin: 0px auto;display: none}
 .Menu .contentMenu .menu_mobil{cursor: pointer;margin: 0px auto;margin-left:30px;position: absolute;top: 50%;transform: translateY(-50%);display: none}
 .Menu .contentMenu .menu_mobil .dash{height: 2px; width: 25px;border-radius: 10px; background-color: #fff;margin: 5px auto;}
-.Menu .contentMenu .lista_mobil{transform: translateX(-100%);width: 40%;height: 100vh;position: fixed;background-color: rgba(0,0,0,0.7);left: 0px;top: 35px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.Menu .contentMenu .lista_mobil{z-index: 1000;transform: translateX(-100%);width: 40%;height: 100vh;position: fixed;background-color: rgba(0,0,0,0.7);left: 0px;top: 30px;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
 .Menu .contentMenu .lista_mobil.activa{transform: translateX(0px);-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
 .Menu .contentMenu .lista_mobil li{width: 90%;margin: 10px;}
 .Menu li {display: inline-block; padding: 9px 20px; position: relative; cursor: pointer;}
@@ -20,7 +20,6 @@
 .Menu.topBlack li a{font-weight: 600}
 .Menu.topBlack li:nth-child(1) {width: 20%}
 .Menu.topBlack li:nth-child(3) {width: 20%}
-
 .Menu.topBlack li:nth-child(1) {width: 10%}
 .Menu.topBlack li:nth-child(3) {width: 30%}
 .Menu ul {margin: 0 auto;width: 100%}
@@ -37,6 +36,23 @@
 .Menu li i:after {display:block;content: '';border-width: 80px ;border-bottom: solid 3px #BF0D0D;transform: scaleX(0);transition: transform 250ms ease-in-out;}
 .Menu li i:hover:after { transform: scaleX(1); }
 
+@media screen and (max-width: 319px) {
+  .Menu .contentMenu .menu_mobil{display: block;}
+  .Menu .contentMenu .menu_mobil .dash{width: 20px;}
+  .Menu.MenuSlider{display: none}
+  .Menu .menu_mobil{width: 20%;height: 100%}
+  .Menu.topBlack .lista_pc {width: 40px;margin: 0px 0px 0px auto;}
+  .Menu.topBlack .lista_pc .Not_mobil{display: none}
+  .Menu.topBlack .contentMenu{width: 90%;display: inline-flex;}
+  .Menu.topBlack li:nth-child(1) {width: 20%}
+  .Menu.topBlack li:nth-child(3) {width: 33%}
+  .Menu li a{font-size: 15px; font-weight: 200;margin-top: 10px}
+  .Menu.topBlack li a{font-weight: 300}
+  .Menu .carrito{width: 20px;margin-top: 5px;}
+  .Menu .BadgeCarrito{width: 15px;height: 15px;margin-left: 10px;}
+  .Menu .BadgeCarrito p{ font-size: 10px;line-height: 15px;}
+
+}
 @media screen and (min-width: 320px) and (max-width: 501px) {
   .Menu .contentMenu .menu_mobil{display: block;}
   .Menu.MenuSlider{display: none}
@@ -48,7 +64,7 @@
   .Menu.topBlack li:nth-child(3) {width: 33%}
   .Menu li a{font-size: 15px; font-weight: 200;margin-top: 10px}
   .Menu.topBlack li a{font-weight: 300}
-  .Menu .carrito{width: 20px;}
+  .Menu .carrito{width: 20px;margin-top: 5px;}
   .Menu .BadgeCarrito{width: 15px;height: 15px;margin-left: 10px;}
   .Menu .BadgeCarrito p{ font-size: 10px;line-height: 15px;}
 

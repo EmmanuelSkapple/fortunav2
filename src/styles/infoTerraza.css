@@ -1,4 +1,4 @@
-.infoTerraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
+.infoTerraza .BarraContenedor{width: 580px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
 .infoTerraza .BarraFortuna{    height: 760px;}
 .infoTerraza #BarraFortuna{width: 700px}
 
@@ -6,7 +6,7 @@
 .infoTerraza .seccion1 .primer_lista li:nth-child(2) {width: 65%}
 .infoTerraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; height: 630px;}
 
-.infoTerraza .seccion1  .ContainetTitle{ position: absolute; left: -2.4%;top: 120px;z-index: 10}
+.infoTerraza .seccion1  .ContainetTitle{ position: absolute; left: -35%;top: 120px;z-index: 10}
 .infoTerraza .seccion1  .ContainetTitle p{margin: 0px;font-size: 8.4vw;font-weight: 700;line-height: 80%;}
 .infoTerraza .seccion1  .ContainetTitle p:nth-child(2){margin-right: -44%;}
 .infoTerraza .seccion1  .ContainetTitle span{color: white}
@@ -16,8 +16,8 @@
 .infoTerraza .seccion1 .ContainerLeft .btnReserva p{text-align: left; }
 .infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 100px;margin-top: 7px; }
 
-.infoTerraza .seccion1 .TerrazaImg01{width: 70%;margin: 0px 60px 0px auto;padding-top: 60px;}
-.infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;position: relative;z-index: 999}
+.infoTerraza .seccion1 .TerrazaImg01{position: relative;width: 70%;margin: 0px 60px 0px auto;padding-top: 60px;}
+.infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;position: relative;z-index: 900}
 .infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo:hover{box-shadow: inset 250px 0 0 0 #8B191D;}
 
 .infoTerraza .seccion1 .diagonalSimple{position: absolute;bottom: -140px;width: 100%;}
@@ -62,64 +62,168 @@ li{padding-bottom: 8px;position: relative;}
 li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 
+@media screen and  (max-width: 319px) {
+	.contenedor { width: 95%; }
+	 .seccion1{ border: 1px solid black; }
+	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
+	 .infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
+	 .infoTerraza .seccion1 ul{margin-left: 0px}
+   .infoTerraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
+   .infoTerraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
+   .infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{width: 60%;font-size: 9px;padding: 5px;}
+   .infoTerraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: -160px}
+   .infoTerraza .BarraFortuna{height: 350px;}
+   .infoTerraza #BarraFortuna{width: 90%;margin: 0px auto;}
+   .infoTerraza .seccion1 .ContainerLeft{height: 300px}
+   .infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 60%;padding: 2px 0px 2px 20px;margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+  .infoTerraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 10px;line-height: 19px}
+  .infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 100% 0 0 0 #8B191D;}
+  .infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 90px;margin-top: 2px; }
+  .infoTerraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;letter-spacing:6px;}
+  .infoTerraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+  .infoTerraza .seccion1 .ContainetTitle p{font-size: 10vw}
+	.infoTerraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+	.infoTerraza .seccion3 ul{margin-left: 0px;}
+	.infoTerraza .seccion3 li{width: 100%;}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 10px;margin-bottom: 10px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 9px;line-height: 9px;margin: 0px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour{bottom: -40px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{font-size: 9px;line-height: 10px;letter-spacing:1px;}
+	.infoTerraza .seccion3 .petContent {margin-top: 70px;}
+	.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 20px}
+	.infoTerraza .seccion3 .petContent .petTitle span{font-size: 20px}
+	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 15px}
+	.infoTerraza .seccion3 .petContent .petFriend {padding-top: 30px;}
+	.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 20px}
+	.infoTerraza .seccion3 .petContent .petFriend span{font-size: 30px;}
+	.infoTerraza .seccion3 .petContent .petBirds{width: 130px;top: 40%;}
+	.infoTerraza .seccion4{margin-top: 40px;}
+	.infoTerraza .seccion4 h1{font-size: 20px;text-align: center;}
+	.infoTerraza .seccion4 ul{margin-left: 0px;}
+	.infoTerraza .seccion4 li{width: 100%;}
+	.infoTerraza .seccion4 .contentEventos{height: 250px;width: 60%;}
+	.infoTerraza .seccion4 .descripcionEventos h3{font-size: 12px;}
+	.infoTerraza .seccion4 .descripcionEventos p{font-size: 9px;line-height: 10px;}
 
-
+	.infoTerraza .seccion1 .diagonalSimple{bottom: -20px}
+	.infoTerraza .seccion2{margin-top: 30px}
+	.infoTerraza .seccion2 ul{margin-left: 0px;}
+	.infoTerraza .seccion2 li{width: 100%;}
+	.infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: 10px;width: 80%;}
+	.infoTerraza .seccion2 .contenedorPasion h1{font-size: 20px;margin: 5px auto;}
+	.infoTerraza .seccion2 .contenedorPasion h1.active{font-size: 30px}
+	.infoTerraza .seccion2 .contenedorPasion img{width: 30px; margin-left: 10px}
+	.infoTerraza .lineaHorizontal{width: 100%;margin: 30px auto;}
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 490px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid black; }
-
-	 .Slider .seccion1 .logo-animado{transform: scale(.5) translateY(50%);}
+	 .seccion1{ border: 1px solid red; }
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
-	.infoTerraza .seccion1 .ContainetTitle{left: -10%;}
-	.infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
-	.infoTerraza .seccion1 .ContainerLeft{height: 490px}
-	.infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 160px;padding: 0px 0px 0px 15px;margin-left: -30px;bottom: 40px}
-	.infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 160px 0 0 0 #8B191D;}
-	.infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 60px;margin-top: 7px; }
-	.infoTerraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 15px}
-	.infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 20px}
-	.infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 12px;line-height: 11px}
-	.infoTerraza .seccion3 .TourContent .contentInfoTour{bottom: -110px}
-	.infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{font-size: 13px;line-height: 14px;}
+	 .infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
+	 .infoTerraza .seccion1 ul{margin-left: 0px}
+   .infoTerraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
+   .infoTerraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
+   .infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{width: 60%;font-size: 9px;padding: 5px;}
+   .infoTerraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: -100px}
+   .infoTerraza .BarraFortuna{height: 350px;}
+   .infoTerraza #BarraFortuna{width: 90%;margin: 0px auto;}
+   .infoTerraza .seccion1 .ContainerLeft{height: 360px}
+   .infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 60%;padding: 2px 0px 2px 20px;margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 70px;}
+  .infoTerraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 10px;line-height: 19px}
+  .infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 100% 0 0 0 #8B191D;}
+  .infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 140px;margin-top: 2px; }
+  .infoTerraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;letter-spacing:6px;}
+  .infoTerraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+  .infoTerraza .seccion1 .ContainetTitle p{font-size: 10vw}
+	.infoTerraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+	.infoTerraza .seccion1 .diagonalSimple{bottom: -20px}
+	.infoTerraza .seccion2{margin-top: 30px}
+	.infoTerraza .seccion2 ul{margin-left: 0px;}
+	.infoTerraza .seccion2 li{width: 100%;}
+	.infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: 10px;width: 80%;}
+	.infoTerraza .seccion2 .contenedorPasion h1{font-size: 25px;margin: 5px auto;}
+	.infoTerraza .seccion2 .contenedorPasion h1.active{font-size: 35px}
+	.infoTerraza .seccion2 .contenedorPasion img{width: 50px; margin-left: 10px}
+	.infoTerraza .lineaHorizontal{width: 100%;margin: 30px auto;}
+	.infoTerraza .seccion3 ul{margin-left: 0px;}
+	.infoTerraza .seccion3 li{width: 100%;}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 10px;margin-bottom: 10px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 9px;line-height: 9px;margin: 0px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour{bottom: -40px}
+	.infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{font-size: 9px;line-height: 10px;letter-spacing:1px;}
+	.infoTerraza .seccion3 .petContent {margin-top: 70px;}
 	.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 30px}
-	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 25px}
+	.infoTerraza .seccion3 .petContent .petTitle span{font-size: 30px}
+	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 20px}
+	.infoTerraza .seccion3 .petContent .petFriend {padding-top: 30px;}
 	.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 30px}
 	.infoTerraza .seccion3 .petContent .petFriend span{font-size: 30px;}
-	.infoTerraza .seccion1 .diagonalSimple{bottom: -70px}
-	.infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: -55px;width: 80%;}
-	.infoTerraza .seccion3 .petContent .petBirds{width: 130px}
-	.infoTerraza .seccion2{margin-top: 90px}
-	.infoTerraza .seccion2 .contenedorPasion h1{font-size: 30px}
-	.infoTerraza .seccion2 .contenedorPasion h1.active{font-size: 40px}
-	.infoTerraza .seccion2 .contenedorPasion img{width: 70px}
+	.infoTerraza .seccion3 .petContent .petBirds{width: 130px;top: 40%;}
+	.infoTerraza .seccion4{margin-top: 40px;}
+	.infoTerraza .seccion4 h1{font-size: 20px;text-align: center;}
+	.infoTerraza .seccion4 ul{margin-left: 0px;}
+	.infoTerraza .seccion4 li{width: 100%;}
+	.infoTerraza .seccion4 .contentEventos{height: 40%;width: 50%;}
+	.infoTerraza .seccion4 .descripcionEventos h3{font-size: 12px;}
+	.infoTerraza .seccion4 .descripcionEventos p{font-size: 9px;line-height: 10px;}
+
+
 }
 
 @media screen and (min-width: 491px) and (max-width: 669px) {
 	.contenedor { width: 95%; }
-	.infoTerraza .seccion1 .ContainetTitle{left: -10%;}
-  .infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
-  .infoTerraza .seccion1 .ContainerLeft{height: 490px}
-	.infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 160px;padding: 0px 0px 0px 15px;margin-left: -30px;bottom: 40px}
-  .infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 160px 0 0 0 #8B191D;}
-  .infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 60px;margin-top: 7px; }
-  .infoTerraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 15px}
-  .infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 20px}
- .infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 12px;line-height: 11px}
- .infoTerraza .seccion3 .TourContent .contentInfoTour{bottom: -110px}
- .infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{font-size: 13px;line-height: 14px;}
-	.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 30px}
-	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 25px}
-	.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 30px}
-	.infoTerraza .seccion3 .petContent .petFriend span{font-size: 30px;}
-	.infoTerraza .seccion1 .diagonalSimple{bottom: -70px}
-	.infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: -55px;width: 80%;}
-.infoTerraza .seccion3 .petContent .petBirds{width: 130px}
-	.infoTerraza .seccion2{margin-top: 90px}
-	.infoTerraza .seccion2 .contenedorPasion h1{font-size: 30px}
-	.infoTerraza .seccion2 .contenedorPasion h1.active{font-size: 40px}
-	.infoTerraza .seccion2 .contenedorPasion img{width: 70px}
+	 .seccion1{ border: 1px solid green; }
+	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
+	.infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
+	.infoTerraza .seccion1 ul{margin-left: 0px}
+	 .infoTerraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
+	 .infoTerraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
+	 .infoTerraza .seccion1 .TerrazaImg01 .btnMasInfo{width: 60%;font-size: 9px;padding: 5px;}
+	 .infoTerraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: -100px}
+	 .infoTerraza .BarraFortuna{height: 350px;}
+	 .infoTerraza #BarraFortuna{width: 90%;margin: 0px auto;}
+	 .infoTerraza .seccion1 .ContainerLeft{height: 360px}
+	 .infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 35%;padding: 2px 0px 2px 20px;margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 70px;}
+	.infoTerraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 10px;line-height: 19px}
+	.infoTerraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 100% 0 0 0 #8B191D;}
+	.infoTerraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 90px;margin-top: 2px; }
+	.infoTerraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;letter-spacing:6px;}
+	.infoTerraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+	.infoTerraza .seccion1 .ContainetTitle p{font-size: 10vw}
+ .infoTerraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+ .infoTerraza .seccion1 .diagonalSimple{bottom: -20px}
+ .infoTerraza .seccion2{margin-top: 30px}
+ .infoTerraza .seccion2 ul{margin-left: 0px;}
+ .infoTerraza .seccion2 li{width: 100%;}
+ .infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: 10px;width: 80%;}
+ .infoTerraza .seccion2 .contenedorPasion h1{font-size: 25px;margin: 5px auto;}
+ .infoTerraza .seccion2 .contenedorPasion h1.active{font-size: 35px}
+ .infoTerraza .seccion2 .contenedorPasion img{width: 50px; margin-left: 10px}
+ .infoTerraza .lineaHorizontal{width: 100%;margin: 30px auto;}
+ .infoTerraza .seccion3 ul{margin-left: 0px;}
+ .infoTerraza .seccion3 li{width: 100%;}
+ .infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 15px;margin-bottom: 10px}
+ .infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 12px;line-height: 14px;margin: 0px}
+ .infoTerraza .seccion3 .TourContent .contentInfoTour{bottom: -40px}
+ .infoTerraza .seccion3 .TourContent .contentInfoTour .btnReserva{font-size: 9px;line-height: 10px;letter-spacing:1px;}
+ .infoTerraza .seccion3 .petContent {margin-top: 70px;}
+ .infoTerraza .seccion3 .petContent .petTitle h1{font-size: 30px}
+ .infoTerraza .seccion3 .petContent .petTitle span{font-size: 30px}
+ .infoTerraza .seccion3 .petContent .petTitle p{font-size: 20px}
+ .infoTerraza .seccion3 .petContent .petFriend {padding-top: 30px;}
+ .infoTerraza .seccion3 .petContent .petFriend h1{font-size: 30px}
+ .infoTerraza .seccion3 .petContent .petFriend span{font-size: 30px;}
+ .infoTerraza .seccion3 .petContent .petBirds{width: 130px;top: 40%;}
+ .infoTerraza .seccion4{margin-top: 40px;}
+ .infoTerraza .seccion4 h1{font-size: 20px;text-align: center;}
+ .infoTerraza .seccion4 ul{margin-left: 0px;}
+ .infoTerraza .seccion4 li{width: 100%;}
+ .infoTerraza .seccion4 .contentEventos{height: 40%;width: 50%;}
+ .infoTerraza .seccion4 .descripcionEventos h3{font-size: 12px;}
+ .infoTerraza .seccion4 .descripcionEventos p{font-size: 9px;line-height: 10px;}
+
 }
 
 @media screen and (min-width: 670px) and (max-width: 770px) {
@@ -127,7 +231,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
  	 .seccion1{ border: 1px solid red; }
 
 
-	.infoTerraza .seccion1 .ContainetTitle{left: -10%;}
+	.infoTerraza .seccion1 .ContainetTitle{left: -40%;}
   .infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
   .infoTerraza .seccion1 .ContainerLeft{height: 490px}
 	.infoTerraza .seccion1 .ContainerLeft .btnReserva{width: 160px;padding: 0px 0px 0px 15px;margin-left: -30px;bottom: 40px}
@@ -154,10 +258,10 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 @media screen and (min-width: 771px) and (max-width: 1023px) {
 	.contenedor { width: 95%; }
 	 .seccion1{ border: 1px solid green; }
-   .infoTerraza .seccion1 .ContainetTitle{left: -10%;}
+   .infoTerraza .seccion1 .ContainetTitle{left: -40%;}
    .infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
 	 .infoTerraza .seccion1 .ContainerLeft{height: 490px}
-	 .infoTerraza .seccion1 .ContainerLeft .btnReserva{margin-left: -80px;left: 30%;bottom: 40px}
+	 .infoTerraza .seccion1 .ContainerLeft .btnReserva{margin-left: -80px;left: 30%;bottom: -30px}
 	 .infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 30px}
 	.infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 13px;line-height: 12px}
 	.infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: -75px;width: 80%;}
@@ -165,8 +269,8 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 }
 
 /***********Mac emmanuel 1280************/
-@media screen and (min-width: 1024px) and (max-width: 1149px) {
-	.infoTerraza .seccion1 .ContainetTitle{left: 1%;}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.infoTerraza .seccion1 .ContainetTitle{left: -38%;}
 	.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 40px}
 	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 25px}
 	.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 40px}
@@ -174,35 +278,26 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 	.infoTerraza .seccion3 .petContent .petFriend span{font-size: 40px;}
 
 }
+@media screen and (min-width: 1024px) and (max-width: 1239px) {
+	.infoTerraza .seccion1 .ContainetTitle{left: -33%;}
+	.infoTerraza .seccion1 .TerrazaImg01{width: 80%;}
 
-@media screen and (min-width: 1150px) and (max-width: 1439px) {
-	.contenedor { width: 80%; }
-	 .seccion1{ border: 1px solid blue; }
-	 .infoTerraza .seccion1 .ContainerLeft{height: 550px;width: 80%}
-	 .infoTerraza .seccion1 .TerrazaImg01{width: 60%;}
-	 .infoTerraza .seccion1 .ContainetTitle{left: 2%;}
-	 .infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
-	 .infoTerraza .seccion1 .ContainerLeft .btnReserva{margin-left: -80px;left: 30%;bottom: 40px}
-	 .infoTerraza .seccion3 .TourContent {width: 95%;margin: 0px 0px 0px auto;}
-	 .infoTerraza .seccion3 .petContent .petTitle h1{font-size: 50px}
-	 .infoTerraza .seccion3 .petContent .petTitle p{font-size: 35px}
-	 .infoTerraza .seccion3 .petContent .petFriend h1{font-size: 50px}
-	 .infoTerraza .seccion3 .TourContent .contentInfoTour h1{font-size: 30px}
-.infoTerraza .seccion3 .TourContent .contentInfoTour p{font-size: 13px;line-height: 12px}
-	 .infoTerraza .seccion3 .petContent .petFriend span{font-size: 50px;}
-	 .infoTerraza .seccion4 .contentEventos{width: 95%}
-	 .infoTerraza .seccion2 .contenTerrazaPasion{margin: 0px auto;margin-top: -75px;width: 80%;}
-	 .infoTerraza #BarraFortuna{width: 810px;margin-top: 50px}
+	.infoTerraza .seccion3 .petContent .petTitle h1{font-size: 40px}
+	.infoTerraza .seccion3 .petContent .petTitle p{font-size: 25px}
+	.infoTerraza .seccion3 .petContent .petFriend h1{font-size: 40px}
+
+	.infoTerraza .seccion3 .petContent .petFriend span{font-size: 40px;}
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1840px){
+
+@media screen and (min-width: 1240px) and (max-width: 1840px){
   .contenedor { width: 80%; }
 
 	 .seccion1{ border: 1px solid green; }
-	  .infoTerraza .seccion1 .ContainetTitle{left: 3%;}
+	  .infoTerraza .seccion1 .ContainetTitle{left: -37%;}
 	  .infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
 		.infoTerraza .seccion4 .contentEventos{width: 80%;}
-		.infoTerraza .seccion1 .TerrazaImg01{width: 60%;}
+		.infoTerraza .seccion1 .TerrazaImg01{width: 80%;}
 		.infoTerraza .seccion1 .ContainerLeft{height: 710px;width: 80%}
 	  .infoTerraza .seccion1 .ContainerLeft .btnReserva{margin-left: -80px;left: 30%;bottom: 50px}
 		.infoTerraza .seccion2{margin-top: 70px}
@@ -226,7 +321,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .contenedor { width: 85%; }
   .seccion1{ border: 1px solid red; }
 
-	.infoTerraza .seccion1 .ContainetTitle{left: 2%;}
+	.infoTerraza .seccion1 .ContainetTitle{left: -43%;}
 	.infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
 	.infoTerraza .seccion4 .contentEventos{width: 80%;}
 	.infoTerraza .seccion1 .TerrazaImg01{width: 65%;}
@@ -250,7 +345,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .contenedor { width: 85%; }
   .seccion1{ border: 1px solid blue; }
   .infoTerraza #BarraFortuna{width: 1200px}
-  .infoTerraza .seccion1 .ContainetTitle{left: 3%;}
+  .infoTerraza .seccion1 .ContainetTitle{left: -58%;}
   .infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
   .infoTerraza .seccion1 .TerrazaImg01{width: 47%;margin: 0px 290px 0px auto;}
   .infoTerraza .seccion1 .ContainerLeft{height: 790px;width: 80%}

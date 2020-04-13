@@ -4,6 +4,9 @@ import '../styles/Slider.css';
 import '../styles/General.css';
 import Spritesheet from 'react-responsive-spritesheet';
 import MenuSlider from './MenuSlider.js';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-163516545-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function Slider() {
   return (
@@ -11,7 +14,7 @@ function Slider() {
       <section className="seccion1">
           <div className="filterBlack">
 
-            <img id="videoBG" src="/imgs/FortunaPosterCorto.png"  videoSrc="https://www.youtube.com/watch?v=38dAOcfQuqo"/>
+            <img id="videoBG" src="/imgs/FortunaPosterCorto.png"  />
              <Spritesheet
                className={`logo-animado`}
                image={`/imgs/sprites.png`}

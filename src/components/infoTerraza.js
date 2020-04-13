@@ -6,6 +6,9 @@ import BarraSVG from './BarraSvg.js';
 
 import '../styles/infoTerraza.css';
 import '../styles/General.css';
+import ReactGA from 'react-ga';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 class ContentTerraza extends Component {
@@ -48,13 +51,12 @@ class InfoTerraza extends Component {
 
                 </li>
                 <li>
-                  <div className="ContainetTitle">
-                    <p>Terr<span class="whiteText">aza</span> </p>
-                    <p>Fo<span class="whiteText">rtuna</span></p>
-                  </div>
                   <div className="TerrazaImg01">
+                    <div className="ContainetTitle">
+                      <p>Terr<span class="whiteText">aza</span> </p>
+                      <p>Fo<span class="whiteText">rtuna</span></p>
+                    </div>
                     <img  src="/imgs/TerrazaNueva01.png"  />
-                    <a className="btnMasInfo">Mas informacion</a>
                   </div>
 
                 </li>

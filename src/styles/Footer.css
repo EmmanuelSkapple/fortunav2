@@ -4,3 +4,19 @@
 
 .PowerBy {display: flex;}
 .PowerBy p:nth-child(2){position: absolute;right: 0px}
+
+@media screen and (max-width: 319px) {
+  .Footer ul li{width: 100%; }
+.Footer ul li p{text-align: center;font-size: 10px;line-height: 10px;}
+.Footer .seccion1 .lineVertical {width: 100%;height: 1px;right: inherit;top: inherit;left: 0px;}
+.PowerBy {display: block;}
+.PowerBy p{text-align: center;font-size: 10px;line-height: 10px}
+}
+@media screen and (min-width: 320px) and (max-width: 501px) {
+  .Footer ul li{width: 100%; }
+.Footer ul li p{text-align: center;font-size: 10px;line-height: 10px}
+.Footer .seccion1 .lineVertical {width: 100%;height: 1px;right: inherit;top: inherit;left: 0px;}
+.PowerBy {display: block;}
+.PowerBy p{text-align: center;font-size: 10px;line-height: 10px}
+
+}

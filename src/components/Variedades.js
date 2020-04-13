@@ -8,6 +8,8 @@ import Icon from '@mdi/react'
 
 import '../styles/Variedades.css';
 import '../styles/General.css';
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 class ContentVariedades extends Component {

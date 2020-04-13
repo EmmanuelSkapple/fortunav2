@@ -16,6 +16,10 @@ class Menu extends Component{
   componentDidMount(){
     this.setState({black:this.props.black})
     var self =this;
+    var width = window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+    if (width <= 839) {
+      this.setState({black:true})
+    }
       $(document).scroll(function() {
         var scrollTop = $(window).scrollTop()
         if (!self.state.black) {
@@ -23,7 +27,11 @@ class Menu extends Component{
               $('#Menu').addClass("topBlack");
           }
           else{
-            $('#Menu').removeClass("topBlack");
+            var width = window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+            if (width >= 839) {
+              $('#Menu').removeClass("topBlack");
+
+            }
           }
         }
       });
@@ -32,7 +40,7 @@ class Menu extends Component{
   render() {
 
    return (
-     <div id='Menu' className={this.props.black?'Menu topBlack':'Menu'}>
+     <div id='Menu' className={this.state.black?'Menu topBlack':'Menu'}>
        <div className='contentMenu'>
          <div className='menu_mobil' onClick={()=>this.setState({openMenuMobil:!this.state.openMenuMobil})}>
            <div className='dash'></div>

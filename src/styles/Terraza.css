@@ -1,10 +1,4 @@
-.Terraza .LogoContainer{width: 250px; margin: 0 auto;}
-.Terraza .contentOpenHouse{padding: 70px 10px;width: 330px;margin: 0 auto;margin-top: 60px;}
-.Terraza .contentOpenHouse p{font-size: 100px;font-weight: 300;font-family: Abril Fatface;color: #a22f31;}
-.Terraza .contentOpenHouse span{position: absolute;font-size: 60px;font-family: Latios;width: 700px;margin-top: 20px;}
-.Terraza .BeerContainer{width: 300px}
-
-.Terraza .BarraContenedor{width: 950px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
+.Terraza .BarraContenedor{width: 580px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
 .Terraza .BarraFortuna{    height: 760px;}
 .Terraza #BarraFortuna{width: 700px}
 
@@ -12,7 +6,7 @@
 .Terraza .seccion1 .primer_lista li:nth-child(2) {width: 65%}
 .Terraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; height: 630px;}
 
-.Terraza .seccion1  .ContainetTitle{ position: absolute; left: -2.4%;top: 120px;z-index: 10}
+.Terraza .seccion1  .ContainetTitle{ position: absolute; left: -35%;top: 120px;z-index: 10}
 .Terraza .seccion1  .ContainetTitle p{margin: 0px;font-size: 8.4vw;font-weight: 700;line-height: 80%;}
 .Terraza .seccion1  .ContainetTitle p:nth-child(2){margin-right: -44%;}
 .Terraza .seccion1  .ContainetTitle span{color: white}
@@ -22,8 +16,8 @@
 .Terraza .seccion1 .ContainerLeft .btnReserva p{text-align: left; }
 .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 100px;margin-top: 7px; }
 
-.Terraza .seccion1 .TerrazaImg01{width: 70%;margin: 0px 60px 0px auto;padding-top: 60px;}
-.Terraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;position: relative;z-index: 999}
+.Terraza .seccion1 .TerrazaImg01{position: relative;width: 70%;margin: 0px 60px 0px auto;padding-top: 60px;}
+.Terraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;position: relative;z-index: 900}
 .Terraza .seccion1 .TerrazaImg01 .btnMasInfo:hover{box-shadow: inset 250px 0 0 0 #8B191D;}
 .Terraza .seccion2 .bgContentBeer{position: relative;top: -100px;}
 .Terraza .seccion2 .bgContentBeer .bgBeer{width: 100%}
@@ -60,7 +54,7 @@
 .Terraza .seccion4 p.goldText{font-size: 60px;font-weight: 700;color: #AC8723;}
 .Terraza .seccion4 .contentTours{-webkit-box-shadow: -3px 6px 20px 0px rgba(153,153,153,1);-moz-box-shadow: -3px 6px 20px 0px rgba(153,153,153,1);box-shadow: -3px 6px 20px 0px rgba(153,153,153,1); width: 80%;margin: 0px auto;padding: 15px;margin-top: 100px;}
 .Terraza .seccion4 p{font-size: 20px;line-height: 25px; text-align: center; font-weight: 500;}
-.Terraza .seccion4 .contentTours .ReservarTour{background-color:#000;color: #FFFFFF; width: 30%;padding: 10px 5px;margin: 0px auto;margin-top: 30px;}
+.Terraza .seccion4 .contentTours .ReservarTour{cursor: pointer;background-color:#000;color: #FFFFFF; width: 30%;padding: 10px 5px;margin: 0px auto;margin-top: 30px;}
 .Terraza .seccion4 .contentTours .goldText{font-size: 20px;font-weight: 700;color: #AC8723;margin: 10px;}
 .Terraza .seccion5 .TequilaBG .imgRuta.activo{ opacity: 1;display: block;animation: fadeInTequila 2s;}
 .Terraza .seccion5 .TequilaBG .imgRuta.hidden{opacity: 0;display: none;animation: fadeOutTequila 3s;}
@@ -79,11 +73,11 @@
   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/}
 .Terraza .seccion5 .titleTequila{ z-index: 2;width: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-70%);text-align: center;}
 .Terraza .seccion5 .titleTequila h1{font-size: 60px;font-weight: 700;color: #fff;margin-bottom: 20px}
-.Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 20px;font-weight: 700;color: #fff;}
-.Terraza .seccion5 .verMapa {cursor: pointer;text-decoration: underline;position: relative;bottom: -50px;}
-.Terraza .seccion5 .verMapaRegresar {font-size: 20px;font-weight: 700;cursor: pointer;text-decoration: underline;position: relative;bottom: -120px;color: #000;}
-.Terraza .seccion5 .verMapa:hover{opacity: 0.5}
-.Terraza .seccion5 .verMapaRegresar:hover{opacity: 0.5}
+.Terraza .seccion5 .titleTequila p{font-size: 20px;font-weight: 700;color: #fff;}
+.Terraza .seccion5 .titleTequila p.verMapa {cursor: pointer;text-decoration: underline;position: relative;bottom: -50px;}
+.Terraza .seccion5 .titleTequila p.verMapaRegresar {font-size: 20px;font-weight: 700;cursor: pointer;text-decoration: underline;position: relative;bottom: -120px;color: #000;}
+.Terraza .seccion5 .titleTequila p.verMapa:hover{opacity: 0.5}
+.Terraza .seccion5 .titleTequila p.verMapaRegresar:hover{opacity: 0.5}
 .Terraza .seccion6 .contendorInstagram{width: 80%;margin: 0px auto;margin-top: 50px;}
 .Terraza .seccion6 #InstagramCard {transform: scale(.8); justify-content: center;display: flex;}
 
@@ -122,32 +116,203 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
     transform: scale(.89);
   }
 }
+@media screen and (max-width: 319px) {
+  .contenedor { width: 95%; }
+    ul{margin-left: 0px;}
+	 .seccion1{ border: 1px solid yellow; }
+   .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
+   .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
+   .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
+   .Terraza .seccion1 .TerrazaImg01 .btnMasInfo{width: 60%;font-size: 9px;padding: 5px;}
+   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
+   .Terraza .BarraFortuna{height: 350px;}
+   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
+   .Terraza .seccion1 .ContainerLeft{height: 490px}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{width: 60%;padding: 2px 0px 2px 20px;margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+  .Terraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 10px;line-height: 19px}
+  .Terraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 100% 0 0 0 #8B191D;}
+  .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 90px;margin-top: 2px; }
+  .Terraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;}
+  .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+  .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 8vw;text-align: center;line-height: 20px;margin: 0px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 8vw;text-align: center;margin-left: 0px;line-height: 20px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px;width: 90%;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 14px;color: #909090}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;font-size: 3vw;line-height: 20px}
+  .Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+.Terraza .seccion3{padding-top: 200px}
+.Terraza .seccion3 ul{margin-left: 0px}
+.Terraza .seccion3 ul li{width: 100%}
+.Terraza .seccion3 .contentLetf{display: flex;flex-direction: column;}
+.Terraza .seccion3 .contentRigth{display: flex;flex-direction: column;}
+.Terraza .seccion3 .contentIngediente{width: 90%}
+.Terraza .seccion3 .contentIngediente.down{margin-top: 0px;}
+.Terraza .seccion3 .contentIngediente.down.levadura{margin-top: 20px;}
+.Terraza .verVariedades{width: 90%;margin: 0px auto;text-align: center;font-size: 10px;}
+.Terraza .contentIngediente img.iconIngrediente{width: 50px}
+.Terraza .contentIngediente img.iconIngrediente.lupulo{width: 40px}
+.Terraza .contentIngediente .contentTitulo img.vineta{ width: 30px;height: 10px;padding: 0px 0px;margin: 10px 10px;}
+.Terraza .contentIngediente h3{ line-height: 30px;margin: 0px 0px;font-size: 15px;}
+.Terraza .contentIngediente p{font-size: 10px;line-height: 13px;}
+.Terraza img.Botella{width: 30%;}
+.Terraza .seccion3 .tanque.Right{bottom: 130px}
+.Terraza .seccion4{padding-top: 40px;padding-bottom: 40px;}
+.Terraza .seccion4 ul.col2 {display: flex;flex-direction: column-reverse;}
+.Terraza .seccion4 ul.col2 li {width: 100%;}
+.Terraza .seccion4 .contentTours{margin-top: 40px}
+.Terraza .seccion4 p:nth-child(1){font-size: 20px;margin-top: 0px;margin: 0px}
+.Terraza .seccion4 span{font-size: 12px;}
+.Terraza .seccion4 p.goldText{font-size: 30px}
+.Terraza .seccion4 .contentTours .goldText{font-size: 15px;margin: 5px;}
+.Terraza .seccion4 .contentTours .ReservarTour{width: 80%;padding: 5px;font-size: 13px;}
+.Terraza .seccion4 p{font-size: 9px;line-height: 14px;}
+.Terraza .seccion4 .contentProceso.Up{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .contentProceso.Down{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .lineDown{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .contentTours .ReservarTour{width: 60%;padding: 5px;}
+.Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%);}
+.Terraza .seccion5 .titleTequila h1{font-size: 15px;margin-bottom: 0px;}
+.Terraza .seccion5 .titleTequila p{font-size: 9px;line-height: 14px;font-weight: 300;margin: 0px}
+.Terraza .seccion5 .Tequilaline.Up{top: -15px}
+.Terraza .seccion5 .Tequilaline.Down{bottom: -15px;}
+.Terraza .seccion5 .titleTequila p.verMapa{color:#000;font-weight: 500;bottom: -20px;}
+.Terraza .seccion5 .TequilaBG .mapa.activo{height: 180px;  clip-path: polygon(50% 0%, 0% 10%, 0% 90%, 52% 100%, 100% 90%, 100% 10%);}
+
+.Terraza .seccion6 {margin-bottom: 100px}
+.Terraza .seccion6 .contendorInstagram li{width: 100%;height: 350px}
+.Terraza .seccion6 #InstagramCard{  transform: scale(.5) translateY(-40%);}
+}
 
 /*********************** MEDIAS QUERIES ***********************/
 @media screen and (min-width: 320px) and (max-width: 501px) {
 	.contenedor { width: 95%; }
+    ul{margin-left: 0px;}
 	 .seccion1{ border: 1px solid red; }
-   .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;}
+   .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
    .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
    .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
-   .Terraza .BarraContenedor{left: 50%;transform: translateX(-50%);bottom: 0px}
+   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
+   .Terraza .BarraFortuna{height: 350px;}
+   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
+   .Terraza .seccion1 .ContainerLeft{height: 490px}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+   .Terraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;}
+   .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 11vw;text-align: center;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 11vw;text-align: center;margin-left: 0px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px;width: 90%;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 19px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;}
+.Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+.Terraza .seccion3{padding-top: 200px}
+.Terraza .seccion3 ul{margin-left: 0px}
+.Terraza .seccion3 ul li{width: 100%}
+.Terraza .seccion3 .contentLetf{display: flex;flex-direction: column;}
+.Terraza .seccion3 .contentRigth{display: flex;flex-direction: column;}
+.Terraza .seccion3 .contentIngediente{width: 90%}
+.Terraza .seccion3 .contentIngediente.down{margin-top: 0px;}
+.Terraza .seccion3 .contentIngediente.down.levadura{margin-top: 20px;}
+.Terraza .verVariedades{width: 90%;margin: 0px auto;text-align: center;font-size: 10px;}
+.Terraza .contentIngediente img.iconIngrediente{width: 50px}
+.Terraza .contentIngediente img.iconIngrediente.lupulo{width: 40px}
+.Terraza .contentIngediente .contentTitulo img.vineta{ width: 30px;height: 10px;padding: 0px 0px;margin: 10px 10px;}
+.Terraza .contentIngediente h3{ line-height: 30px;margin: 0px 0px;font-size: 15px;}
+.Terraza .contentIngediente p{font-size: 10px;line-height: 13px;}
+.Terraza img.Botella{width: 30%;}
+.Terraza .seccion3 .tanque.Right{bottom: 130px}
+.Terraza .seccion4{padding-top: 40px;padding-bottom: 40px;}
+.Terraza .seccion4 ul.col2 {display: flex;flex-direction: column-reverse;}
+.Terraza .seccion4 ul.col2 li {width: 100%;}
+.Terraza .seccion4 .contentTours{margin-top: 40px}
+.Terraza .seccion4 p:nth-child(1){font-size: 40px}
+.Terraza .seccion4 span{font-size: 15px}
+.Terraza .seccion4 p.goldText{font-size: 40px}
+.Terraza .seccion4 p{font-size: 13px;line-height: 18px;}
+.Terraza .seccion4 .contentProceso.Up{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .contentProceso.Down{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .contentTours .ReservarTour{width: 60%;padding: 5px;}
+.Terraza .seccion4 .lineDown{width: 90%;margin: 0px auto;}
+.Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%);}
+.Terraza .seccion5 .titleTequila h1{font-size: 20px;margin-bottom: 0px;}
+.Terraza .seccion5 .titleTequila p{font-size: 10px;line-height: 11px}
+.Terraza .seccion5 .Tequilaline.Up{top: -16px}
+.Terraza .seccion5 .Tequilaline.Down{bottom: -16px;}
+.Terraza .seccion5 .TequilaBG .mapa.activo{height: 180px;  clip-path: polygon(50% 0%, 0% 10%, 0% 90%, 52% 100%, 100% 90%, 100% 10%);}
+.Terraza .seccion6 {margin-bottom: 100px}
+.Terraza .seccion5 .titleTequila p.verMapa{color: #000;bottom: -30px}
+.Terraza .seccion6 .contendorInstagram li{width: 100%;height: 550px}
 }
 
 @media screen and (min-width: 502px) and (max-width: 669px) {
-	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid green; }
-
+  .contenedor { width: 95%; }
+    ul{margin-left: 0px;}
+   .seccion1{ border: 1px solid red; }
+   .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
+   .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
+   .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
+   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
+   .Terraza .BarraFortuna{height: 350px;}
+   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
+   .Terraza .seccion1 .ContainerLeft{height: 490px}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+   .Terraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;letter-spacing:6px;}
+   .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
+   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 11vw;text-align: center;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 11vw;text-align: center;margin-left: 0px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 19px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;}
+.Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
+.Terraza .seccion3{padding-top: 200px}
+.Terraza .seccion3 ul li{width: 100%}
+.Terraza .seccion3 .contentLetf{display: flex;flex-direction: row;}
+.Terraza .seccion3 .contentRigth{display: flex;flex-direction: row;}
+.Terraza .seccion3 .contentIngediente{width: 50%}
+.Terraza .seccion3 .contentIngediente.down{margin-top: 0px;}
+.Terraza .seccion3 .contentIngediente.down.levadura{margin-top: 20px;}
+.Terraza .verVariedades{width: 30%;}
+.Terraza .contentIngediente img.iconIngrediente{width: 80px}
+.Terraza .contentIngediente img.iconIngrediente.lupulo{width: 48px}
+.Terraza .contentIngediente .contentTitulo img.vineta{ width: 50px;height: 16px;padding: 0px 0px;margin: 10px 10px;}
+.Terraza .contentIngediente h3{ line-height: 34px;margin: 0px 0px;}
+.Terraza .contentIngediente p{font-size: 13px;}
+.Terraza img.Botella{width: 30%;}
+.Terraza .seccion3 .tanque.Right{bottom: 130px}
+.Terraza .seccion4{padding-top: 40px;padding-bottom: 40px;}
+.Terraza .seccion4 ul.col2 {display: flex;flex-direction: column-reverse;}
+.Terraza .seccion4 ul.col2 li {width: 100%;}
+.Terraza .seccion4 .contentTours{margin-top: 40px}
+.Terraza .seccion4 p:nth-child(1){font-size: 40px}
+.Terraza .seccion4 span{font-size: 15px}
+.Terraza .seccion4 p.goldText{font-size: 40px}
+.Terraza .seccion4 p{font-size: 13px;line-height: 18px;}
+.Terraza .seccion4 .contentProceso.Up{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .contentProceso.Down{width: 90%;margin: 0px auto;}
+.Terraza .seccion4 .lineDown{width: 90%;margin: 0px auto;}
+.Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%);}
+.Terraza .seccion5 .titleTequila h1{font-size: 30px;margin-bottom: 0px;}
+.Terraza .seccion5 .titleTequila p{font-size: 13px;line-height: 20px}
+.Terraza .seccion5 .Tequilaline.Up{top: -25px}
+.Terraza .seccion5 .Tequilaline.Down{bottom: -25px;}
+.Terraza .seccion6 {margin-bottom: 100px}
+.Terraza .seccion6 .contendorInstagram li{width: 100%;height: 550px}
 }
 
 @media screen and (min-width: 670px) and (max-width: 770px) {
 	 .seccion1{ border: 1px solid blue; }
    .contenedor { width: 95%; }
  	 .seccion1{ border: 1px solid green; }
-
   .Terraza .BarraFortuna{height: 310px;width: 50%;}
   .Terraza .seccion1 .primer_lista li:nth-child(1){width: 30%}
-  .Terraza .seccion1 .ContainetTitle{left: -12%;}
+  .Terraza .seccion1 .ContainetTitle{left: -40%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
+  .Terraza .seccion1 .TerrazaImg01{ margin: 0px 20px 0px auto;}
   .Terraza .seccion1 .ContainerLeft .btnReserva{width: 160px;padding: 0px 0px 0px 15px;margin-left: -30px}
   .Terraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 160px 0 0 0 #8B191D;}
   .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 60px;margin-top: 7px; }
@@ -172,8 +337,8 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
    .Terraza .seccion5 .Tequilaline.Up{top: -40px}
  .Terraza .seccion5 .Tequilaline.Down{bottom: -40px}
  .Terraza .seccion5 .titleTequila h1{font-size: 50px;margin: 0px;}
- .Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 15px}
- .Terraza .seccion5 .verMapa{bottom: -20px}
+ .Terraza .seccion5 .titleTequila p{font-size: 15px}
+ .Terraza .seccion5 .titleTequila p.verMapa{bottom: -20px}
  .Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%)}
  .Terraza .seccion6 #InstagramCard{transform: scale(.5);}
  .Terraza .seccion6 .contendorInstagram{margin-top: -30px}
@@ -184,7 +349,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 	 .seccion1{ border: 1px solid green; }
   .Slider .seccion1 .logo-animado{transform: scale(.5) translateY(50%);}
   .Slider .seccion1 .redesSociales .LineUp{display: none;}
-   .Terraza .seccion1 .ContainetTitle{left: -8%;}
+   .Terraza .seccion1 .ContainetTitle{left: -42%;}
    .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
   /* .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin-right: -105px;} */
   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 430px}
@@ -206,8 +371,8 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .seccion5 .Tequilaline.Up{top: -40px}
 .Terraza .seccion5 .Tequilaline.Down{bottom: -40px}
 .Terraza .seccion5 .titleTequila h1{font-size: 50px;margin: 0px;}
-.Terraza .seccion5 .titleTequila p:not(.verMapaRegresar){font-size: 15px}
-.Terraza .seccion5 .verMapa{bottom: -20px}
+.Terraza .seccion5 .titleTequila p{font-size: 15px}
+.Terraza .seccion5 .titleTequila p.verMapa{bottom: -20px}
 .Terraza .seccion5 .titleTequila{transform: translate(-50%,-50%)}
 .Terraza .seccion6 #InstagramCard{transform: scale(.6);}
 .Terraza .seccion6 .contendorInstagram{margin-top: -30px}
@@ -224,7 +389,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .contenedor { width: 90%; }
 
 	 .seccion1{ border: 1px solid green; }
-   .Terraza .seccion1 .ContainetTitle{left: 1%;}
+   .Terraza .seccion1 .ContainetTitle{left: -45%;}
    .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
    .Terraza .seccion1 .TerrazaImg01{width: 65%;}
    .Terraza .seccion2 .bgContentBeer{position: relative;top: -40px;}
@@ -243,7 +408,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .contenedor { width: 85%; }
   .seccion1{ border: 1px solid red; }
 
-  .Terraza .seccion1 .ContainetTitle{left: 1%;}
+  .Terraza .seccion1 .ContainetTitle{left: -45%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
   .Terraza .seccion1 .TerrazaImg01{width: 65%;}
   .Terraza .seccion2 .bgContentBeer{position: relative;top: -40px;}
@@ -264,7 +429,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .contenedor { width: 85%; }
   .seccion1{ border: 1px solid blue; }
   .Terraza #BarraFortuna{width: 1200px}
-  .Terraza .seccion1 .ContainetTitle{left: 8%;}
+  .Terraza .seccion1 .ContainetTitle{left: -35%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 8vw;}
   .Terraza .seccion1 .TerrazaImg01{width: 65%;}
   .Terraza .seccion1 .ContainerLeft{height: 790px;width: 80%}
