@@ -4,14 +4,34 @@ import '../styles/Slider.css';
 import '../styles/General.css';
 import Spritesheet from 'react-responsive-spritesheet';
 import MenuSlider from './MenuSlider.js';
+import YouTube from 'react-youtube';
 
 function Slider() {
+  const opts = {
+      height: '950',
+      width: '1450',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+        controls:0,
+        disablekb:1,
+        iv_load_policy:3,
+        loop:1,
+        modestbranding:1,
+        rel:0,
+        showinfo:0,
+        mute:1,
+        enablejsapi: 1
+      },
+    };
   return (
     <div className="Slider">
       <section className="seccion1">
           <div className="filterBlack">
 
-            <img id="videoBG" src="/imgs/FortunaPosterCorto.png"  videoSrc="https://www.youtube.com/watch?v=38dAOcfQuqo"/>
+          <video id="videoBG" autoPlay loop muted>
+            <source src="https://storage.cloud.google.com/fortuna/fortuna-web.mp4" type="video/webm; "/>
+          </video>
              <Spritesheet
                className={`logo-animado`}
                image={`/imgs/sprites.png`}
