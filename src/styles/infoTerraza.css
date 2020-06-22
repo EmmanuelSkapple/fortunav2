@@ -64,7 +64,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and  (max-width: 319px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid black; }
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
 	 .infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
 	 .infoTerraza .seccion1 ul{margin-left: 0px}
@@ -119,7 +118,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 320px) and (max-width: 490px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid red; }
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
 	 .infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
 	 .infoTerraza .seccion1 ul{margin-left: 0px}
@@ -174,7 +172,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 491px) and (max-width: 669px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid green; }
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
 	.infoTerraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
 	.infoTerraza .seccion1 ul{margin-left: 0px}
@@ -228,9 +225,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 670px) and (max-width: 770px) {
    .contenedor { width: 95%; }
- 	 .seccion1{ border: 1px solid red; }
-
-
 	.infoTerraza .seccion1 .ContainetTitle{left: -40%;}
   .infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
   .infoTerraza .seccion1 .ContainerLeft{height: 490px}
@@ -257,7 +251,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 771px) and (max-width: 1023px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid green; }
    .infoTerraza .seccion1 .ContainetTitle{left: -40%;}
    .infoTerraza .seccion1 .ContainetTitle p{font-size: 9vw;}
 	 .infoTerraza .seccion1 .ContainerLeft{height: 490px}
@@ -292,8 +285,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 1240px) and (max-width: 1840px){
   .contenedor { width: 80%; }
-
-	 .seccion1{ border: 1px solid green; }
 	  .infoTerraza .seccion1 .ContainetTitle{left: -37%;}
 	  .infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
 		.infoTerraza .seccion4 .contentEventos{width: 80%;}
@@ -319,7 +310,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 1841px) and (max-width: 2240px){
   .contenedor { width: 85%; }
-  .seccion1{ border: 1px solid red; }
 
 	.infoTerraza .seccion1 .ContainetTitle{left: -43%;}
 	.infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}
@@ -343,7 +333,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 }
 @media (min-width: 2241px){
   .contenedor { width: 85%; }
-  .seccion1{ border: 1px solid blue; }
   .infoTerraza #BarraFortuna{width: 1200px}
   .infoTerraza .seccion1 .ContainetTitle{left: -58%;}
   .infoTerraza .seccion1 .ContainetTitle p{font-size: 8vw;}

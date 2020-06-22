@@ -24,6 +24,9 @@
 .Variedades .botella.ipa{background: url("/imgs/botellas/ippolita.png") no-repeat fixed center;background-size: 170px;}
 .Variedades .botella.stout{background: url("/imgs/botellas/stout.png") no-repeat fixed center;background-size: 170px;}
 .Variedades .botella.sake{background: url("/imgs/botellas/sakeAle.png") no-repeat fixed center;background-size: 170px;}
+.Variedades .botella.sour{background: url("/imgs/botellas/sourindo.png") no-repeat fixed center;background-size: 170px;}
+.Variedades .botella.canta{background: url("/imgs/botellas/cantaBeer.png") no-repeat fixed center;background-size: 170px;}
+.Variedades .botella.canitaLigth{background: url("/imgs/botellas/canitaLigth.png") no-repeat fixed center;background-size: 170px;}
 
 @media screen and (max-width: 335px) {
   .Variedades .botella.pale{background-position: 200px 370px ;background-size: 90px}

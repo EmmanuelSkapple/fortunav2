@@ -1,3 +1,17 @@
+
+.Slider .MayorEdadDimmer{display: none;width: 100%;position: fixed;height: 100vh;z-index: 9999;background-color: #000;}
+.Slider .MayorEdadDimmer.activo{display: block;width: 100%;position: fixed;height: 100vh;z-index: 9999;background-color: #000;}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad{width: 60%;position: absolute;z-index: 9999;top: 30%;left: 55%;transform: translate(-50%, -50%);}
+.Slider .MayorEdadDimmer .imgContentEdad{width: 50%;height: 100%;background-image: url('/imgs/MayorEdad.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad h1{font-size: 7vw}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad span.whiteText{color: white}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad span.blackText{color: black}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad .btnEdad{display: flex;width: 50%; position: absolute;left: 45%;transform: translateX(-50%);}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad .btnEdad .btnSi{cursor: pointer;background-color: #000;font-weight: 700;color: #fff;font-size: 3vw;width: 40%;padding: 5px;border-radius: 10px;margin: 10px}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad .btnEdad .btnSi:hover{background-color: #fff;color: #000;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad .btnEdad .btnNo{cursor: pointer;background-color: #fff;font-weight: 700;color: #000;font-size: 3vw;width: 40%;padding: 5px;border-radius: 10px;margin: 10px}
+.Slider .MayorEdadDimmer .contentIzquierdoEdad .btnEdad .btnNo:hover{background-color: #000;color: #fff;-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
+
 .Slider #videoBG{ width:100%; background:#ccc;}
 .Slider .filterBlack{filter: grayscale(50%) brightness(66%);-webkit-filter: grayscale(50%) brightness(66%);}
 .Slider .seccion1 .redesSociales{  position: absolute;width: 50px;top: 90px;right: 60px;}
@@ -20,6 +34,7 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 .Slider .seccion1 .redesSociales #TwitterIcon:hover{transform: scale(1.3);-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease;}
 
 
+
 @keyframes scroll {
 	0% {
 		transform: translateY(0);
@@ -34,7 +49,6 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 
 @media screen and (max-width: 319px) {
 	.contenedor { width: 95%; }
-	.seccion1{ border: 1px solid red; }
 	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 20px;}
 	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 20px}
 	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 20px}
@@ -47,11 +61,13 @@ svg #wheel {animation: scroll ease 2s infinite; z-index: 9999; }
 }
 @media screen and (min-width: 320px) and (max-width: 501px) {
 	.contenedor { width: 95%; }
+	.seccion1{ border: 1px solid green; }
+
 	 .Slider .seccion1 .redesSociales #FacebookIcon{width: 20px;}
 	 .Slider .seccion1 .redesSociales #InstagramIcon{width: 20px}
 	 .Slider .seccion1 .redesSociales #TwitterIcon{width: 20px}
 	 .Slider .seccion1 .redesSociales .LineUp{display: none;}
-	 .Slider .seccion1 .logo-animado{transform: scale(.3);bottom: 70px;top: inherit;}
+	 .Slider .seccion1 .logo-animado{transform: scale(.3);bottom: 130px;top: inherit;}
    .Slider .seccion1 .redesSociales{right: 20px;top: 40px;}
 
 

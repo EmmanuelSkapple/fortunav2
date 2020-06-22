@@ -1,7 +1,8 @@
-.Terraza .BarraContenedor{width: 580px;position: absolute;z-index: 10;left: -350px;margin-top: 40px;height: 440px;}
+.Terraza .BarraContenedor{z-index: 10;margin: 0px auto;margin-top: 40px;}
 .Terraza .BarraFortuna{    height: 760px;}
 .Terraza #BarraFortuna{width: 700px}
-
+.Terraza a:hover{color:inherit;}
+.Terraza .seccion1{background-color: #fff}
 .Terraza .seccion1 .primer_lista li:nth-child(1) {width: 35%}
 .Terraza .seccion1 .primer_lista li:nth-child(2) {width: 65%}
 .Terraza .seccion1 .ContainerLeft{background-color: #f9f9f9; position: relative; top:0px; padding: 60px 0px; height: 630px;}
@@ -10,34 +11,38 @@
 .Terraza .seccion1  .ContainetTitle p{margin: 0px;font-size: 8.4vw;font-weight: 700;line-height: 80%;}
 .Terraza .seccion1  .ContainetTitle p:nth-child(2){margin-right: -44%;}
 .Terraza .seccion1  .ContainetTitle span{color: white}
-.Terraza .seccion1 .ContainerLeft .btnReserva {     box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;position: absolute;z-index: 100;width: 250px;display: inline-flex;padding: 5px 0px 0px 30px;background-color: black;color: #fff;bottom: 140px;left: 50%;margin-left: -120px;}
+.Terraza .seccion1 .ContainerLeft .btnReserva {margin-top: 30px;box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;display: inline-flex;padding: 5px 0px 0px 30px;background-color: black;color: #fff;}
 .Terraza .seccion1 .ContainerLeft .btnReserva.LLama i{display: none}
 .Terraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 250px 0 0 0 #8B191D;}
 .Terraza .seccion1 .ContainerLeft .btnReserva p{text-align: left; }
 .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 100px;margin-top: 7px; }
-
+.Terraza .seccion1 .contentInfoTerraza{text-align:center;}
+.Terraza .seccion1 .imgTerraza00{width: 80%;margin: 0px auto;}
 .Terraza .seccion1 .TerrazaImg01{position: relative;width: 70%;margin: 0px 60px 0px auto;padding-top: 60px;}
 .Terraza .seccion1 .TerrazaImg01 .btnMasInfo{ box-shadow: inset 0 0 0 0 #8B191D;transition: ease-out 0.4s;cursor: pointer;width: 250px;padding: 11px;background-color: black;color: #fff;margin: 0 auto;margin-top: 30px;font-weight: 600;position: relative;z-index: 900}
 .Terraza .seccion1 .TerrazaImg01 .btnMasInfo:hover{box-shadow: inset 250px 0 0 0 #8B191D;}
-.Terraza .seccion2 .bgContentBeer{position: relative;top: -100px;}
-.Terraza .seccion2 .bgContentBeer .bgBeer{width: 100%}
-.Terraza .seccion2 .bgContentBeer .tituloBeer{width: 590px;position: absolute;top: 50%;transform: translateY(-50%);}
-.Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1) {font-size: 60px;font-weight: 700;color: #BA2F2F;}
-.Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {font-size: 60px;font-weight: 700;color: #2FBA64;margin-left: 190px;}
-.Terraza .seccion2 .bgContentBeer .tituloBeer span {font-weight: 700;color: #BA2F2F;margin-left: 140px;line-height: 35px;}
-.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {text-align: left;width: 370px;margin-left: 190px;margin-top: 29px;}
-.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 12px;font-weight: 700;color: #A2A2A2;margin: 0px;line-height: 29px;}
 
-.Terraza .seccion3{background-color: #FAFAFA; clip-path: polygon(0% 0%, 100% 7%,100% 90%,0 100%);padding-top: 270px;margin-top: -285px;z-index: -1;padding-bottom: 130px;}
+.Terraza .seccion2 .bgContentBeer{ position: relative;top: -100px;}
+.Terraza .seccion2 .bgContentBeer .bgBeer{width: 100%}
+.Terraza .seccion2 .bgContentBeer .ContentBeerImg{width: 60%;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer{    width: 630px; position: absolute;top: 50%;transform: translateY(-50%);}
+.Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1) {background-color: #BA2F2F;padding: 30px;font-size: 60px;font-weight: 700;color: #fff;text-align: right;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {margin-top:10px;text-align: right;font-size: 60px;font-weight: 700;color: #2FBA64;margin-left: 190px;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer .span {font-weight: 700;color: #fff;line-height: 25px;text-align: center;margin: auto 0px auto auto;width: 60%;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {width: 70%;margin: auto 0px auto auto;text-align: left;margin-top: 29px;}
+.Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 15px;font-weight: 700;color: #fff;margin: 0px;line-height: 29px;background-color: transparent;padding: 0px;}
+
+.Terraza .seccion3{background-color: #FAFAFA; clip-path: polygon(0% 0%, 100% 7%,100% 90%,0 100%);padding-top: 270px;margin-top: -135px;z-index: -1;padding-bottom: 130px;}
 .Terraza .seccion3 .tanque{position: absolute;}
 .Terraza .seccion3 .tanque.Left{left: 0px;width: 210px;top: 100px;}
 .Terraza .seccion3 .tanque.Right{right: 0px}
 .Terraza .seccion3 .contentIngediente{width: 80%;margin: 0px auto;text-align: center;}
 .Terraza .seccion3 .contentIngediente.down{margin-top: 100px}
 .Terraza .seccion3 .contentIngediente.down.levadura{margin-top: 120px}
-.Terraza .contentIngediente img.iconIngrediente{width: 100px;margin: 0px auto;opacity: 0.6}
+.Terraza .contentIngediente img.iconIngrediente{width: 100px;margin: 0px auto;}
+.Terraza .contentIngediente img.iconIngrediente:hover{transform: scale(1.2);transform-origin: center;cursor: pointer;}
 .Terraza .contentIngediente img.iconIngrediente.lupulo{width: 80px;margin: 0px auto;}
-.Terraza  img.Botella{width: 60%;margin: 0px auto;}
+.Terraza  img.Botella{width: 40%;margin: 0px auto;}
 .Terraza .contentIngediente .contentTitulo{display: flex;justify-content: center;}
 .Terraza .contentIngediente .contentTitulo img.vineta{width: 70px;padding: 20px 0px;margin: 0px 10px;}
 .Terraza .contentIngediente p {font-size: 15px;line-height: 20px;padding: 0px 30px}
@@ -45,9 +50,9 @@
 .Terraza .verVariedades{ text-align: center;font-size: 20px;font-weight: 700;text-decoration: underline;width: 20%;margin: 0px auto;}
 .Terraza .seccion4{margin-top: -70px;padding-top: 190px;padding-bottom: 100px;}
 .Terraza .seccion4 img.diagonalFortuna{position: absolute;top: -30px;z-index: 10;left: 0px;}
-.Terraza .seccion4 .contentProceso.Up {display: flex;}
-.Terraza .seccion4 .contentProceso.Up img{padding: 5px}
-.Terraza .seccion4 .contentProceso.Down img{padding: 5px}
+.contentProceso.Up {display: flex;}
+.contentProceso.Up img{padding: 5px}
+.contentProceso.Down img{padding: 5px}
 .Terraza .seccion4 .lineDown {padding: 5px}
 .Terraza .seccion4 p:nth-child(1){font-size: 60px;font-weight: 700;margin-top: 50px;}
 .Terraza .seccion4 span{font-size: 25px;font-weight: 600;}
@@ -117,18 +122,14 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   }
 }
 @media screen and (max-width: 319px) {
-  .contenedor { width: 95%; }
+  .contenedor { width: 95%; border: 1px solid red}
     ul{margin-left: 0px;}
-	 .seccion1{ border: 1px solid yellow; }
    .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
    .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
    .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
    .Terraza .seccion1 .TerrazaImg01 .btnMasInfo{width: 60%;font-size: 9px;padding: 5px;}
-   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
-   .Terraza .BarraFortuna{height: 350px;}
-   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
-   .Terraza .seccion1 .ContainerLeft{height: 490px}
-   .Terraza .seccion1 .ContainerLeft .btnReserva{width: 60%;padding: 2px 0px 2px 20px;margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+   .Terraza .seccion1 .ContainerLeft{margin-bottom: 30px;}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;bottom: 100px;}
   .Terraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 10px;line-height: 19px}
   .Terraza .seccion1 .ContainerLeft  .btnReserva:hover {box-shadow: inset 100% 0 0 0 #8B191D;}
   .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 90px;margin-top: 2px; }
@@ -136,13 +137,13 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 8vw;text-align: center;line-height: 20px;margin: 0px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 8vw;text-align: center;margin-left: 0px;line-height: 20px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px;width: 90%;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 14px;color: #909090}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;font-size: 3vw;line-height: 20px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 7vw;text-align: center;padding: 4px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 7vw;text-align: center;margin-left: 0px;margin-top: 5px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 10px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2vw;line-height: 19px}
   .Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
 .Terraza .seccion3{padding-top: 200px}
+
 .Terraza .seccion3 ul{margin-left: 0px}
 .Terraza .seccion3 ul li{width: 100%}
 .Terraza .seccion3 .contentLetf{display: flex;flex-direction: column;}
@@ -189,24 +190,21 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 @media screen and (min-width: 320px) and (max-width: 501px) {
 	.contenedor { width: 95%; }
     ul{margin-left: 0px;}
-	 .seccion1{ border: 1px solid red; }
    .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
    .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
    .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
-   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
-   .Terraza .BarraFortuna{height: 350px;}
-   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
-   .Terraza .seccion1 .ContainerLeft{height: 490px}
-   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+   .Terraza .seccion1 .ContainerLeft{margin-bottom: 30px; width: 90%;margin: 0px auto;}
+   .Terraza .seccion1 .ContainerLeft p{font-size: 15px;line-height: 21px;}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;bottom: 100px;}
    .Terraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;}
    .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
    .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 11vw;text-align: center;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 11vw;text-align: center;margin-left: 0px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px;width: 90%;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 19px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 7vw;text-align: center;padding: 4px;}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 7vw;text-align: center;margin-left: 0px;margin-top: 5px;margin-bottom: 0px;}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{width: 90%;margin: 0px auto;margin-top: 0px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 12px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .span{text-align: center;margin: 0px auto;line-height: 13px;font-size: 13px;}
 .Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
 .Terraza .seccion3{padding-top: 200px}
 .Terraza .seccion3 ul{margin-left: 0px}
@@ -250,24 +248,20 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 @media screen and (min-width: 502px) and (max-width: 669px) {
   .contenedor { width: 95%; }
     ul{margin-left: 0px;}
-   .seccion1{ border: 1px solid red; }
    .Terraza .seccion1 .primer_lista{display: flex;flex-direction: column;margin-left: 0px;}
    .Terraza .seccion1 .primer_lista li:nth-child(2){width: 100%;order: -1;}
    .Terraza .seccion1 .primer_lista li:nth-child(1){width: 100%;order: +1}
-   .Terraza .BarraContenedor{left: 50%;width: 90%;transform: translateX(-50%);bottom: 0px}
-   .Terraza .BarraFortuna{height: 350px;}
-   .Terraza #BarraFortuna{width: 90%;margin: 0px auto;}
-   .Terraza .seccion1 .ContainerLeft{height: 490px}
-   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;transform: translateX(-50%);bottom: 100px;}
+   .Terraza .seccion1 .ContainerLeft{margin-bottom: 90px;}
+   .Terraza .seccion1 .ContainerLeft .btnReserva{margin: 0px auto;margin-left: inherit;bottom: 100px;}
    .Terraza .seccion1 .ContainetTitle{left: 0px;width: 100%;color: #fff;background-color: rgba(0,0,0,0.4);padding: 10px;letter-spacing:6px;}
    .Terraza .seccion1 .ContainetTitle p:nth-child(2){margin: 5px auto;margin-left:0px;width: 100%;}
    .Terraza .seccion1 .ContainetTitle p{font-size: 10vw}
   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 11vw;text-align: center;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 11vw;text-align: center;margin-left: 0px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 19px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer span{text-align: center;margin: 0px auto;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 7vw;text-align: center;padding: 4px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 7vw;text-align: center;margin-left: 0px;margin-top: 5px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 10px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2vw;line-height: 19px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .span{text-align: center;margin: 0px auto;line-height: 17px;}
 .Terraza .seccion1 .TerrazaImg01{width: 80%;margin: 0px auto;}
 .Terraza .seccion3{padding-top: 200px}
 .Terraza .seccion3 ul li{width: 100%}
@@ -305,9 +299,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 }
 
 @media screen and (min-width: 670px) and (max-width: 770px) {
-	 .seccion1{ border: 1px solid blue; }
    .contenedor { width: 95%; }
- 	 .seccion1{ border: 1px solid green; }
   .Terraza .BarraFortuna{height: 310px;width: 50%;}
   .Terraza .seccion1 .primer_lista li:nth-child(1){width: 30%}
   .Terraza .seccion1 .ContainetTitle{left: -40%;}
@@ -318,11 +310,17 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .seccion1 .ContainerLeft .btnReserva i{margin-left: 60px;margin-top: 7px; }
 
    .Terraza .seccion1 .ContainerLeft .btnReserva p{margin: 0px;font-size: 15px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 350px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 45px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 45px;margin-left: 120px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {margin-left: 90px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 12px}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 90%;text-align: center;transform: translateY(-50%)translateX(-50%);left: 50%}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 8vw;text-align: center;}
+
+   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 8vw;text-align: center;margin-left: 0px}
+
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer{margin: 0px auto;margin-top: 30px}
+
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 2.5vw;line-height: 19px}
+
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .span{text-align: center;margin: 0px auto;}
+
    .Terraza .contentIngediente .contentTitulo{margin-top: 20px;margin-bottom: 10px;}
  .Terraza .contentIngediente img.iconIngrediente{width: 70px}
  .Terraza .contentIngediente img.iconIngrediente.lupulo{width: 60px;}
@@ -346,7 +344,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 771px) and (max-width: 1023px) {
 	.contenedor { width: 95%; }
-	 .seccion1{ border: 1px solid green; }
   .Slider .seccion1 .logo-animado{transform: scale(.5) translateY(50%);}
   .Slider .seccion1 .redesSociales .LineUp{display: none;}
    .Terraza .seccion1 .ContainetTitle{left: -42%;}
@@ -355,7 +352,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer{width: 430px}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 50px}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen{font-size: 50px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {margin-left: 120px}
   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p{font-size: 12px}
   .Terraza .contentIngediente .contentTitulo{margin-top: 20px;margin-bottom: 10px;}
 .Terraza .contentIngediente img.iconIngrediente{width: 70px}
@@ -363,7 +359,7 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .contentIngediente .contentTitulo img.vineta{padding: 0px;height: 10px;width: 40px;margin-top: 10px}
   .Terraza .contentIngediente h3{font-size: 20px;margin: 0px auto;}
   .Terraza .contentIngediente p{font-size: 11px}
-  .Terraza img.Botella{width: 50%;}
+  .Terraza img.Botella{width: 40%;}
   .Terraza .seccion4 p:nth-child(1){font-size: 50px}
   .Terraza .seccion4 span{font-size: 20px}
   .Terraza .seccion4 p.goldText{font-size: 50px}
@@ -381,24 +377,22 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 /***********Mac emmanuel 1280************/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 	.contenedor { width: 1000px; }
-	 .seccion1{ border: 1px solid blue; }
 
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1840px){
   .contenedor { width: 90%; }
+  .Terraza #BarraFortuna{width: 900px}
 
-	 .seccion1{ border: 1px solid green; }
    .Terraza .seccion1 .ContainetTitle{left: -45%;}
    .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
    .Terraza .seccion1 .TerrazaImg01{width: 65%;}
    .Terraza .seccion2 .bgContentBeer{position: relative;top: -40px;}
    .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 80px}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer span {margin-left: 190px;line-height: 55px;font-size: 20px;}
+   .Terraza .seccion2 .bgContentBeer .tituloBeer .span {line-height: 55px;font-size: 20px;}
    .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {font-size: 80px;margin-left: 200px;}
-   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {width: 450px;margin-left: 200px;}
    .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 15px;}
-    .Terraza img.Botella{width: 40%}
+    .Terraza img.Botella{width: 30%}
     .Terraza .seccion5 .Tequilaline.Up{top: -80px}
     .Terraza .seccion5 .Tequilaline.Down{bottom: -80px}
 }
@@ -406,16 +400,15 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 
 @media screen and (min-width: 1841px) and (max-width: 2240px){
   .contenedor { width: 85%; }
-  .seccion1{ border: 1px solid red; }
+  .Terraza #BarraFortuna{width: 1000px}
 
   .Terraza .seccion1 .ContainetTitle{left: -45%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 10vw;}
   .Terraza .seccion1 .TerrazaImg01{width: 65%;}
   .Terraza .seccion2 .bgContentBeer{position: relative;top: -40px;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 80px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer span {margin-left: 190px;line-height: 55px;font-size: 20px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .span {line-height: 55px;font-size: 20px;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {font-size: 80px;margin-left: 200px;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {width: 450px;margin-left: 200px;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 15px;}
    .Terraza img.Botella{width: 40%}
    .Terraza .seccion5 .Tequilaline.Up{top: -80px}
@@ -427,7 +420,6 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
 }
 @media (min-width: 2241px){
   .contenedor { width: 85%; }
-  .seccion1{ border: 1px solid blue; }
   .Terraza #BarraFortuna{width: 1200px}
   .Terraza .seccion1 .ContainetTitle{left: -35%;}
   .Terraza .seccion1 .ContainetTitle p{font-size: 8vw;}
@@ -436,9 +428,9 @@ li:before{content: 'x';position: absolute;left: -21px;opacity: .55;}
   .Terraza .seccion1 .ContainerLeft .btnReserva{margin-left: -80px;left: 30%;bottom: 50px}
   .Terraza .seccion2 .bgContentBeer{position: relative;top: -40px;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p:nth-child(1){font-size: 130px}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer span {margin-left: 190px;line-height: 140px;font-size:40px;}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .span {line-height: 140px;font-size:40px;}
   .Terraza .seccion2 .bgContentBeer .tituloBeer p.titleGreen {font-size: 130px;margin-left: 200px;}
-  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {width: 100%;margin-left: 200px;margin-top: 50px}
+  .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer {margin-top: 50px}
   .Terraza .seccion2 .bgContentBeer .tituloBeer .descriptionBeer p {font-size: 25px;font-weight: 500}
   .Terraza img.Botella{width: 35%}
   .Terraza .contentIngediente img.iconIngrediente{width: 170px}

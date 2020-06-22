@@ -1,0 +1,67 @@
+/************* RESUMEN CUENTA **************/
+.contentResumenCuenta{background-color: #efefef;width: 100%;height: 100%;}
+.contentResumenCuenta .cardsAnaliticas{width: 100%;display: flex;flex-direction: row;justify-content: space-around;padding: 50px}
+.contentResumenCuenta .cardsAnaliticasIndividual{width: 25%;background-color: #fff;text-align:center;padding-bottom: 20px}
+.cardsAnaliticasIndividual .headerCard .iconHelp{width: 20px;border: 1px solid #3BC9EB;border-radius: 50%;margin-left: 7px;margin-top: 7px;color: #3BC9EB;cursor: pointer;-webkit-transition: all .9s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .9s ease;}
+.cardsAnaliticasIndividual .headerCard .iconHelp:hover{border: 1px solid #000;color: #000;-webkit-transition: all .9s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .9s ease;}
+.cardsAnaliticasIndividual .IconCard{width: 100px;background-color: #fff;margin: 0px auto;}
+.cardsAnaliticasIndividual .IconCard.dinero{width: 50px;}
+
+.cardsAnaliticasIndividual .CardDigito{font-size: 75px;line-height: 75px;margin: 15px 0px;font-weight: 500;color:#D4BE85}
+.cardsAnaliticasIndividual .descripcionCard{color:#747474;}
+.cardsAnaliticasIndividual .showGrafica{margin: 30px 0px;color: #EC7A5C;text-decoration: underline;}
+
+
+
+/*********************** MEDIAS QUERIES ***********************/
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid red; } */
+  .contentResumenCuenta .cardsAnaliticasIndividual {width: 60%;margin: 10px;}
+  .cardsAnaliticasIndividual .IconCard{width: 50px;}
+  .cardsAnaliticasIndividual .IconCard.dinero{width: 25px;}
+  .cardsAnaliticasIndividual .CardDigito{font-size: 30px;line-height: 25px;}
+  .contentResumenCuenta .cardsAnaliticas{flex-direction: column;align-items: center;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid blue; } */
+  .contentResumenCuenta .cardsAnaliticasIndividual {width: 60%;margin: 10px;}
+  .cardsAnaliticasIndividual .IconCard{width: 50px;}
+  .cardsAnaliticasIndividual .IconCard.dinero{width: 25px;}
+  .cardsAnaliticasIndividual .CardDigito{font-size: 30px;line-height: 25px;}
+  .contentResumenCuenta .cardsAnaliticas{flex-direction: column;align-items: center;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid green; } */
+  .cardsAnaliticasIndividual .IconCard{width: 50px;}
+  .cardsAnaliticasIndividual .IconCard.dinero{width: 25px;}
+  .cardsAnaliticasIndividual .CardDigito{font-size: 30px;line-height: 25px;}
+
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid blue; } */
+
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1840px){
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid green; } */
+}
+
+
+@media screen and (min-width: 1841px) and (max-width: 2240px){
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid black; } */
+
+}
+@media (min-width: 2241px){
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid blue; } */
+}

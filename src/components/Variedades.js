@@ -190,6 +190,42 @@ class Variedades extends Component {
                   <div className="botella canita"></div>
                 </div>
               </Parallax>
+              <Parallax strength={-200} className={"parallax"}  bgImage={'https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}>
+                <div className='contentCervezas'>
+                  <div className='derecha'>
+                    <div className='galeria'>
+                      <ul className='col1'>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-canita3.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-canita1.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-canita4.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-canita2.jpeg"  /></div></li>
+
+                        <div className='clear'></div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="izquierda">
+                    <h1>Cañita Light</h1>
+                    <p className='descripcion-cerveza' >
+                      Cañita light, el sabor de una buena cerveza con menos calorias </p>
+                     <div className='especificaciones'>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiHops} id="Lupulo" color={'#fff'} />
+                           <p>7 IBUS</p>
+                         </div>
+                       </div>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiBottleWine} id="Botella"  color={'#fff'} />
+                           <p>3.9 % vol.</p>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div className="botella canitaLigth"></div>
+                </div>
+              </Parallax>
               <Parallax strength={-200} className={"parallax"}  bgImage={'https://images.pexels.com/photos/641038/pexels-photo-641038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'}>
                 <div className='contentCervezas'>
                   <div className='derecha'>
@@ -299,9 +335,80 @@ class Variedades extends Component {
                        </div>
                      </div>
                   </div>
-                  <div className="botella california"></div>
+                  <div className="botella sake"></div>
                 </div>
               </Parallax>
+              <Parallax strength={-200} className={"parallax"}  bgImage={'https://images.pexels.com/photos/325520/pexels-photo-325520.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}>
+                <div className='contentCervezas'>
+                  <div className='derecha'>
+                    <div className='galeria'>
+                      <ul className='col1'>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sor1.jpg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sor2.jpg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sor3.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sk4.jpg"  /></div></li>
+                        <div className='clear'></div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="izquierda">
+                    <h1>Sourindo</h1>
+                    <p className='descripcion-cerveza' >
+                      Las notas ácidas y refrescantes de nuestra sour con tamarindo la hacen ideal para disfrutarse antes, durante o después de la fiesta. </p>
+                     <div className='especificaciones'>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiHops} id="Lupulo" color={'#fff'} />
+                           <p>20 IBUS</p>
+                         </div>
+                       </div>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiBottleWine} id="Botella"  color={'#fff'} />
+                           <p>4.5 % vol.</p>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div className="botella sour"></div>
+                </div>
+              </Parallax>
+              <Parallax strength={-200} className={"parallax"}  bgImage={'https://images.pexels.com/photos/2388639/pexels-photo-2388639.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'}>
+                <div className='contentCervezas'>
+                  <div className='derecha'>
+                    <div className='galeria'>
+                      <ul className='col1'>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sk1.jpg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-af3.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-ca4.jpeg"  /></div></li>
+                        <li><div className='imgGaleria'> <img   src="/imgs/maridaje/maridaje-sk4.jpg"  /></div></li>
+                        <div className='clear'></div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="izquierda">
+                    <h1>CantaBeerto</h1>
+                    <p className='descripcion-cerveza' >
+                      Cerveza refrescante con notas cítricas frutales. Inspirada en el “Cantarito” de la región de tequila Jalisco. Compuesta de jugo de agave, agua, malta, lúpulo, levadura, toronja, naranja, limón y sal de mar. </p>
+                     <div className='especificaciones'>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiHops} id="Lupulo" color={'#fff'} />
+                           <p>7 IBUS</p>
+                         </div>
+                       </div>
+                       <div className='item'>
+                         <div className='Header'>
+                           <Icon path={mdiBottleWine} id="Botella"  color={'#fff'} />
+                           <p>4.8 % vol.</p>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+                  <div className="botella canta"></div>
+                </div>
+              </Parallax>
+
 
             </section>
 

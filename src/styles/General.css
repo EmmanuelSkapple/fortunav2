@@ -4,7 +4,7 @@ ul li:before {
    content: '';
 }
 img { display: block; width: 100%; border: none; }
-a { text-decoration: none; color: inherit; display: block; text-transform: uppercase;}
+a { text-decoration: none; color: inherit; display: block;}
 section { position: relative; }
 * { box-sizing: border-box; }
 *:focus { outline: none; }
@@ -38,6 +38,42 @@ p { -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transiti
 .LogoFortuna{width: 100%}
 #LogoFortuna{width: 100%}
 
+/************* ALERTA ***************/
+#snackbar.show{visibility: visible;  min-width: 250px; transform: translate(-50%, 0);background-color: #333; color: #fff; text-align: center; border-radius: 10px; padding: 16px; padding-top:5px ;position: fixed; z-index: 9999; left: 50%; bottom: 30px; }
+#snackbar.hidden{visibility: none; display: none}
+#snackbar.error{background-color: #c36565}
+#snackbar.warning{background-color: #bbad00}
+#snackbar.success{background-color: #68b37f}
+#snackbar .HeaderAlert{text-align: left;font-size: 15px;font-weight: 600;}
+#snackbar .lineDown{margin-bottom: 10px;background-color: #cccccc;height: 1px; width: 100%;opacity: 0.3}
+#snackbar .contentAlert{margin-bottom: 10px;text-align: left;font-size: 13px;font-weight: 400;}
+
+
+/************* LOADER PAGE ***************/
+
+#ContenedorLoader {background: rgb(235, 205, 86);}
+h4 {position: absolute;bottom: 20px;left: 20px;margin: 0;font-weight: 200;opacity: .5;font-family: sans-serif;color: #fff;}
+#subcontainerLoader {width: 70px;height: 35px;overflow: hidden;position: absolute;top: calc(50% - 17px);left: calc(50% - 35px);}
+#loader {width: 70px;height: 70px;border-style: solid;border-top-color: #d07323b8;border-right-color: #ea4f13d9;border-left-color: transparent;border-bottom-color: transparent;border-radius: 50%;box-sizing: border-box;animation: rotate 3s ease-in-out infinite;transform: rotate(-200deg)}
+@keyframes rotate {
+  0% { border-width: 10px; }
+  25% { border-width: 3px; }
+  50% {
+    transform: rotate(115deg);
+    border-width: 10px;
+  }
+  75% { border-width: 3px;}
+  100% { border-width: 10px;}
+}
+
+/************* Slider bar usuario ***************/
+
+.contentSlidePadre{display: flex;margin-top:48px}
+.contenedorSlideBar{width: 20%;height: 100vh;position: relative;background-color: #4b4b4b;color: #fff}
+.contentBodyCuenta{width: 100%;}
+.headerSlide{display: flex;padding: 15px;}
+.headerSlide h1{font-size: 15px;text-align: center;margin: 0px auto;}
+.headerSlide i{font-size: 15px;position: absolute;}
 
 /*********************** MEDIAS QUERIES ***********************/
 @media screen and (min-width: 320px) and (max-width: 479px) {

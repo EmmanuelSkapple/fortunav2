@@ -56,7 +56,7 @@ class InfoTerraza extends Component {
                       <p>Terr<span class="whiteText">aza</span> </p>
                       <p>Fo<span class="whiteText">rtuna</span></p>
                     </div>
-                    <img  src="/imgs/TerrazaNueva01.png"  />
+                    <img  src="/imgs/TerrazaNueva01.jpg"  />
                   </div>
 
                 </li>
@@ -88,7 +88,7 @@ class InfoTerraza extends Component {
                  </li>
                  <li>
                    <div className='contenTerrazaPasion'>
-                     <img  src="/imgs/infoTerraza.png"  />
+                     <img  src="/imgs/infoTerraza.jpg"  />
                    </div>
                  </li>
                  <div className='clear'></div>
@@ -104,13 +104,13 @@ class InfoTerraza extends Component {
                      <img  src="/imgs/TourGuiado.png"  />
                      <div className='contentInfoTour'>
                        <h1>Tour Guiado</h1>
-                       <p>Tour abierto al publico</p>
+                       <p>Tour abierto al público</p>
                        <p>lunes a domingo 11:30 am.</p>
                        <div className='btnReserva'>Reserva</div>
                        <p>Tour privados desde seis personas.</p>
                        <p>Martes a viernes 1-3:00pm.</p>
-                       <p>Sabados a domingo 1:00pm.</p>
-                       <p>Previa reservación</p>
+                       <p>Sábado a domingo 1:00pm.</p>
+                       <p>Prevía reservación</p>
                      </div>
                    </div>
                  </li>
@@ -131,11 +131,11 @@ class InfoTerraza extends Component {
            </section>
            <section className='seccion4'>
              <div className='contenedor'>
-               <h1>Proximos eventos</h1>
+               <h1>Próximos eventos</h1>
                <ul className='col3'>
                  <li>
                    <div className='contentEventos'>
-                     <div className='imagenEventos'><img  src="/imgs/Evento1.png"/></div>
+                     <div className='imagenEventos'><img  src="/imgs/Evento1.jpg"/></div>
                      <div className='descripcionEventos'>
                        <h3>World Beer Cup</h3>
                        <p>Cerveza Fortuna presente en el World Beer Cup 2020</p>
@@ -144,7 +144,7 @@ class InfoTerraza extends Component {
                  </li>
                  <li>
                    <div className='contentEventos'>
-                     <div className='imagenEventos'><img  src="/imgs/Evento2.png"/></div>
+                     <div className='imagenEventos'><img  src="/imgs/Evento2.jpg"/></div>
                      <div className='descripcionEventos'>
                        <h3>Primer Open House 2020</h3>
                        <p>Cerveza Fortuna te invita a nuestro primer Open House del año. llamanos y reserva tu lugar</p>
@@ -153,10 +153,10 @@ class InfoTerraza extends Component {
                  </li>
                  <li>
                    <div className='contentEventos'>
-                     <div className='imagenEventos'><img  src="/imgs/Evento3.png"/></div>
+                     <div className='imagenEventos'><img  src="/imgs/Evento3.jpg"/></div>
                      <div className='descripcionEventos'>
                        <h3>Posada de los cerveceros</h3>
-                       <p>Si eres cervecero y te la quieres pasar bien, visitanos el 27 de noviembre y disfruta nuestra posada</p>
+                       <p>Si eres cervecero y te la quieres pasar bien, visítanos el 27 de noviembre y disfruta nuestra posada</p>
                      </div>
                    </div>
                  </li>

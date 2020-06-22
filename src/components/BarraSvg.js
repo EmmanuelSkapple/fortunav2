@@ -7,18 +7,29 @@ class BarraSVG extends Component {
       mobil:false,
     }
   }
-componentDidMount(){
-  var width = window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
-  var height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
-  if (width <= 502) {
-    this.setState({mobil:true})
-  }
-}
-render (){
 
+  handleResize = () => {
+    console.log(this.state.mobil);
+
+    var width = window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+    var height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+    if (width <= 502) {
+      this.setState({mobil:true})
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+render (){
      return (
        <div className="BarraFortuna">
-         <svg  id="BarraFortuna" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox={this.state.mobil?"-350 0 3500 2000":"0 0 4095 2041.9"}>
+         <svg  id="BarraFortuna" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="-350 0 3500 2000">
 
           <style>{`.BarraFortuna .st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} .BarraFortuna .st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}`}</style>
           <g id="UMtFyd_1_">

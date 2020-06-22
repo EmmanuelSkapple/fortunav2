@@ -89,12 +89,16 @@ render (){
      return (
        <div className="Terraza">
          <section className="seccion1">
-          <div className="BarraContenedor">
-            <BarraSVG/>
-          </div>
             <ul className="col2 primer_lista">
               <li>
                 <div className="ContainerLeft">
+                  <img className='imgTerraza00'  src="/imgs/TerrazaNueva00.jpg"  />
+                  <div className="BarraContenedor">
+                    <div className='contentInfoTerraza'>
+                        <h2>¡Experiencia!</h2>
+                        <p>Terraza Fortuna es el espacio ideal para celebrar tus mejores momentos; desde cumpleaños y reuniones pequeñas, hasta bodas y eventos empresariales.</p>
+                    </div>
+                  </div>
                   <a onClick={()=>this.setState({reserva:!this.state.reserva})} className={!this.state.reserva?"btn btnReserva":"btn btnReserva LLama"}>{!this.state.reserva?<p>Reserva</p>:<p>Llama al : 3336277134</p>} <i class="fas fa-caret-right"></i></a>
                 </div>
               </li>
@@ -105,10 +109,10 @@ render (){
                     <p>Terr<span class="whiteText">aza</span> </p>
                     <p>Fo<span class="whiteText">rtuna</span></p>
                   </div>
-                  <img  src="/imgs/TerrazaNueva01.png"  />
+                  <img  src="/imgs/TerrazaNueva01.jpg"  />
                   <a className="btnMasInfo">
                     <Link to='/Terraza'>
-                      Mas informacion
+                      Más información
                     </Link>
                   </a>
                 </div>
@@ -119,10 +123,10 @@ render (){
          </section>
          <section className="seccion2">
           <div className="bgContentBeer">
-            <img className="bgBeer"  src="/imgs/BeerGardenWebHD.png"  />
+            <img className="bgBeer"  src="/imgs/BeerGardenWeb@2x.jpg"  />
             <div className='tituloBeer'>
-              <p>Relajate</p>
-              <span>en nuestro</span>
+              <p>Relájate</p>
+              <p className='span'>en nuestro</p>
               <p className='titleGreen'>BeerGarden</p>
               <div className='descriptionBeer'>
                 <p>
@@ -140,7 +144,7 @@ render (){
                 <li>
                     <div className='contentLetf'>
                         <div className='contentIngediente'>
-                          <img className="iconIngrediente"  src="/imgs/agua.png"  />
+                          <img className="iconIngrediente"  src="/imgs/agua2.png"  />
 
                           <div className='contentTitulo'>
                             <img className="vineta"  src="/imgs/vinetaLeft.png"  />
@@ -151,7 +155,7 @@ render (){
                         </div>
 
                         <div className='contentIngediente down'>
-                          <img className="iconIngrediente lupulo"  src="/imgs/lupulo.png"  />
+                          <img className="iconIngrediente "  src="/imgs/lupulo2.png"  />
                           <div className='contentTitulo '>
                             <img className="vineta"  src="/imgs/vinetaLeft.png"  />
                             <h3>Lupulo</h3>
@@ -170,7 +174,7 @@ render (){
                 <li>
                   <div className='contentRigth'>
                     <div className='contentIngediente'>
-                      <img className="iconIngrediente"  src="/imgs/malta.png"  />
+                      <img className="iconIngrediente"  src="/imgs/malta2.png"  />
                       <div className='contentTitulo'>
                         <img className="vineta"  src="/imgs/vinetaLeft.png"  />
                         <h3>Malta</h3>
@@ -179,13 +183,13 @@ render (){
                       <p> Elemento decisivo en su color, en sus aromas y cuerpo.</p>
                     </div>
                     <div className='contentIngediente down levadura'>
-                      <img className="iconIngrediente"  src="/imgs/levadura.png"  />
+                      <img className="iconIngrediente"  src="/imgs/levadura2.png"  />
                       <div className='contentTitulo'>
                         <img className="vineta"  src="/imgs/vinetaLeft.png"  />
                         <h3>Levadura</h3>
                         <img className="vineta"  src="/imgs/vinetaRigth.png"  />
                       </div>
-                      <p>Encargada de toda la magia para crear una cerveza perfecta</p>
+                      <p>Encargada de toda la magía para crear una cerveza perfecta.</p>
                     </div>
                   </div>
                 </li>
@@ -206,11 +210,11 @@ render (){
                      <img src="/imgs/fotoProcesoMiddle2.png"  />
                    </div>
                    <div className='imgLarge'>
-                     <img src="/imgs/fotoProcesoLarge1.png"  />
+                     <img src="/imgs/fotoProcesoLarge1.jpg"  />
                    </div>
                  </div>
                  <div className='contentProceso Down'>
-                   <img src="/imgs/fotoProcesoLarge2.png"  />
+                   <img src="/imgs/fotoProcesoLarge2.jpg"  />
                  </div>
                  <div className='lineDown'>
                    <img src="/imgs/lineaDecora.png"  />
@@ -224,15 +228,15 @@ render (){
                  <div className='contentTours'>
                    <h3 className='goldText'>Tours guiados</h3>
                    {!this.state.reservaTour?
-                     <p>Disfruta de una experiencia completa, dentro de nuestra planta conocerás todo el proceso que se lleva acabo para poder crear la cerveza artesanal.</p>
+                     <p>Disfruta de una experiencia completa, dentro de nuestra planta conocerás todo el proceso que realizamos para poder crear la cerveza artesanal.</p>
                      :
                      <div>
-                       <div style={{pointerEvents: 'none',margin:'5px'}}>LLama al : 33 3627 7134</div>
+                       <div style={{pointerEvents: 'none',margin:'5px'}}>Llama al : 33 3627 7134</div>
                        <div style={{pointerEvents: 'none',margin:'5px'}}>Cel : 33 13 52 58 72</div>
                        <div style={{pointerEvents: 'none',margin:'5px'}}>Email : arodriguez@cervezafortuna.com</div>
                      </div>
                    }
-                   <div  onClick={()=>this.setState({reservaTour:!this.state.reservaTour})} className='ReservarTour'>{this.state.reservaTour?'Reserva':'Regresar'}</div>
+                   <div  onClick={()=>this.setState({reservaTour:!this.state.reservaTour})} className='ReservarTour'>{this.state.reservaTour?'Regresar':'Reserva'}</div>
                  </div>
                </li>
                <div className='clear'></div>
@@ -254,7 +258,7 @@ render (){
              {!this.state.VerMapa?
                <div>
                  <h1>Ruta del Tequila</h1>
-                 <p>Cerveza Fortuna es la unica y primera cervecería afiliada a la Ruta del Tequila.</p>
+                 <p>Cerveza Fortuna es la única y primera cervecería afiliada a la Ruta del Tequila.</p>
                  <p className='verMapa' onClick={()=>this.setState({VerMapa:!this.state.VerMapa})}>Ver mapa</p>
                </div>:
                <div>
