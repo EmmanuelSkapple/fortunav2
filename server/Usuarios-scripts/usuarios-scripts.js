@@ -28,7 +28,7 @@ function loggeoUsuarios (req,res,dataBase) {
         res.send({status:'401'});
       }
       else{
-        if (user.val().key =='SoHUpJWoGgZPa483B6SPrTU0HJv2') {
+        if (user.val().key =='yIp8C3YGYJRwvQFP9w24SFpGVFd2') {
           res.send({status:'OK',mode:1});
         }
         else{
@@ -138,6 +138,7 @@ function TomarPrecioTotalCarrito (req,res,dataBase){
   respuestaCarrito.then((data)=>{
       let ArrayPromesas = [];
       let Total=0;
+      let Totalitems = 0;
       if (data) {
           data.carrito.forEach((it,index,ArrayFile)=>{
             let respuestaStorage = Producto.TomarProductoId(dataBase,it.idProducto,it.nombreProducto);
@@ -146,6 +147,7 @@ function TomarPrecioTotalCarrito (req,res,dataBase){
                 if (producto) {
                   let subTotalProducto = parseInt(producto.productoUnico.precioDescuentoProducto)*parseInt(it.cantidadProducto);
                   Total = Total + subTotalProducto;
+                  Totalitems += it.cantidadProducto;
                 }
               }).catch(error=>{
                 console.log(error);
@@ -154,11 +156,11 @@ function TomarPrecioTotalCarrito (req,res,dataBase){
           })
         Promise.all(ArrayPromesas)
         .then(()=>{
-          res.send({status:'OK',total:Total,totalItems:data.carrito.length})
+          res.send({status:'OK',total:Total,totalItems:Totalitems})
         })
       }
     else{
-      res.send({status:'OK',total:Total,totalItems:data.carrito.length})
+      res.send({status:'OK',total:Total,totalItems:Totalitems})
 
     }
   })

@@ -36,7 +36,9 @@
   .Variedades .botella.ipa{background-position: 200px 370px ; background-size: 90px;}
   .Variedades .botella.stout{background-position: 200px 370px ; background-size: 90px;}
   .Variedades .botella.sake{background-position: 200px 370px ; background-size: 90px;}
-
+  .Variedades .botella.canitaLigth{background-position: 200px 370px; background-size: 90px;}
+  .Variedades .botella.canta{background-position: 200px 370px; background-size: 90px;}
+  .Variedades .botella.sour{background-position: 200px 370px; background-size: 90px;}
   .Variedades .izquierda{width: 90%;left: 30px;top: -40px;}
   .Variedades .contentCervezas h1{font-size: 15px}
   .Variedades .contentCervezas p.descripcion-cerveza{font-size: 9px;line-height: 14px}
@@ -59,6 +61,9 @@
   .Variedades .botella.ipa{background-position: 240px 370px; background-size: 110px;}
   .Variedades .botella.stout{background-position: 240px 370px; background-size: 110px;}
   .Variedades .botella.sake{background-position: 240px 370px; background-size: 110px;}
+  .Variedades .botella.canitaLigth{background-position: 240px 370px; background-size: 110px;}
+  .Variedades .botella.canta{background-position: 240px 370px; background-size: 110px;}
+  .Variedades .botella.sour{background-position: 240px 370px; background-size: 110px;}
 
   .Variedades .izquierda{width: 90%;left: 30px;top: -30px;}
   .Variedades .contentCervezas h1{font-size: 20px}
@@ -81,6 +86,9 @@
   .Variedades .botella.ipa{background-position: right;}
   .Variedades .botella.stout{background-position: right;}
   .Variedades .botella.sake{background-position: right;}
+  .Variedades .botella.canitaLigth{background-position: right;}
+  .Variedades .botella.canta{background-position: right;}
+  .Variedades .botella.sour{background-position: right;}
 
   .Variedades .izquierda{width: 45%;left: 30px;top: -30px;}
   .Variedades .contentCervezas h1{font-size: 25px}
@@ -130,6 +138,9 @@
 .Variedades .botella.ipa{background-position: center 100px;}
 .Variedades .botella.stout{background-position: center 100px;}
 .Variedades .botella.sake{background-position: center 100px;}
+.Variedades .botella.canitaLigth{background-position: center 100px;}
+.Variedades .botella.canta{background-position: center 100px;}
+.Variedades .botella.sour{background-position: center 100px;}
 }
 
 
@@ -149,6 +160,9 @@
 .Variedades .botella.ipa{background-position: center 160px;}
 .Variedades .botella.stout{background-position: center 160px;}
 .Variedades .botella.sake{background-position: center 160px;}
+.Variedades .botella.canitaLigth{background-position: center 160px;}
+.Variedades .botella.canta{background-position: center 160px;}
+.Variedades .botella.sour{background-position: center 160px;}
 }
 
 @media screen and (min-width: 1840px)  {
@@ -167,4 +181,7 @@
 .Variedades .botella.ipa{background-position: center 160px;}
 .Variedades .botella.stout{background-position: center 160px;}
 .Variedades .botella.sake{background-position: center 160px;}
+.Variedades .botella.canitaLigth{background-position: center 160px;}
+.Variedades .botella.canta{background-position: center 160px;}
+.Variedades .botella.sour{background-position: center 160px;}
 }

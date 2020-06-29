@@ -7,6 +7,7 @@ import {Direccion} from '../strings/peticiones.js';
 import ResumenCuenta from '../components/adminComponents/ResumenCuenta.js';
 import MisVentas from '../components/adminComponents/MisVentas.js'
 import MisProductos from '../components/adminComponents/MisProductos.js'
+import Categorias from '../components/adminComponents/Categorias.js'
 import InfoExtraTerraza from '../components/infoTerraza.js'
 import Variedades from '../components/Variedades.js';
 import Tienda from '../components/Tienda/Tienda.js';
@@ -26,6 +27,7 @@ class AdminRoutes extends Component{
           <Route exact path="/fortunaAdmin" component={ResumenCuenta}/>
           <Route path="/fortunaAdmin/Ventas" component={MisVentas}/>
           <Route path="/fortunaAdmin/MisProductos" component={MisProductos}/>
+          <Route path="/fortunaAdmin/Categorias" component={Categorias}/>
           <Route  path= '/' component={HomepageLayout}/>
           <Route  path= '/Terraza' component={InfoExtraTerraza}/>
           <Route  path= '/tienda' component={Tienda}/>

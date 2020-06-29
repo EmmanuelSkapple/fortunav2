@@ -31,7 +31,7 @@ function TomarProductoId(bd,idProducto,NameProducto){
       if(snapShot.exists()){
         snapShot.forEach(snapBaby=>{
           snapBaby.forEach(snapFeto=>{
-            if (snapFeto.val().idProducto == idProducto && snapFeto.val().urlProducto ==  NameProducto && snapFeto.val().StatusProducto==1) {
+            if (snapFeto.val().idProducto == idProducto && snapFeto.val().StatusProducto==1) {
               resolve({productoUnico:snapFeto.val()});
             }
           })

@@ -41,6 +41,7 @@ class Login extends Component {
       ventana:1,
       loading:false,
       openAlert:false,
+      EmailRecuperar:'',
     }
   }
 
@@ -65,10 +66,10 @@ class Login extends Component {
                 PassConfirmacionRegistro:'',
                 loading:false,
                 openAlert:true,
-                tipoAlerta: 'success',
+                AlertType: 'success',
                 registro:false,
                 titleAlert:"¡Exito!",
-                messageAlert:'Tu cuenta fue creada, ¡ingresa ahora!',
+                AlertMessage:'Tu cuenta fue creada, ¡ingresa ahora!',
               })
               window.location.reload();
             }
@@ -76,9 +77,9 @@ class Login extends Component {
               self.setState({
                 loading:false,
                 openAlert:true,
-                tipoAlerta: 'error',
+                AlertType: 'error',
                 titleAlert:"Algo anda mal!",
-                messageAlert:res.data.contentStatus,
+                AlertMessage:res.data.contentStatus,
               })
             }
           })
@@ -87,9 +88,9 @@ class Login extends Component {
       self.setState({
         loading:false,
         openAlert:true,
-        tipoAlerta: 'error',
+        AlertType: 'error',
         titleAlert:"Algo anda mal!",
-        messageAlert:'Llena todos los campos',
+        AlertMessage:'Llena todos los campos',
       })
     }
 
@@ -118,17 +119,17 @@ class Login extends Component {
         self.setState({
           loading:false,
           openAlert:true,
-          tipoAlerta: 'error',
+          AlertType: 'error',
           titleAlert:"Contraseña incorrecta",
-          messageAlert:"Tu contraseña no es correcta, intentalo de nuevo."
+          AlertMessage:"Tu contraseña no es correcta, intentalo de nuevo."
         })
       }
       else if(errorCode==='auth/user-not-found'){
         self.setState({
           loading:false,
           openAlert:true,
-          tipoAlerta: 'warning',
-          messageAlert:"Usuario no existe, crea una cuenta para poder ingresar",
+          AlertType: 'warning',
+          AlertMessage:"Usuario no existe, crea una cuenta para poder ingresar",
           titleAlert:"Usuario inexistente"
         })
       }
@@ -161,13 +162,29 @@ class Login extends Component {
     }
   }
 
-  resetAlert=()=>{this.setState({openAlert:false,tipoAlerta:'',messageAlert:'',titleAlert:''})}
+  resetAlert=()=>{this.setState({openAlert:false,AlertType:'',AlertMessage:'',titleAlert:''})}
 
   handleKeyPress = event => {
     if (event.key == 'Enter') {
       this.handleLogin();
     }
   };
+
+  handleRecuperar=()=>{
+    let self = this;
+    this.setState({loading:true})
+    if (this.state.EmailRecuperar) {
+      firebase.auth().sendPasswordResetEmail(this.state.EmailRecuperar).then(function() {
+        self.setState({registro:false,olvideContrasena:false,loading:false,openAlert:true,AlertType: 'success',titleAlert:"Exito!",AlertMessage:'se mando un correo para restrablacer tu contraseña'})
+      }).catch(function(error) {
+        self.setState({loading:false,openAlert:true,AlertType: 'error',titleAlert:"Error!",AlertMessage:error})
+      });
+    }else{
+      self.setState({loading:false,openAlert:true,AlertType: 'error',titleAlert:"Error!",AlertMessage:'ingresa correo'})
+
+    }
+
+  }
 
   render (){
        return (
@@ -176,21 +193,43 @@ class Login extends Component {
              <div className='bgLogin'>
                {!this.state.registro?
                  <div className='loginContent'>
-                    <div className='loginHeader'>Ingresar</div>
-                    <div className='loginForm' onKeyPress={this.handleKeyPress}>
-                        <input placeholder='Jose.Perez@ejemplo.com' onChange={(e)=>this.setState({EmailLogin : e.target.value})} />
-                        <input value={this.state.PassLogin} type='password' placeholder='******' onChange={(e)=>this.setState({PassLogin : e.target.value})}/>
-                    </div>
-                    <div className='forgotPassword'>Olvide mi contraseña</div>
-                    {this.state.loading?
-                      <div  className='btnIngresar'  >
-                        <Icon loading name='spinner' color='white' />
-                      </div>
-                      :
-                      <div className='btnIngresar' onClick={this.handleLogin}>Entrar</div>
-                    }
-                    <div className='btnCrearCuenta' onClick={()=>this.setState({registro:true})}>Crear cuenta</div>
+                   {this.state.olvideContrasena?
+                     <div>
+                        <div className='loginHeader'>Recuperar</div>
+                        <div className='loginForm' onKeyPress={this.handleKeyPress}>
+                            <input placeholder='Jose.Perez@ejemplo.com' onChange={(e)=>this.setState({EmailRecuperar : e.target.value})} />
+                        </div>
+                        <div onClick={()=>this.setState({olvideContrasena:!this.state.olvideContrasena})} className='forgotPassword'>Regresar</div>
+
+                        {this.state.loading?
+                          <div  className='btnIngresar'  >
+                            <Icon loading name='spinner' color='white' />
+                          </div>
+                          :
+                          <div className='btnIngresar' onClick={this.handleRecuperar}>Recuperar</div>
+                        }
+                     </div>
+                     :
+                     <div>
+                        <div className='loginHeader'>Ingresar</div>
+                        <div className='loginForm' onKeyPress={this.handleKeyPress}>
+                            <input placeholder='Jose.Perez@ejemplo.com' onChange={(e)=>this.setState({EmailLogin : e.target.value})} />
+                            <input value={this.state.PassLogin} type='password' placeholder='******' onChange={(e)=>this.setState({PassLogin : e.target.value})}/>
+                        </div>
+                        <div onClick={()=>this.setState({olvideContrasena:!this.state.olvideContrasena})} className='forgotPassword'>Olvide mi contraseña</div>
+                        {this.state.loading?
+                          <div  className='btnIngresar'  >
+                            <Icon loading name='spinner' color='white' />
+                          </div>
+                          :
+                          <div className='btnIngresar' onClick={this.handleLogin}>Entrar</div>
+                        }
+                        <div className='btnCrearCuenta' onClick={()=>this.setState({registro:true})}>Crear cuenta</div>
+                     </div>
+
+                   }
                  </div>
+
                  :
                  <div className='registroContent'>
                     <div className='loginHeader'>Registro</div>
@@ -211,13 +250,13 @@ class Login extends Component {
                          <input placeholder='Jose.Perez@ejemplo.com' onChange={(e)=>this.setState({EmailRegistro : e.target.value})} />
                        </div>
                        <div className='item'>
-                         <label>Telefono</label>
+                         <label>Teléfono</label>
                          <input placeholder='1234567890' onChange={(e)=>this.setState({TelefonoRegistro : e.target.value})} />
                        </div>
                       </div>
                       <div className='middleInputs'>
                        <div className='item'>
-                         <label>Constraseña</label>
+                         <label>Contraseña</label>
                          <input type={this.state.showPass?'text':'password'} placeholder='******' onChange={this.HandleValidarPass} />
                            {this.state.ErrorLengthPassword?
                              <label className='warningPassword'>Minimo 8 caracteres</label> :<div></div>
@@ -235,8 +274,8 @@ class Login extends Component {
                              }
                            </div>
                        </div>
-                       <div className='item'>
-                         <label>Confirmar Constraseña</label>
+                       <div className='item confirmPass'>
+                         <label>Confirmar Contraseña</label>
                          <input type={this.state.showPass?'text':'password'} placeholder='******' onChange={this.ConfirmarPass} />
                          {this.state.ErrorConfirmarPassword == 2?
                            <label className='warningPassword'>No coiciden las contraseñas</label>
@@ -262,7 +301,7 @@ class Login extends Component {
                }
              </div>
            </section>
-           <Alerta titleAlert={this.state.titleAlert} messageAlert={this.state.messageAlert} tipoAlerta={this.state.tipoAlerta} openAlert={ this.state.openAlert} resetAlert={this.resetAlert}/>
+           <Alerta titleAlert={this.state.titleAlert} AlertMessage={this.state.AlertMessage} AlertType={this.state.AlertType} openAlert={ this.state.openAlert} resetAlert={this.resetAlert}/>
          </div>
       )
     }

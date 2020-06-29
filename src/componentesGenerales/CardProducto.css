@@ -16,17 +16,31 @@
 
 /*********************** MEDIAS QUERIES ***********************/
 @media screen and (min-width: 320px) and (max-width: 479px) {
-
+  .CardPromociones {height: 300px;}
+  .CardPromociones .tituloItem{font-size: 15px;}
+  .CardPromociones .imgItem img {height: 100px;}
+  .CardPromociones .unidades {font-size: 11px;margin: 0px;line-height: 11px;}
+  .CardPromociones .btnMasInfo{margin: 5px auto;}
+  .CardPromociones .precioItem {font-size: 11px;}
+  .CardPromociones .precioDecuento {font-size: 11px;line-height: 12px;}
 }
 @media screen and (min-width: 480px) and (max-width: 540px) {
-
+  .CardPromociones .tituloItem{font-size: 14px;}
+  .CardPromociones {height: 320px;}
   .CardPromociones .imgItem img {height: 100px;}
-  .CardPromociones {height: 330px;}
-
+  .CardPromociones .unidades {font-size: 12px;margin: 0px;line-height: 13px;}
+  .CardPromociones .btnMasInfo{margin: 5px auto;}
+  .CardPromociones .precioItem {font-size: 12px;}
+  .CardPromociones .precioDecuento {font-size: 15px;}
 }
 
 @media screen and (min-width: 541px) and (max-width: 599px) {
-  .CardPromociones {height: 400px;}
+  .CardPromociones {height: 360px;}
+  .CardPromociones .imgItem img {height: 130px;}
+  .CardPromociones .unidades {font-size: 12px;margin: 0px;line-height: 13px;}
+  .CardPromociones .btnMasInfo{margin: 5px auto;}
+  .CardPromociones .precioItem {font-size: 12px;}
+  .CardPromociones .precioDecuento {font-size: 15px;}
 
 
 }

@@ -211,7 +211,7 @@ class FinalizarCompra extends Component{
                   <div className='infoExtraContent'>
                     <div className='infoProductosFinalizar'>
                       <h3>Total productos</h3>
-                      <p>{this.state.infoExtraCarrito.totalItems} productos</p>
+                      <p>{this.state.infoExtraCarrito.totalItems} producto(s)</p>
                     </div>
                     <div className='infoProductosFinalizar'>
                       <h3>Subtotal</h3>
@@ -228,7 +228,23 @@ class FinalizarCompra extends Component{
                   </div>
                   <div className='finalizarCompra'>
                     {this.state.stepFializarCompra==0?
-                      <div onClick={()=>this.setState({stepFializarCompra:1})} className='BtnPagarCarrito'>Pagar</div>
+                      <div>
+                        {this.state.infoExtraCarrito.total>0?
+                          <div>
+                            {this.state.infoExtraCarrito.totalItems < 12?
+                              <div className='BtnPagarCarrito'>
+                                Compra minima 12 articulos
+                              </div>
+                              :
+                              <div onClick={()=>this.setState({stepFializarCompra:1})} className='BtnPagarCarrito'>Pagar</div>
+
+                            }
+                          </div>
+                          :
+                          <div>
+                          </div>
+                        }
+                      </div>
                       :
                       <div>
                         {this.state.loading?

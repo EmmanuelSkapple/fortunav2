@@ -14,6 +14,15 @@
 
 
 /*********************** MEDIAS QUERIES ***********************/
+@media (max-width: 319px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid red; } */
+  .contentResumenCuenta .cardsAnaliticasIndividual {width: 60%;margin: 10px;}
+  .cardsAnaliticasIndividual .IconCard{width: 50px;}
+  .cardsAnaliticasIndividual .IconCard.dinero{width: 25px;}
+  .cardsAnaliticasIndividual .CardDigito{font-size: 30px;line-height: 25px;}
+  .contentResumenCuenta .cardsAnaliticas{flex-direction: column;align-items: center;}
+}
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.contenedor { width: 95%; }
 	/* .seccion1{ border: 1px solid red; } */

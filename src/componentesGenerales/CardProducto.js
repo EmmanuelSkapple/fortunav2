@@ -30,7 +30,9 @@ class CardProducto extends Component{
             </Link>
           </div>
           {/* <div className='btnAgregarCarrito'>Agregar al carrito</div> */}
-        <div className='btnMasInfo'>Ver mas</div>
+          <Link to={"/producto/"+this.props.producto.idProducto+"/"+this.props.producto.urlProducto}>
+            <div className='btnMasInfo'>Ver mas</div>
+          </Link>
       </div>
     )
   }

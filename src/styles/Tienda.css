@@ -39,10 +39,43 @@
 
 
 /*********************** MEDIAS QUERIES ***********************/
+@media(max-width: 319px) {
+	.contenedor { width: 95%; }
+	/* .seccion1{ border: 1px solid green; } */
+  .Tienda .seccion2 ul li{width: 50%}
+	.Tienda .headerTienda .titleTiendaSeccion{font-size: 4vw}
+	.Tienda .headerTienda .divisorHeaderTienda{width: 25%}
+	.Tienda .seccion1 .bannerContent {height: 35vw}
+	.Tienda .seccion1 .bannerContent img{height: 35vw}
+	.Tienda .seccion1 .bannerContent .bannerText h2{font-size: 7.2vw}
+	.Tienda .seccion1 .bannerContent .bannerText p{font-size: 3vw}
+	.Tienda .seccion1 .bannerContent .bannerText{width: 80%}
+	.DetalleProducto .infoProducto h3{font-size: 15px;margin: 0px}
+	.DetalleProducto .infoProducto p{font-size: 12px;}
+	.DetalleProducto .imgProductoDetalle{margin-top:10px;width: 70%;}
+	.DetalleProducto .infoExtraProducto h2{font-size: 30px;color: #000}
+	.DetalleProducto .imgProductoDetalle img{height: 270px}
+	.DetalleProducto ul li:nth-child(1) {width: 50%;}
+	.DetalleProducto ul li:nth-child(2) {width: 50%;}
+	.DetalleProducto ul li:nth-child(3) {width: 100%;}
+
+	.DetalleProducto .bgDetalleProducto{padding:50px 40px;height: auto;}
+	.DetalleProducto .infoExtraProducto p{font-size: 11px;line-height: 19px;color: #000}
+	.DetalleProducto .infoExtraProducto .precioItem{font-size: 15px;color: #000}
+	.DetalleProducto .infoExtraProducto .precioDecuento{font-size: 20px;color: #000}
+	.DetalleProducto .cantidad{font-size: 15px;}
+	.DetalleProducto .inputCantidad{width: 120px;padding: 5px;}
+	.DetalleProducto .return {transform: none;top: 50px;}
+
+	.DetalleProducto .return i{font-size: 25px;}
+	.DetalleProducto .actionsDetalleProducto .btnAgregarCarrito{font-size: 15px;font-size: 12px;width: 50%;padding: 15px 5px; align-self: center;}
+	.DetalleProducto .inputCantidad{border:  2px solid #000}
+
+}
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.contenedor { width: 95%; }
 	/* .seccion1{ border: 1px solid green; } */
-  .Tienda .seccion2 ul li{width: 100%;height: 20vw}
+  .Tienda .seccion2 ul li{width: 50%}
 	.Tienda .headerTienda .titleTiendaSeccion{font-size: 4vw}
 	.Tienda .headerTienda .divisorHeaderTienda{width: 25%}
 	.Tienda .seccion1 .bannerContent {height: 35vw}

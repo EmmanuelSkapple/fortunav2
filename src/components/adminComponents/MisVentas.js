@@ -194,7 +194,6 @@ class MisCompras extends Component{
               </div>
               :
               <div>
-                <div onClick={()=>this.setState({verCompra:!this.state.verCompra})} className='return'><Icon name='arrow left'></Icon></div>
 
                 <ul  className='col2'>
                   <li>
@@ -266,7 +265,7 @@ class MisCompras extends Component{
                       <p>{this.state.productoSeleccionado.idTransaccion}</p>
                     </div>
                     <div className='CardInfo Compra'>
-                      <h3>Informacion de pago</h3>
+                      <h3>Información de pago</h3>
                       <div className='cargoInfo'>
                         <div className='itemCargoInfo'>
                           <h5>Tarjeta</h5>
@@ -279,14 +278,14 @@ class MisCompras extends Component{
                       </div>
                     </div>
                     <div className='CardInfo Compra'>
-                      <h3>Informacion de envio</h3>
+                      <h3>Información de envío</h3>
                       <div className='cargoInfo'>
                         <div className='itemCargoInfo'>
                           <h5>Status</h5>
                           {this.state.productoSeleccionado.fechaEntrega?
                             <p>Antes del {this.state.productoSeleccionado.fechaEntrega}</p>
                             :
-                            <p>Estamos preparando el envio</p>
+                            <p>Estamos preparando el envío</p>
                           }
                         </div>
                         <div className='itemCargoInfo'>
@@ -306,7 +305,7 @@ class MisCompras extends Component{
                           <p>{this.state.productoSeleccionado.direccionEnvio.NombreDireccion}</p>
                         </div>
                         <div className='itemCargoInfo'>
-                          <h5>Telefono contacto</h5>
+                          <h5>Teléfono contacto</h5>
                           <p>{this.state.productoSeleccionado.direccionEnvio.numContactoDireccion}</p>
                         </div>
                       </div>
@@ -357,8 +356,8 @@ class CardItemProducto extends Component {
         </div>
         <div className='infoCardItem center'>
           <h3>Fecha entrega</h3>
-          {this.props.producto.fechaEntrega?
-            <p>Antes del {this.props.producto.fechaEntrega}</p>
+          {this.props.producto.FechaEntrega?
+            <p>Antes del {this.props.producto.FechaEntrega}</p>
             :
             <p>Estamos preparando el envio</p>
           }

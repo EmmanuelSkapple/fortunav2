@@ -2,7 +2,7 @@
 .Slider .MayorEdadDimmer{display: none;width: 100%;position: fixed;height: 100vh;z-index: 9999;background-color: #000;}
 .Slider .MayorEdadDimmer.activo{display: block;width: 100%;position: fixed;height: 100vh;z-index: 9999;background-color: #000;}
 .Slider .MayorEdadDimmer .contentIzquierdoEdad{width: 60%;position: absolute;z-index: 9999;top: 30%;left: 55%;transform: translate(-50%, -50%);}
-.Slider .MayorEdadDimmer .imgContentEdad{width: 50%;height: 100%;background-image: url('/imgs/MayorEdad.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;}
+.Slider .MayorEdadDimmer .imgContentEdad{width: 50%;height: 100%;background-image: url('/imgs/MayorEdad1@2x.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;}
 .Slider .MayorEdadDimmer .contentIzquierdoEdad h1{font-size: 7vw}
 .Slider .MayorEdadDimmer .contentIzquierdoEdad span.whiteText{color: white}
 .Slider .MayorEdadDimmer .contentIzquierdoEdad span.blackText{color: black}

@@ -117,7 +117,7 @@ class DetalleProducto extends Component {
                      <div className='infoProducto'>
                        <div className='twoItems'>
                          <div className='itemInfo'>
-                           <h3>Cerveceria:</h3>
+                           <h3>Cervecería:</h3>
                            <p>{this.state.productoEncontrado.marcaProducto}</p>
                          </div>
                          <div className='itemInfo'>
@@ -149,7 +149,11 @@ class DetalleProducto extends Component {
                    </li>
                    <li>
                      <div className='imgProductoDetalle'>
-                       <img  src={this.state.productoEncontrado.imagenes?this.state.productoEncontrado.imagenes[0]:''} />
+                       {this.state.productoEncontrado.imagenes?
+                         <img  alt='botella' src={this.state.productoEncontrado.imagenes?this.state.productoEncontrado.imagenes[0]:''} />
+                         :
+                         <Icon loading name='spinner'></Icon>
+                       }
                      </div>
                    </li>
                    <li>

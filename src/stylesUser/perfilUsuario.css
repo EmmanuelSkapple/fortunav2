@@ -89,6 +89,18 @@
 
 
 /*********************** MEDIAS QUERIES ***********************/
+@media (max-width: 319px) {
+  .contenedor { width: 95%; }
+  .contentPerfil{padding: 10px 0px}
+  .contentPerfil ul li {width: 100%;}
+  .CardInfoBasica .Nivel{font-size: 20px;}
+  .CardInfoBasica .id{font-size: 11px;}
+  .titlePerfil h3 {font-size: 13px;}
+  .CardInfo .datosContent .datosTitle{font-size: 13px;}
+  .CardInfo .datosContent .datosDescripcion {font-size: 13px;}
+  .CardInfo.MensajeEnvios p{font-size: 11px;}
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .contenedor { width: 95%; }
   .contentPerfil{padding: 10px 0px}

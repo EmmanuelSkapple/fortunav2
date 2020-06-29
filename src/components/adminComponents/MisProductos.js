@@ -138,7 +138,7 @@ class CardItemProducto extends Component {
   }
 
   render(){
-    let dt = new Date(1591372188902);
+    let dt = new Date(this.props.producto.fechaCreacion);
     let fechaCreacion = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
     return(
       <div>
@@ -157,8 +157,8 @@ class CardItemProducto extends Component {
               <p className='idProducto'>{this.props.producto.idProducto}</p>
             </div>
             <div className='infoCardItem center'>
-              <h3>Precio</h3>
-              <p>{this.props.producto.precioProducto}</p>
+              <h3>Precio Final</h3>
+              <p>{this.props.producto.precioDescuentoProducto}</p>
             </div>
             <div className='infoCardItem center'>
               <h3>Cantidad</h3>
@@ -338,7 +338,7 @@ class NuevoProducto extends Component{
           <AlertSnack openAlert={this.state.openAlert} titleAlert={this.state.titleAlert} resetAlert={this.resetAlert} AlertMessage={this.state.AlertMessage} AlertType={this.state.AlertType}/>
           <div className='bgNuevoProducto'>
             <div className='filterOrange'></div>
-            <img src='/imgs/LoginBg.png'/>
+            <img src='/imgs/LoginBg.jpg'/>
           </div>
           <div className='contentPrimerPaso '>
             <div className='contentBarProcess'>
@@ -478,7 +478,7 @@ class NuevoProductoPaso2 extends Component{
                 <input value={this.state.precioProducto} type='number' onChange={(e)=>this.setState({precioProducto:e.target.value})}/>
               </div>
               <div className='input label'>
-                <p   className='tituloInputNuevoProducto'>Precio Descuento</p>
+                <p   className='tituloInputNuevoProducto'>P.Descuento</p>
                 <input value={this.state.precioDescuentoProducto} type='number' onChange={(e)=>this.setState({precioDescuentoProducto:e.target.value})}/>
               </div>
             </div>
@@ -578,7 +578,7 @@ class NuevoProductoPaso4 extends Component{
           {!this.state.loading?
             <div  className='btnStepper' onClick={this.goBack}>Siguiente</div>
             :
-            <div  className='btnStepper'><Icon loading={this.state.loading} name='spinner'></Icon></div>
+            <div  className='btnStepper'><Icon  loading={this.state.loading} name='spinner'></Icon></div>
           }
         </div>
       </div>
@@ -776,8 +776,6 @@ class ActualizarProducto extends Component{
   resetAlert = ()=>{this.setState({openAlert:false,titleAlert:'',AlertMessage:'',AlertType:''})}
 
   render(){
-    let dt = new Date(1591372188902);
-    let fechaCreacion = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear();
     return(
       <div className='CardItemModificar'>
 
@@ -853,7 +851,7 @@ class ActualizarProducto extends Component{
           <li>
             <div className='infoCardItem center Modificar'>
               <div className='input label'>
-                <p className='tituloInputNuevoProducto'>Precio Descuento</p>
+                <p className='tituloInputNuevoProducto'>P.Descuento</p>
                 <input value={this.state.precioDescuentoProducto} type='text' onChange={(e)=>this.setState({precioDescuentoProducto:e.target.value})}/>
               </div>
             </div>
@@ -902,6 +900,10 @@ class ActualizarProducto extends Component{
           <div className='clear'></div>
         </ul>
         <div className='ActionsModificar'>
+            <div className='Radio label Modificar'>
+              <p>{this.state.StatusProducto==1?'Visble':'No visible'}</p>
+              <Radio  toggle checked={this.state.StatusProducto} onChange={()=>this.setState({StatusProducto:this.state.StatusProducto==0?1:0})} />
+            </div>
 
           <div onClick={this.EliminarProducto} className='eliminarModificado Actionbtn'>
             Eliminar

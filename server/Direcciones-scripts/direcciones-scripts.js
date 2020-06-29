@@ -7,7 +7,6 @@ function NuevaDireccion(bd,req,res){
   var PushComponentes=ref.push();
   PushComponentes.set({
       idDireccion:PushComponentes.key,
-      NombreDireccion:dataDireccion.NombreDireccion,
       CPDireccion:dataDireccion.CPDireccion,
       EstadoDireccion:dataDireccion.EstadoDireccion,
       MunicipioDireccion:dataDireccion.MunicipioDireccion,
@@ -18,6 +17,7 @@ function NuevaDireccion(bd,req,res){
       EntreCalle1Direccion:dataDireccion.EntreCalle1Direccion,
       EntreCalle2Direccion:dataDireccion.EntreCalle2Direccion,
       IndicacionesDireccion:dataDireccion.IndicacionesDireccion,
+      NombreDireccion:dataDireccion.NombreDireccion,
       numContactoDireccion:dataDireccion.numContactoDireccion,
     },function(error) {
         if (error) {

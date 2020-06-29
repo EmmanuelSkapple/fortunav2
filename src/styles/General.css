@@ -54,7 +54,7 @@ p { -webkit-transition: all .4s ease; -moz-transition: all .4s ease; -o-transiti
 #ContenedorLoader {background: rgb(235, 205, 86);}
 h4 {position: absolute;bottom: 20px;left: 20px;margin: 0;font-weight: 200;opacity: .5;font-family: sans-serif;color: #fff;}
 #subcontainerLoader {width: 70px;height: 35px;overflow: hidden;position: absolute;top: calc(50% - 17px);left: calc(50% - 35px);}
-#loader {width: 70px;height: 70px;border-style: solid;border-top-color: #d07323b8;border-right-color: #ea4f13d9;border-left-color: transparent;border-bottom-color: transparent;border-radius: 50%;box-sizing: border-box;animation: rotate 3s ease-in-out infinite;transform: rotate(-200deg)}
+#loader {width: 70px;height: 70px;border-style: solid;border-top-color: #C45656;border-right-color: #A73B3B;border-left-color: transparent;border-bottom-color: transparent;border-radius: 50%;box-sizing: border-box;animation: rotate 3s ease-in-out infinite;transform: rotate(-200deg)}
 @keyframes rotate {
   0% { border-width: 10px; }
   25% { border-width: 3px; }
@@ -96,7 +96,6 @@ h4 {position: absolute;bottom: 20px;left: 20px;margin: 0;font-weight: 200;opacit
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 	.contenedor { width: 95%; }
 	/* .seccion1{ border: 1px solid blue; } */
-
 
 }
 

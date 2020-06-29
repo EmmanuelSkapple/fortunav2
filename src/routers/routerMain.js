@@ -117,7 +117,7 @@ class RouterPrincipal extends Component {
   render() {
 
     return this.state.loading === true ? <LoadPage/> :(
-      <BrowserRouter>
+      <BrowserRouter >
         <Switch>
           <Route exact path= '/' component={HomepageLayout}/>
           <Route  path= '/Terraza' component={InfoExtraTerraza}/>

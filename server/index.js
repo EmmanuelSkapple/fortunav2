@@ -42,7 +42,6 @@ app.use(function(req, res, next) {
 
 app.get('/', function (req, res) {
   res.send('Que andas buscando aqui? ___ooO_(_o__o_)_Ooo___');
-
 });
 
 app.post('/registro-usuario', function (req, res) {

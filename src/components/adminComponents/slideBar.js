@@ -37,9 +37,14 @@ class slideBar extends Component{
             <Icon name='clipboard'></Icon>
             <p className='slideTitle'>Mis productos</p>
           </Link>
-
           </div>
+          <div className='IconColumn'>
+          <Link to="/fortunaAdmin/Categorias">
 
+            <Icon name='clipboard'></Icon>
+            <p className='slideTitle'>Categorias</p>
+          </Link>
+          </div>
           <div className='IconColumn'>
             <Link to="/fortunaAdmin/Ventas">
               <Icon name='shopping bag'></Icon>

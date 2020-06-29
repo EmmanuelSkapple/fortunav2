@@ -3,6 +3,7 @@ var Carrito=require('../Usuarios-scripts/usuarios-scripts.js');
 var Producto=require('../Producto-scripts/get-productos.js');
 var Usuario=require('../Usuarios-scripts/usuarios-scripts.js');
 var Direcciones=require('../Direcciones-scripts/direcciones-scripts.js');
+var EmailScript = require("../Email-scripts/email-scripts.js");
 
 
 
@@ -92,11 +93,23 @@ function RegistrarCargoDB (req,res,bd,userPerfil,dataTarjeta,cargo,carritoItems,
           return(error); //error si hay problemas al subir Firebase
           res.send({status:'505',error:error})
         } else {
+          MandarCorreo(res,userPerfil.val().Nombre,userPerfil.val().Email,cargo,carritoItems,direccionItem);
           borrarCarrito(req,res,bd);
+
           res.send ({status:'OK'});
         }
       }
     );
+}
+
+
+function MandarCorreo (res,UserName,Email,cargo,carritoItems,direccionItem){
+  let datos={
+    cargo:cargo,
+    carritoItems:carritoItems,
+    direccionItem:direccionItem,
+  }
+  EmailScript.SendEmail(res,UserName,Email,datos);
 }
 
 function borrarCarrito (req,res,bd){

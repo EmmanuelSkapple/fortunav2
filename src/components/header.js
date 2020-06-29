@@ -33,7 +33,6 @@ class Menu extends Component{
     if (user) {
       axios.post(Direccion+`/login-usuario`,{idUser:user.uid})
       .then(res => {
-        console.log(res.data);
         if(res.data.status == '404'){
           this.setState({
             autenticado:false,
@@ -86,6 +85,24 @@ class Menu extends Component{
       //   }
       // });
 
+      window.addEventListener('click', function(e){
+        if (document.getElementById('carritoSlider')) {
+          if (document.getElementById('carritoSlider').contains(e.target)){
+            // Clicked in box
+          } else{
+            if (self.state.carritoOpen) {
+                self.setState({carritoOpen:false})
+            }
+            // Clicked outside the box
+          }
+        }
+        if ( document.getElementById('carrito').contains(e.target)) {
+          if (!self.state.carritoOpen) {
+              self.setState({carritoOpen:true})
+          }
+        }
+
+      });
 
   }
 
@@ -94,6 +111,7 @@ class Menu extends Component{
     if(firebase.auth().currentUser){
       axios.post(Direccion+`/tomar-carrito`,{idUser:firebase.auth().currentUser.uid})
           .then(res => {
+
             if (res.data.status == 'OK') {
               self.setState({
                 productosCarrito:res.data.carrito,
@@ -227,7 +245,7 @@ class Menu extends Component{
 
            </li>
            <li>
-             <div onClick={this.openCarrito} className='carrito'>
+             <div  id='carrito' onClick={this.openCarrito} className='carrito'>
              <div className="BadgeCarrito">
                <p>{this.state.infoExtraCarrito.totalItems?this.state.infoExtraCarrito.totalItems:'0'}</p>
              </div>
@@ -247,7 +265,7 @@ class Menu extends Component{
          </ul>
        </div>
        {this.props.black && this.state.carritoOpen?
-         <div className={this.state.carritoOpen?'carritoSlider activo':'carritoSlider'}>
+         <div id='carritoSlider' className={this.state.carritoOpen?'carritoSlider activo':'carritoSlider'}>
 
            <div className={this.state.carritoOpen?'carritoSliderContent activo':'carritoSliderContent'}>
              {
@@ -257,13 +275,27 @@ class Menu extends Component{
              }
            </div>
            <div className='SlideCarritoDescripcion'>
-             <p><span>{this.state.infoExtraCarrito.totalItems}</span> Productos</p>
+             <p><span>{this.state.infoExtraCarrito.totalItems}</span> Producto(s)</p>
              <p>Total =  $<span>{parseInt(this.state.infoExtraCarrito.total?this.state.infoExtraCarrito.total:'0').toFixed(2)}</span> MXN</p>
            </div>
            {this.state.productosCarrito.length>0?
              <div className='SlideCarritoBotton'>
                <div onClick={this.borrarAllCarrito} className='BtnBorrarCarrito'>Borrar carrito</div>
-               <div className='BtnFinalizarCompra'><Link to='/user/FinalizarCompra'>Finalizar compra</Link></div>
+               {this.state.infoExtraCarrito.total>0?
+                 <div>
+                   {this.state.infoExtraCarrito.totalItems < 12?
+                     <div className='BtnFinalizarCompra'>
+                       Compra minima 12 articulos
+                     </div>
+                     :
+                     <div className='BtnFinalizarCompra'><Link to='/user/FinalizarCompra'>Finalizar compra</Link></div>
+
+                   }
+                 </div>
+                 :
+                 <div>
+                 </div>
+               }
              </div>:
              <div></div>
            }

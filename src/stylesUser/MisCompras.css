@@ -120,6 +120,9 @@
 input.inputCVV ::-webkit-outer-spin-button,
 input.inputCVV ::-webkit-inner-spin-button {-webkit-appearance: none;}
 
+.Radio.label.Modificar{display: flex;flex-direction: row;justify-content: center;align-items: center;}
+.Radio.label.Modificar p{margin: 0px; margin-right: 10px;}
+
 
 /****************COMPRAS CLIENTES*****************/
 .CardInfo h5{margin-bottom: 0px;margin-top: 10px;}
@@ -130,7 +133,7 @@ input.inputCVV ::-webkit-inner-spin-button {-webkit-appearance: none;}
 
 
 /*********************** MEDIAS QUERIES ***********************/
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media (max-width: 319px) {
   .contenedor { width: 95%; }
   /* .seccion1{ border: 1px solid blue; } */
   .contentSlidePadre{margin-top: 37px;}
@@ -166,7 +169,42 @@ input.inputCVV ::-webkit-inner-spin-button {-webkit-appearance: none;}
   .headerMisProductos .CardInfo.Compra p{font-size: 13px;}
   .headerMisProductos .return{position: absolute;left: -10px;font-size: 20px;}
 
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .contenedor { width: 95%; }
+  /* .seccion1{ border: 1px solid blue; } */
+  .contentSlidePadre{margin-top: 37px;}
 
+  .contentMisProductos{width: 90%;padding: 10px;margin: 0px auto;}
+  .contentMisProductos .buscadorProductos{width: 100%;}
+  .contentMisProductos .btnNuevoProducto{font-size: 13px;}
+  .infoCardItem h3{font-size: 12px;}
+  .infoCardItem p{font-size: 11px;}
+  .btnModificar{display: none;}
+  .idProducto{display: none;}
+  .infoCardItem.left{margin-left: 10px;}
+  .CardItemModificar li{width: 50%;}
+  .contentMisProductos .filtroActivos .tabactivo{font-size: 13px;margin: 0px auto;}
+  .CardItemModificar li:nth-child(13){width: 100%}
+  .infoCardItem.Modificar .input{width: 80%}
+  .infoCardItem.Modificar .tituloInputNuevoProducto{text-align: center;}
+  .infoCardItem.Modificar.decripcion .input.label{margin:0px auto;}
+  .CardItemModificar textarea{width: 100%;margin: 0px auto;height: 50px;}
+  .ActionsModificar .Actionbtn{width: 45%}
+
+  /*************NUEVO PRODUCTO**********/
+  .contentFormNuevoProducto .StatusProducto{width: 90%;}
+  .contentFormNuevoProducto .StatusProducto p{font-size: 13px;}
+  .NuevoProducto .contentPrimerPaso{width: 100%;}
+  .contentFormNuevoProducto.contentMiddle{width: 90%;}
+  .contentFormNuevoProducto .tituloInputNuevoProducto{font-size: 14px;}
+
+  /*************COMPRAS**********/
+  .headerMisProductos .CardItem .infoCardItem h3{font-size: 13px;}
+  .headerMisProductos li{width: 100%;}
+  .headerMisProductos .CardInfo.Compra h3{font-size: 13px;margin-bottom: 5px;}
+  .headerMisProductos .CardInfo.Compra p{font-size: 13px;}
+  .headerMisProductos .return{position: absolute;left: -10px;font-size: 20px;}
 
 }
 

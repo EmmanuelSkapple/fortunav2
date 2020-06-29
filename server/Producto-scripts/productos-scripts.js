@@ -48,6 +48,7 @@ function ActualizarProductoSencillo(req,res,dataBase) {
     marcaProducto:req.body.marcaProducto,
     cantidadProducto:req.body.cantidadProducto,
     unidadProducto:req.body.unidadProducto,
+    precioProducto:req.body.precioProducto,
     precioDescuentoProducto:req.body.precioDescuentoProducto,
     estiloProducto:req.body.estiloProducto,
     colorProducto:req.body.colorProducto,

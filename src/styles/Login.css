@@ -21,21 +21,59 @@
 
 
 /*********************** MEDIAS QUERIES ***********************/
+@media (max-width: 319px) {
+	.contenedor { width: 95%; }
+	.Login .seccion1 .bgLogin{height: 100vh;padding:20px;}
+	.Login .seccion1 .loginContent{width: 80%;margin-top: 20px;}
+	.Login .seccion1 .registroContent{width: 85%;}
+	.seccion1{ border: 1px solid blue; }
+	.loginForm .middleInputs{flex-direction: column;}
+	.middleInputs .item{margin: 0px;margin-top: 10px;}
+	.middleInputs .item.confirmPass{margin-top: 15px;}
+	.loginForm .middleInputs label{font-size: 11px;}
+	.Login .seccion1 .loginHeader{font-size: 20px;padding: 10px 0px}
+	.Login .seccion1 .loginForm .item input{padding: 5px;font-size: 11px;margin: 0px}
+	.Login .seccion1 .forgotPassword {font-size: 9px;}
+	.Login .seccion1 .btnIngresar{font-size: 11px;padding: 5px;width: 50%;}
+	.Login .seccion1 .btnCrearCuenta{font-size: 11px;padding: 5px; margin: 10px auto;}
+	.iconEyeRegistro{margin-top: -40px;}
+
+}
 @media screen and (min-width: 320px) and (max-width: 479px) {
 	.contenedor { width: 95%; }
   .Login .seccion1 .bgLogin{height: 100vh;padding:20px;}
-  .Login .seccion1 .loginContent{width: 70%;margin-top: 20px;}
-	/* .seccion1{ border: 1px solid red; } */
-  .loginForm .middleInputs{flex-direction: column;}
+  .Login .seccion1 .loginContent{width: 80%;margin-top: 20px;}
+	.Login .seccion1 .registroContent{width: 85%;}
+	.seccion1{ border: 1px solid blue; }
+	.loginForm .middleInputs{flex-direction: column;}
+	.middleInputs .item{margin: 0px;margin-top: 10px;}
+	.middleInputs .item.confirmPass{margin-top: 15px;}
+  .loginForm .middleInputs label{font-size: 11px;}
+	.Login .seccion1 .loginHeader{font-size: 20px;padding: 10px 0px}
+	.Login .seccion1 .loginForm .item input{padding: 5px;font-size: 11px;margin: 0px}
+	.Login .seccion1 .forgotPassword {font-size: 9px;}
+	.Login .seccion1 .btnIngresar{font-size: 11px;padding: 5px;width: 50%;}
+	.Login .seccion1 .btnCrearCuenta{font-size: 11px;padding: 5px; margin: 10px auto;}
+	.iconEyeRegistro{margin-top: -40px;}
 }
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
 	.contenedor { width: 95%; }
-  .Login .seccion1 .bgLogin{height: 100vh;padding:20px;}
-  .Login .seccion1 .loginContent{width: 70%;margin-top: 20px;}
+	.Login .seccion1 .bgLogin{height: 100vh;padding:20px;}
+  .Login .seccion1 .loginContent{width: 80%;margin-top: 20px;}
+	.Login .seccion1 .registroContent{width: 85%;}
+	.seccion1{ border: 1px solid blue; }
+	.loginForm .middleInputs{flex-direction: column;}
+	.middleInputs .item{margin: 0px;margin-top: 10px;}
+	.middleInputs .item.confirmPass{margin-top: 15px;}
+  .loginForm .middleInputs label{font-size: 11px;}
+	.Login .seccion1 .loginHeader{font-size: 20px;padding: 10px 0px}
+	.Login .seccion1 .loginForm .item input{padding: 5px;font-size: 11px;margin: 0px}
+	.Login .seccion1 .forgotPassword {font-size: 9px;}
+	.Login .seccion1 .btnIngresar{font-size: 11px;padding: 5px;width: 50%;}
+	.Login .seccion1 .btnCrearCuenta{font-size: 11px;padding: 5px; margin: 10px auto;}
+	.iconEyeRegistro{margin-top: -40px;}
 
-	/* .seccion1{ border: 1px solid blue; } */
-.loginForm .middleInputs{flex-direction: column;}
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -43,6 +81,7 @@
   .Login .seccion1 .bgLogin{height: 100vh;padding:20px;}
   .Login .seccion1 .loginContent{width: 70%;margin-top: 20px;}
 	/* .seccion1{ border: 1px solid green; } */
+	.loginForm .middleInputs label{font-size: 11px;}
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {

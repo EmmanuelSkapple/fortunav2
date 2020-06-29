@@ -207,7 +207,7 @@ class Variedades extends Component {
                   <div className="izquierda">
                     <h1>Cañita Light</h1>
                     <p className='descripcion-cerveza' >
-                      Cañita light, el sabor de una buena cerveza con menos calorias </p>
+                      Cañita light, el sabor de una buena cerveza con menos calorías </p>
                      <div className='especificaciones'>
                        <div className='item'>
                          <div className='Header'>
@@ -244,7 +244,7 @@ class Variedades extends Component {
                     <p className='descripcion-cerveza' >
                       Nuestra India Pale Ale (IPA) tiene un color cobrizo anaranjado con fuertes notas herbales y frutales y sabor intenso
                       con un perfecto equilibrio entre la malta y su alto contenido de lúpulo que deja realzar un amargor relajador
-                      alfinal de su trayectoria
+                      al final de su trayectoria
                     </p>
                     <div className='especificaciones'>
                       <div className='item'>

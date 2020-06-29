@@ -1,3 +1,6 @@
+var EmailScript = require("../Email-scripts/email-scripts.js");
+var Perfil=require('../Usuarios-scripts/perfil-usuario.js');
+
 function tomarTransaccionWithUser (bd,req,res){
     var ref=bd.ref('Transacciones/'+req.body.idUser);
     let valuesActivos=[];
@@ -65,6 +68,7 @@ function ActualizarFechaEntrega(req,res,bd){
   ref.update({
     FechaEntrega:req.body.FechaEntrega,
   }).then(()=>{
+    MandarCorreo(bd,res,req.body.idUser,req.body.idTransaccion);
     res.send({status:'OK'});
   }).catch((err)=>{
     res.send({status:505,error:err});
@@ -77,11 +81,17 @@ function ActualizarStatus(req,res,bd){
   ref.update({
     Status:req.body.Status,
   }).then(()=>{
+    MandarCorreo(bd,res,req.body.idUser,req.body.idTransaccion);
     res.send({status:'OK'});
   }).catch((err)=>{
     res.send({status:505,error:err});
   })
 }
+async function MandarCorreo  (bd,res,idUser,idTransaccion){
+  let userPerfil = await Perfil.Tomar(bd,idUser);
+  EmailScript.SendEmailStatus(res,userPerfil.val().Nombre,userPerfil.val().Email,idTransaccion);
+}
+
 
 exports.ActualizarStatus=ActualizarStatus;
 exports.ActualizarFechaEntrega=ActualizarFechaEntrega;

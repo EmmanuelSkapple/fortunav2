@@ -22,6 +22,7 @@ class UserRoutes extends Component{
   render(){
     return(
       <div>
+        
             <Switch>
               <Route exact path="/user" component={Perfil}/>
               <Route path="/user/FinalizarCompra" component={finalizarCompra}/>

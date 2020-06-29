@@ -96,7 +96,7 @@ class Perfil extends Component{
             openAlert:true,
             AlertType: 'error',
             titleAlert:"Algo anda mal!",
-            messageAlert:res.data.error,
+            AlertMessage:res.data.error,
           })
         }
       })
@@ -140,7 +140,7 @@ class Perfil extends Component{
             openAlert:true,
             AlertType: 'error',
             titleAlert:"Algo anda mal!",
-            messageAlert:res.data.error,
+            AlertMessage:res.data.error,
           })
         }
       })
